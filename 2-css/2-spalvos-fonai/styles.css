@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(197, 220, 255);
+}
+
+h1 {
+    background-color: darkcyan;
+    color: white;
+}
+
+.fonas-raudonas {
+    background-color: red;
+}
+
+.fonas-melynas {
+    background-color: rgb(57, 95, 212);
+}
+
+#pirmas {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#antras {
+    background-color: beige;
+}
+
+#antras h2 {
+    background-color: cadetblue;
+    color: white;
+}
+
+#antras p {
+    color: cadetblue;
+}
+
+#trecias {
+    background-color: cornflowerblue;
+}
+
+#trecias h2 {
+    background: black;
+    color: white;
+}
+
+#trecias p {
+    color: white;
+}
+
+#trecias a {
+    background: red;
+    color: white;
+}
+
+#ketvirtas {
+    background-image: url('images/foto1.jpg');
+    background-size: contain;
+    color: aliceblue;
+    background-position: 0px center;
+    background-attachment: fixed;
+}
+
+#penktas {
+    background: url('images/foto2.jpg') top center fixed;
+}
+
+.pirmas-foto {
+    background: url('images/foto3.jpg');
+}
+
+.antras-foto {
+    background: url('images/foto3.jpg');
+}
+
+.foto-blokas {
+    background-size: cover;
+    background-size: contain;
+}
+
+.foto-su-img {
+    border: 1px solid red;
+    width: fit-content;
+}
+
+.foto-su-img img {
+    width: 100px;
+}
