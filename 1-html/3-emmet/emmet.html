@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Elements abbreviation -->
+    <!-- h1 -->
+    <h1></h1>
+
+    <!-- table+tab -->
+    <table></table>
+
+    <!-- > reiskia child. Pvz div>il>li -->
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- div>div>table>tr>td>span -->
+    <div>
+        <div>
+            <table>
+                <tr>
+                    <td><span></span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- h1>u -->
+    <h1><u></u></h1>
+
+    <!-- form>(label>input)*2 -->
+    <form action="#">
+        <label for="labas"> labas
+            <input type="text" id="labas">
+        </label>
+        <label for="krabas"> krabas
+            <input type="text" id="krabas">
+        </label>
+    </form>
+
+    <!-- + reiskia sibling. Pvz div>(h2>lorem1)+(ul>li*6>lorem2)+(ol>li*4>lorem1) -->
+    <div>
+        <h2>Lorem.</h2>
+        <ul>    
+            <li>Lorem, ipsum.</li>
+            <li>Tenetur, numquam!</li>
+            <li>Excepturi, molestiae.</li>
+            <li>Molestiae, nulla!</li>
+            <li>Repellendus, maiores.</li>
+            <li>Aliquid, culpa!</li>
+        </ul>
+        <ol>
+            <li>Lorem.</li>
+            <li>Repellendus!</li>
+            <li>Possimus.</li>
+            <li>Hic.</li>
+        </ol>
+    </div>
+
+    <!-- ^ reiskia climb up. Pvz div>p>span^table -->
+    <div>
+        <p><span></span></p>
+        <table></table>
+    </div>
+
+    <!-- div>div>p>span^^table -->
+    <div>
+        <div>
+            <p><span></span></p>
+        </div>
+        <table></table>
+    </div>
+
+    <!-- table[border='1']>tr>td>(ol>li{tekstas $}*6)^td>{labas}^^tr>td>{krabas}^td>(ul>li{tekstas}*6) -->
+
+    <table border="1">
+        <tr>
+            <td>
+                <ol>
+                    <li>tekstas 1</li>
+                    <li>tekstas 2</li>
+                    <li>tekstas 3</li>
+                    <li>tekstas 4</li>
+                    <li>tekstas 5</li>
+                    <li>tekstas 6</li>
+                </ol>
+            </td>
+            <td>
+                labas
+            </td>
+        </tr>
+        <tr>
+            <td>
+                krabas
+            </td>
+            <td>
+                <ul>
+                    <li>tekstas</li>
+                    <li>tekstas</li>
+                    <li>tekstas</li>
+                    <li>tekstas</li>
+                    <li>tekstas</li>
+                    <li>tekstas</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <!-- h1{Prekes}+ul>li{kategorija $}*3>p*3{preke $} -->
+
+    <h1>Prekes</h1>
+    <ul>
+        <li>kategorija 1
+            <p>preke 1</p>
+            <p>preke 2</p>
+            <p>preke 3</p>
+        </li>
+        <li>kategorija 2
+            <p>preke 1</p>
+            <p>preke 2</p>
+            <p>preke 3</p>
+        </li>
+        <li>kategorija 3
+            <p>preke 1</p>
+            <p>preke 2</p>
+            <p>preke 3</p>
+        </li>
+    </ul>
+
+    <!-- div.blokas-paslaugos -->
+
+    <div class="blokas-paslaugos"></div>
+
+    <!-- .blokas-paslaugos sukuria div su klase blokas-paslaugos-->
+
+    <div class="blokas-paslaugos"></div>
+
+    <!-- button.primaryButton{Submit} -->
+
+    <button class="primaryButton">Submit</button>
+
+    <!-- button.btn.btnPrimary.btnSmall -->
+
+    <button class="btn btnPrimary btnSmall"></button>
+
+    <!-- ul.navigacija>li*5.elementas -->
+    
+    <ul class="navigacija">
+        <li class="elementas"></li>
+        <li class="elementas"></li>
+        <li class="elementas"></li>
+        <li class="elementas"></li>
+        <li class="elementas"></li>
+    </ul>
+
+    <!-- .formDivStyle>form>label[for='nameInput']{Name}.labelStyle+input#nameInput.inputStyle -->
+
+    <div class="formDivStyle">
+        <form action="">
+            <label for="nameInput" class="labelStyle">Name</label>
+            <input type="text" id="nameInput" class="inputStyle">
+        </form>
+    </div>
+
+    <!-- ol>li#paryskintas.specialus-fonas+li.bendras-fonas*3 -->
+
+    <ol>
+        <li id="paryskintas" class="specialus-fonas"></li>
+        <li class="bendras-fonas"></li>
+        <li class="bendras-fonas"></li>
+        <li class="bendras-fonas"></li>
+    </ol>
+
+    <!-- a[href="paslaugos/paslauga.html"] -->
+
+    <a href="paslaugos/paslauga.html"></a>
+
+    <!-- ul>li*3>a[href='#']{nuoroda $} -->
+
+    <a href="paslaugos/paslauga.html"></a>
+
+    <ul>
+        <li>
+            <a href="#">nuoroda 1</a>
+        </li>
+        <li>
+            <a href="#">nuoroda 2</a>
+        </li>
+        <li>
+            <a href="#">nuoroda 3</a>
+        </li>
+    </ul>
+
+    <!-- img*3[src='https://placehold.co/150x100'] -->
+
+    <img src="https://placehold.co/150x100" alt="">
+    <img src="https://placehold.co/150x100" alt="">
+    <img src="https://placehold.co/150x100" alt="">
+
+    <!-- .blokas*3>h3{antraste $}+img[src='https://placehold.co/100x100'] -->
+
+    <div class="blokas">
+        <h3>antraste 1</h3>
+        <img src="https://placehold.co/100x100" alt="">
+    </div>
+    <div class="blokas">
+        <h3>antraste 2</h3>
+        <img src="https://placehold.co/100x100" alt="">
+    </div>
+    <div class="blokas">
+        <h3>antraste 3</h3>
+        <img src="https://placehold.co/100x100" alt="">
+    </div>
+
+</body>
+
+</html>

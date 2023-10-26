@@ -1,0 +1,108 @@
+/* body {
+    background: orange;
+} */
+
+h1 {
+    background: darkgrey;
+}
+
+p {
+    font-size: 12px;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+li {
+    color: chocolate;
+}
+
+ul {
+    border: 2px solid red;
+}
+
+ol {
+    background-color: bisque;
+}
+
+#paryskintas {
+    color: red;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+#kitoks-sarasas {
+    background-color: rgb(57, 34, 187);
+}
+
+.raudona {
+    color: red;
+}
+
+.melyna {
+    color: blue;
+}
+
+.pakreiptas {
+    font-style: italic;
+}
+
+.pastorintas {
+    font-weight: bold;
+}
+
+.paragrafelis {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
+
+h1, h2, h3 {
+    border-left: 5px solid black;
+}
+
+p, li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    box-shadow: 0px 0px 30px black;
+}
+
+#paslaugos {
+    background-color: rgb(39, 9, 15);
+    color: white;
+    border: 5px solid black;
+    border-radius: 16px;
+    padding: 16px;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+#paslaugos h2 {
+    border: none;
+}
+
+#paslaugos p {
+    font-size: 16px;
+}
+
+ol li {
+    list-style-type: square;
+}
+
+ul li {
+    list-style-type: lower-alpha;
+}
+
+a {
+    font-size: 20px;
+    background-color: pink;
+    color: black;
+}
+
+a:hover {
+    font-size: 25px;
+    background-color: rgb(253, 169, 183);
+    box-shadow: 0px 0px 10px black;
+}
