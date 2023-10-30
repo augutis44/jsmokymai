@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    background-color: white;
+}
+
+h2 {
+    background-color: grey;
+}
+
+div {
+    background-color: #FFFFFF;
+}
+
+.naujienos-block {
+    background-color: #F5F5DC;
+}
+
+h3 {
+    color: red;
+}
+ 
+p {
+    color: blue;
+}
+
+a {
+    background-color: red;
+    color: white;
+}
