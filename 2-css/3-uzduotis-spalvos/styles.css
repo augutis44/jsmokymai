@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(216, 216, 216);
+}
+
+h1 {
+    color: white;
+    background-color: black;
+}
+
+h2 {
+    color: white;
+    background-color: #5C92ED;
+}
+
+div {
+    background-color: white;
+}
+
+a {
+    color: red;
+}
