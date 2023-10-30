@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(61, 94, 240);
+}
+
+div {
+    background: white;
+    margin: 50px auto;
+    width: 50%;
+}
+
+#blokas1 {
+    padding: 20px;
+    border: 5px solid black;
+}
+
+#blokas2 {
+    padding-left: 30px;
+    padding-top: 30px;
+    border-left: 2px solid orange;
+    box-shadow: 20px 20px 15px black;
+}
+
+#blokas3 {
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    border-top: 4px dashed pink;
+    border-right: 6px dotted yellowgreen;
+    border-radius: 0px 0px 0px 20px;
+}
+
+#blokas4 {
+    padding: 20px 40px;
+    border-color: burlywood;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 20px 40px;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+}
+
+#blokas5 {
+    padding: 20px 40px 30px 0px;
+    border-radius: 20px;
+}
+
+#blokas5:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
