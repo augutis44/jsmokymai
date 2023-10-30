@@ -1,0 +1,21 @@
+.blokas1 {
+    background: url('images/foto1.jpg');
+}
+
+.blokas2 {
+    background: url('images/foto2.jpg');
+}
+
+.blokas3 {
+    background: url('images/foto3.jpg');
+}
+
+h1 {
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+}
+
+p {
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
