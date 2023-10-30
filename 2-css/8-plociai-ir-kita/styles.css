@@ -1,0 +1,130 @@
+body {
+    background: rgb(62, 180, 220);
+}
+
+#pirmas {
+    background-color: white;
+    width: 200px;
+}
+
+#antras {
+    background-color: azure;
+    width: 300px;
+    height: 200px;
+}
+
+#trecias {
+    background: white;
+    width: 50%;
+}
+
+#ketvirtas {
+    background-color: bisque;
+    width: 800px;
+    height: 200px;
+}
+
+#penktas {
+    background: white;
+    width: 100%;
+    max-width: 1000px;
+}
+
+#lentele {
+    background-color: white;
+    width: 100%;
+    /* width: fit-content; */
+}
+
+table,
+td,
+th {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+#sestas {
+    background-color: gold;
+    width: 300px;
+    height: 150px;
+}
+
+#septintas {
+    background: white;
+}
+
+#astuntas {
+    background: #7af651;
+    /* height: 400px; */
+    /* vw - view width
+    vh - view height */
+    height: 100vh;
+}
+
+#astuntas .vaikinis {
+    background-color: white;
+    height: 50%;
+}
+
+#kita-lentele {
+    background: white;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+#kita-lentele td {
+    vertical-align: top;
+}
+
+/* #pirmas-sarasas {} */
+
+ul#pirmas-sarasas {
+    /* list-style-type: circle; */
+    list-style-type: square;
+}
+
+ol#antras-sarasas {
+    list-style-type: lower-alpha;
+}
+
+#devintas a {
+    text-decoration: none;
+    background: black;
+    color: white;
+    transition: 0.2s all;
+}
+
+#devintas a:hover {
+    background: red;
+}
+
+#desimtas {
+    width: 200px;
+    background: orange;
+    transition: 0.3s all;
+}
+
+#desimtas:hover {
+    width: 250px;
+    background: white;
+}
+
+#vienuoliktas {
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    transition: 0.2s all;
+}
+
+#vienuoliktas:hover {
+    background-color: white;
+}
+
+#vienuoliktas p {
+    transition: 1s all;
+}
+
+#vienuoliktas:hover p {
+    color: red;
+}
