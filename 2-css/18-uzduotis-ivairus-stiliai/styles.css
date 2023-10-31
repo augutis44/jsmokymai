@@ -1,0 +1,121 @@
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/fotoFonas.jfif');
+}
+
+.mainDivForPadding {
+    margin: 90px 0px 292px 135px;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+.image1 {
+    width: 602px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 95px 51px 179px 60px;
+}
+
+.labelForImage1 {
+    text-transform: uppercase;
+    font-family: 'Inter';
+    font-size: 14px;
+    margin: 26px 0px 12px;
+}
+
+.blackLine {
+    height: 1px;
+    width: 1211px;
+    background-color: black;
+    margin: 6px 0px;
+}
+
+.heading {
+    font-family: 'Inter';
+    font-size: 40px;
+    font-weight: 700;
+    margin: 25px 0px 17px;
+    width: 764px;
+}
+
+.whiteBackgroundP {
+    font-family: 'Inter';
+    display: inline-flex;
+    padding: 16px 32px;
+    font-style: italic;
+    border-radius: 17px;
+    background: rgba(255, 255, 255, 0.45);
+    width: 770px;
+}
+
+.purpleLine {
+    height: 7px;
+    width: 1211px;
+    background-color: #540F80;
+    margin: 25px 0px 22px;
+}
+
+.byLabel {
+    color: #0F4380;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px 0px 25px;
+}
+
+.purpleTextBox {
+    width: 723px;
+    padding: 60px 123.56px;
+    align-items: center;
+    border-radius: 25px;
+    background: #540F80;
+    box-sizing: border-box;
+}
+
+.purpleTextBox p {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.purpleTextBox .firstParagraph {
+    margin: 0px 0px 16px
+}
+
+.text h3 {
+    color: #01FCB6;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.text {
+    width: 723px;
+    margin: 57.62px 0px 23px;
+}
+
+.text p {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    margin: 18px 0px;
+}
+
+.text a {
+    background-color: #01FCB6;
+    text-decoration-line: underline;
+    color: black;
+}
+
+.image2 {
+    width: 645px;
+    height: 432px;
+    border-radius: 0px 69px 0px 199px;
+
+}
