@@ -1,0 +1,43 @@
+body {
+    background: #EBEBEB;
+    font-family: 'Roboto';
+}
+
+h1 {
+    color: #222;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #FFF;
+}
+
+p {
+    font-family: 'Open Sans';
+    width: 521px;
+    flex-shrink: 0;
+    color: #222;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h2 {
+    color: #222;
+    font-size: 36px;
+    font-weight: 900;
+    margin: 5px 0px 15px 0px;
+}
+
+h3 {
+    color: #222;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration-line: underline;
+    margin: 10px 0px;
+}
+
+div {
+    background-color: white;
+}
