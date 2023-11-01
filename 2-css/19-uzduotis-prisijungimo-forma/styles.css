@@ -1,0 +1,85 @@
+body {
+    background: url('fonas.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h2,
+p {
+    margin: 0;
+}
+
+.loginFormDiv h2,
+.loginFormDiv p {
+    margin-top: 35px;
+}
+
+.loginFormDiv {
+    background-color: white;
+    text-align: center;
+    padding: 88px 259px;
+    width: 1088px;
+    box-sizing: border-box;
+    margin: 120px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.boldedParagraph {
+    font-family: 'Niramit';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+    /* 24px */
+}
+
+h2 {
+    font-family: 'Niramit';
+    font-size: 32px;
+    line-height: 120%;
+}
+
+form {
+    display: inline;
+    text-align: left;
+}
+
+form label {
+    font-family: 'Niramit';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+form input {
+    width: 324px;
+    height: 56px;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    margin: 16px 0px;
+}
+
+input::placeholder {
+    padding: 10px 17.5px;
+}
+
+#loginInput {
+    padding: 16px 48px;
+    border-radius: 30px;
+    background: #02B4E2;
+    border: none;
+}
+
+.lightParagraph {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: justify;
+    font-family: 'Niramit';
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 0px !important;
+}
+
+#loginInput {
+    width: 137px;
+}
