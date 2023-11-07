@@ -1,0 +1,173 @@
+body,
+html {
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("images/bgfoto.png");
+  background-repeat: repeat;
+  background-size: 300px;
+}
+
+ul,
+h1,
+p,
+h2 {
+  margin: 0;
+}
+
+/* ========================
+NAVIGACIJA
+======================== */
+
+nav {
+  background: #000;
+  color: white;
+  padding: 16px 160px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: 19px;
+  font-weight: 800;
+  font-variant: all-small-caps;
+  letter-spacing: 1.9px;
+}
+
+nav ul li a img {
+  width: 56px;
+  height: 56px;
+}
+
+/* ========================
+BODIS
+======================== */
+
+.productsBox {
+  background: #000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  width: 1121px;
+  margin: 81px auto;
+}
+
+.productsCardsBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  margin: 46px 85px 66px;
+}
+
+.productsHeadingBox {
+  text-align: center;
+  font-family: "Montserrat";
+  color: #fff;
+  margin: 56px 0px 0px;
+}
+
+.productsHeadingBox h1 {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 5.12px;
+}
+
+.productsHeadingBox p {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+
+.cardBox {
+  border: 3px solid #fff;
+  width: 293px;
+  height: 440px;
+  color: #fff;
+  font-family: "Montserrat";
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.cardBox img {
+  border-radius: 127px;
+  width: 127px;
+  height: 127px;
+  margin: 46px 83px 20px;
+  object-fit: cover;
+}
+
+.cardBox h2 {
+  font-size: 24px;
+  font-weight: 800;
+  font-variant: all-small-caps;
+  letter-spacing: 0.96px;
+  margin: 12px 0px;
+}
+
+.cardBox div {
+  background: #fff;
+  width: 23px;
+  height: 3px;
+}
+
+.cardBox p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.54px;
+  margin: 17px 33px 16px;
+}
+
+.cardBox a {
+  color: #9661e8;
+  font-size: 19px;
+  font-weight: 800;
+  font-variant: all-small-caps;
+  letter-spacing: 1.52px;
+  text-decoration: none;
+  border: 2px solid #000;
+  background: transparent;
+  padding: 10px 20px;
+  margin: 0px 67px 34px;
+}
+
+.cardBox a:hover {
+  border: 2px solid #9661e8;
+}
+
+/* ========================
+FOOTER
+======================== */
+
+footer {
+  background: #000;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}

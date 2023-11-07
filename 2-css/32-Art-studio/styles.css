@@ -1,0 +1,161 @@
+body,
+html,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================
+NAVIGACIJA
+======================== */
+
+nav {
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 80px;
+}
+
+nav img {
+  width: 79px;
+  height: 79px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 19px;
+  font-weight: 800;
+  font-variant: all-small-caps;
+  letter-spacing: 1.9px;
+}
+
+nav ul .contactUsLink {
+  border-radius: 8px;
+  background: #e12e60;
+  color: #fff;
+  padding: 16px 32px;
+}
+
+/* ========================
+HEADER
+======================== */
+
+.navAndHeaderBox {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("images/headerBgImage.jpg");
+  background-position: center;
+  background-size: 100%;
+}
+
+header {
+  padding: 65px 0px 58px 88px;
+}
+
+header h1 {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 50px;
+  font-weight: 700;
+  width: 856px;
+}
+
+/* ========================
+BODY
+======================== */
+
+.redBackgroundDiv {
+  background: #ef5d69;
+  display: flex;
+  padding: 78px 59px 79px 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.redBackgroundDiv .pinkBackgroundParagraphDiv {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  padding: 60px 40px;
+  gap: 60px;
+}
+
+.pinkBackgroundWithPictureDiv {
+  background: #fcdfe1;
+  display: flex;
+  padding: 127px 59px 128px 98px;
+  gap: 40px;
+}
+
+.pinkBackgroundWithPictureDiv p {
+  background: #fff;
+  padding: 65px 50px;
+  font-family: "Roboto";
+  font-size: 19px;
+  font-weight: 400;
+  border-radius: 8px;
+  height: 614px;
+  box-sizing: border-box;
+  align-self: stretch;
+}
+
+.pinkBackgroundWithPictureDiv img {
+  width: 844px;
+  height: 614px;
+  border-radius: 8px;
+}
+
+/* ========================
+FOOTER
+======================== */
+
+footer {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 80px;
+}
+
+footer .logoDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .logoDiv img {
+  width: 50px;
+  height: 50px;
+  padding: 0px 0px 16px;
+}
+
+footer .logoDiv p {
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0px;
+  border-radius: 8px;
+}
+
+footer ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 16px;
+}
+
+footer ul li a {
+  text-decoration: none;
+}

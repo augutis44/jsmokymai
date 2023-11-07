@@ -1,0 +1,123 @@
+body,
+html {
+  margin: 0;
+}
+
+p,
+h1,
+h2 {
+  margin: 0;
+}
+
+/* ========================
+NAVIGACIJA
+======================== */
+
+nav {
+  background: #222;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ========================
+HEADER
+======================== */
+
+header {
+  background: #90ee90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+}
+
+header p {
+  margin: 20px 0px 15px;
+}
+
+header button {
+  padding: 10px 20px;
+  border: 2px solid #393939;
+  background: transparent;
+  color: #393939;
+  box-shadow: 1px 1px 8px rgb(107, 107, 107, 0.2);
+}
+
+header button:hover {
+  background-color: #393939;
+  color: white;
+}
+
+/* ========================
+Body
+======================== */
+
+.topNotification {
+  padding: 20px;
+  background: #7fffd4;
+}
+
+.articlesDiv {
+  background: #ffe4c4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px;
+}
+
+.articlesDiv div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff1e1;
+  padding: 30px 20px 10px;
+  width: calc((100% - 80px) / 3);
+  box-sizing: border-box;
+}
+
+.articlesDiv div p {
+  margin: 15px 0px;
+}
+
+/* ========================
+Footer
+======================== */
+
+footer {
+  background: #222;
+  color: white;
+  display: flex;
+  padding: 40px 20px 20px;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+footer div,
+footer p {
+  width: calc(100% / 3);
+  box-sizing: border-box;
+}
+
+footer p {
+  text-align: left;
+}
+
+footer a {
+  color: #16838e;
+  text-decoration: none;
+}

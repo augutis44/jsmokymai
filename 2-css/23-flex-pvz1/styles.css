@@ -1,0 +1,97 @@
+p,
+ul,
+h3 {
+  margin: 0;
+}
+
+#eile1 {
+  background-color: orange;
+  display: flex;
+}
+
+#eile2 {
+  background-color: orangered;
+  display: flex;
+}
+
+#eile3 {
+  background: orange;
+  display: flex;
+}
+
+#eile4 {
+  background: orangered;
+  display: flex;
+}
+
+#eile4 .stuleplis {
+  flex: 1;
+}
+
+#eile5 {
+  background: orange;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+#eile5 .stulpelis {
+  background: white;
+  flex: 1;
+  /* margin: 20px; */
+}
+
+#eile6 {
+    background: orangered;
+    display: flex;
+    padding: 50px;
+    gap: 20px;
+}
+
+#eile6 p {
+    flex: 1;
+    background-color: white;
+    padding: 15px;
+}
+
+#eile7 {
+    background: orange;
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+}
+
+#eile7 p {
+    background-color: white;
+    padding: 15px;
+    flex: 1;
+}
+
+#eile7 .platesnis {
+    flex: 2;
+}
+
+#eile8 {
+    background: orangered;
+    padding: 30px;
+}
+
+#eile8 form {
+    width: 60%;
+    background: white;
+}
+
+#eile8 form .eile {
+    display: flex;
+}
+
+#eile8 form .eile label {
+    width: 100px;
+    flex-shrink: 0;
+}
+
+#eile8 form .eile input {
+    flex-grow: 1;
+} 
+
+

@@ -1,0 +1,101 @@
+body,
+html {
+  margin: 0;
+}
+
+p,
+h2,
+div {
+  margin: 0;
+}
+
+/* ========================
+NAVIGACIJA
+======================== */
+
+nav {
+  display: flex;
+  background: #ffe4c4;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.brand {
+  font-size: 24px;
+}
+
+/* ========================
+HEADER
+======================== */
+
+header {
+  display: flex;
+  color: white;
+  background: #8a2be2;
+  justify-content: center;
+}
+
+header p {
+  text-align: center;
+  padding: 20px 0px;
+  width: 70vw;
+}
+
+/* ========================
+Straipsniai
+======================== */
+
+.straipsniaiBox {
+  background: #f8f8f8;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.straipsniaiBox div {
+  padding: 40px 20px;
+  background: white;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+  width: calc((100% - 2 * 20px) / 3);
+}
+
+.straipsniaiBox div p {
+  margin: 20px 0;
+}
+
+.endOfSiteNotification {
+  display: flex;
+  background: #8a2be2;
+  color: white;
+  justify-content: space-around;
+}
+
+.endOfSiteNotification p {
+  padding: 20px 0px;
+}
+
+/* ========================
+Footer
+======================== */
+
+footer {
+  background-color: #deb887;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer p {
+  padding: 20px 0px;
+}

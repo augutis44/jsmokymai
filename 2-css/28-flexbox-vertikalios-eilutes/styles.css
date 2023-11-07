@@ -1,0 +1,43 @@
+body,
+html {
+  margin: 0;
+}
+
+div {
+  display: flex;
+  height: 260px;
+  padding: 20px;
+}
+
+.blokas1 {
+  background: yellow;
+}
+
+.blokas2 {
+  background: orange;
+  justify-content: flex-end;
+}
+
+.blokas3 {
+  background: orangered;
+  align-items: center;
+}
+
+.blokas4 {
+  background: red;
+  align-items: center;
+  justify-content: center;
+}
+
+.blokas5 {
+  background: rgb(96, 1, 1);
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 300px;
+}

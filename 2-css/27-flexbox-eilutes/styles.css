@@ -1,0 +1,45 @@
+div:nth-child(odd) {
+  background: orange;
+}
+
+div:nth-child(even) {
+  background: orangered;
+}
+
+div {
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box
+}
+
+.blokas1 p {
+  padding: 0;
+  margin: 0;
+}
+
+.blokas2 p {
+  background: white;
+  padding: 0;
+  margin: 20px;
+  box-sizing: border-box
+}
+
+.blokas3 p {
+  padding: 0;
+  background: white;
+  padding: 20px;
+  justify-content: center;
+  box-sizing: border-box
+}
+
+.blokas4 {
+  justify-content: space-between;
+}
+
+.blokas4 p {
+  padding: 20px;
+  margin: 20px;
+  background: orange;
+  width: 200px;
+  box-sizing: border-box
+}

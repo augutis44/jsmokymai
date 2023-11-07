@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+p,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================
+H1
+======================== */
+
+.marginContainer {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.marginContainer h1 {
+  margin-top: 82px;
+  margin-bottom: 70px;
+  font-family: "Poppins";
+  font-size: 72px;
+  font-weight: 700;
+}
+
+/* ========================
+VISOS KORTELES
+======================== */
+
+.allCardsDiv {
+  display: flex;
+  margin-bottom: 200px;
+  justify-content: space-between;
+}
+
+/* ========================
+VIENA KORTELE
+======================== */
+
+.oneCardDiv {
+  border-radius: 16px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+  width: 376px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-family: 'Inter';
+}
+
+.textInCardDiv {
+  padding: 16px 24px;
+}
+
+.oneCardDiv img {
+  width: 376px;
+  height: 431px;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.oneCardDiv h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.oneCardDiv .aboutInfo {
+  color: #777;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 24px 0px;
+}
+
+.buyBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buyBox button {
+  padding: 12px 32px;
+  background: white;
+  border-radius: 4px;
+  border: 2px solid #84ad40;
+  color: #84ad40;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.colours {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.colours p {
+  color: #7d9458;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.colours img {
+  width: 79px;
+  height: 16px;
+}
+
+.oneCardDiv:hover {
+  border: 1px solid #84ad40;
+}
+
+.oneCardDiv:hover button {
+  background: #84ad40;
+  color: white;
+}
+
+/* ========================
+RESPONSIVE KORTELE
+======================== */
+
+@media (min-width: 375px) and (max-width: 768px) {
+  .marginContainer {
+    margin: 0px 24px;
+  }
+
+  .allCardsDiv {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .oneCardDiv {
+    max-width: calc((100% - 20px) / 2);
+  }
+
+  .marginContainer h1 {
+    margin-top: 93px;
+    margin-bottom: 32px;
+    font-size: 62px;
+  }
+}
+
+@media (max-width: 375px) {
+  .marginContainer h1 {
+    margin-top: 44px;
+    margin-bottom: 24px;
+    font-size: 32px;
+  }
+
+  .marginContainer {
+    margin: 0px 16px;
+  }
+
+  .allCardsDiv {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .oneCardDiv {
+    flex: 2;
+  }
+}

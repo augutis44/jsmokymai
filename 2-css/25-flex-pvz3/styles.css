@@ -1,0 +1,50 @@
+p {
+  margin: 0;
+}
+
+#eile1 {
+  background: orange;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+#eile1 .stulpelis {
+  width: 30%;
+  background: white;
+}
+
+#eile2 {
+  background: orangered;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#eile2 .stulpelis {
+  background: white;
+  padding: 20px;
+  width: 33%;
+  /* jeigu norima, kad visi visur tarpeliai butu vienodi */
+  width: calc((100% - 40px) / 3);
+  box-sizing: border-box;
+}
+
+#eile3 {
+  background: orange;
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+#eile3 .stulpelis {
+  background: white;
+  padding: 25px;
+  box-sizing: border-box;
+  width: calc((100% - 3 * 20px) / 4);
+}
