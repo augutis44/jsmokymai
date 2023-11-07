@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Montserrat&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Automobilių nuoma</title>
+</head>
+
+<body>
+    <script>
+        (function (window, document, undefined) {
+            window.onload = init;
+
+            function init() {
+                var containerElement = document.getElementById("sideContainer");
+                var customLeftElement = document.getElementById("customSideContainer");
+
+                var left = containerElement.offsetLeft;
+                customLeftElement.style.marginLeft = left + "px";
+            }
+            window.addEventListener('resize', init);
+
+        })(window, document, undefined);
+    </script>
+
+    <div class="navContainerFull">
+        <div id="sideContainer">
+            <nav>
+                <div class="logo">
+                    <p>Automobilių
+                    <section class="logoOrange">nuoma</section>
+                    </p>
+                </div>
+                <ul>
+                    <li> <a href="#">Link 1</a> </li>
+                    <li> <a href="#">Link 2</a> </li>
+                    <li> <a href="#">Link 3</a> </li>
+                    <li> <a href="#">Link 4</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <header>
+        <div class="headerMain">
+            <div id="customSideContainer" class="headerTextDiv">
+                <h1>Sugedo mašina?</h1>
+                <p>Mes jums padėsime.</p>
+                <div class="headerButtonsDiv">
+                    <a href="#" class="button">Žiūrėti automobilius</a>
+                    <a href="#" class="button">Susisiekti</a>
+                </div>
+            </div>
+            <img src="images/headerFoto.jfif" alt="old orange car">.
+        </div>
+        <div class="sideContainerFull">
+            <div id="sideContainer" class="headerParagraph">
+                <p>Automobilių nuoma yra populiari paslauga, leidžianti žmonėms trumpam laikui naudotis automobiliu.
+                    Tai
+                    patogus būdas gauti prieigą prie transporto priemonės, kai to reikia, be ilgalaikio
+                    įsipareigojimo.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <div class="allCardsDivFull">
+        <div id="sideContainer">
+
+            <h2>Nuomojami automobiliai</h2>
+
+            <div class="allCardsDiv">
+
+                <div class="card">
+                    <div class="oneCardDiv">
+                        <img src="images/car1.png" alt="BMW iX3 car">
+                        <h3>BMW iX3</h3>
+                        <div class="orangeDiv">
+                            <p><b>80 Eur.</b>/para</p>
+                        </div>
+                        <div class="oneCardButtonDiv">
+                            <a href="#" class="button">Daugiau</a>
+                            <a href="#" class="button">Susisiekti</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="oneCardDiv">
+                        <img src="images/car2.png" alt="BMW iX car">
+                        <h3>BMW iX</h3>
+                        <div class="orangeDiv">
+                            <p><b>70 Eur.</b>/para</p>
+                        </div>
+                        <div class="oneCardButtonDiv">
+                            <a href="#" class="button">Daugiau</a>
+                            <a href="#" class="button">Susisiekti</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="oneCardDiv">
+                        <img src="images/car3.png" alt="Audi RS6 car">
+                        <h3>Audi RS6</h3>
+                        <div class="orangeDiv">
+                            <p><b>80 Eur.</b>/para</p>
+                        </div>
+                        <div class="oneCardButtonDiv">
+                            <a href="#" class="button">Daugiau</a>
+                            <a href="#" class="button">Susisiekti</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="oneCardDiv">
+                        <img src="images/car4.png" alt="Audi A1 car">
+                        <h3>Audi A1</h3>
+                        <div class="orangeDiv">
+                            <p><b>50 Eur.</b>/para</p>
+                        </div>
+                        <div class="oneCardButtonDiv">
+                            <a href="#" class="button">Daugiau</a>
+                            <a href="#" class="button">Susisiekti</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="oneCardDiv">
+                        <img src="images/car5.png" alt="Peugeot 208 car">
+                        <h3>Peugeot 208</h3>
+                        <div class="orangeDiv">
+                            <p><b>60 Eur.</b>/para</p>
+                        </div>
+                        <div class="oneCardButtonDiv">
+                            <a href="#" class="button">Daugiau</a>
+                            <a href="#" class="button">Susisiekti</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="oneCardDiv">
+                        <img src="images/car6.png" alt="Vokswagen Tiguan car">
+                        <h3>Vokswagen Tiguan</h3>
+                        <div class="orangeDiv">
+                            <p><b>40 Eur.</b>/para</p>
+                        </div>
+                        <div class="oneCardButtonDiv">
+                            <a href="#" class="button">Daugiau</a>
+                            <a href="#" class="button">Susisiekti</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footerFull">
+        <div id="sideContainer">
+            <footer>
+                <p>Automobilių nuoma yra populiari paslauga, leidžianti žmonėms trumpam laikui naudotis automobiliu. Tai
+                    patogus
+                    būdas gauti prieigą prie transporto priemonės, kai to reikia, be ilgalaikio įsipareigojimo.</p>
+                <div>
+                    Nuorodos
+                    <ul>
+                        <li>
+                            <a href="#">Automobilių nuoma</a>
+                        </li>
+                        <li>
+                            <a href="#">Kontaktai</a>
+                        </li>
+                        <li>
+                            <a href="#">Privatumo politika</a>
+                        </li>
+                    </ul>
+                </div>
+                <address>
+                    Kontaktai <br>
+                    <img src="images/email.svg" alt="email logo"><a
+                        href="mailto:info@autonuoma.lt">info@autonuoma.lt</a><br>
+                    <img src="images/phone.svg" alt="phone logo">
+                    <p>+370 672 652 75</p>
+                </address>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
