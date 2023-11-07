@@ -1,0 +1,108 @@
+.box1 {
+    background-color: red;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* centruoja per viduri */
+    /* transform: translate(-50%, -50%);  */
+}
+
+.box2 {
+    background-color: green;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+}
+
+.box3 {
+    background-color: yellow;
+    position: relative;
+    left: 100px;
+    height: 500px;
+    width: 500px;
+}
+
+.box4 {
+    /* vaiskto tik teviniam elemente jeigu uzdetas teviniam realtive o vaiko absolute*/
+    background-color: brown;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* PIRMAS PVZ */
+
+#pirmas {
+    background-color: aquamarine;
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+#pirmas .blokelis {
+    background: white;
+    position: relative;
+}
+
+#pirmas .antras {
+    top: 15px;
+}
+
+#pirmas .trecias {
+    top: 30px;
+}
+
+/* ANTRAS PVZ */
+
+#antras {
+    background-color: bisque;
+    padding: 50px;
+}
+#antras .blokelis {
+    background: white;
+    margin: 20px auto;
+    width: 200px;
+}
+#antras .nr1 {
+    position: relative;
+    left: 15px;
+}
+#antras .nr2 {
+    position: relative;
+    right: 15px;
+}
+#antras .nr3 {
+    position: relative;
+    left: 15px;
+}
+
+/* TRECIAS PAVYZDYS */
+
+#trecias {
+    padding: 100px;
+    background-color: mediumseagreen;
+    text-align: center;
+}
+#trecias a {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 12px 40px;
+    border-radius: 20px;
+
+    position: relative;
+    transition: 0.2s all;
+    bottom: 0;
+}
+#trecias a:hover {
+    background-color: bisque;
+
+    bottom: 5px;
+}

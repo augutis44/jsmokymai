@@ -10,6 +10,10 @@ h2 {
   padding: 0;
 }
 
+.col {
+  max-width: 376px;
+}
+
 /* ========================
 H1
 ======================== */
@@ -34,20 +38,24 @@ VISOS KORTELES
 
 .allCardsDiv {
   display: flex;
-  margin-bottom: 200px;
+  flex-wrap: wrap;
+  /* Enable flex wrapping */
   justify-content: space-between;
+  gap: 29px;
+  margin-bottom: 200px;
 }
 
 /* ========================
 VIENA KORTELE
 ======================== */
 
+
 .oneCardDiv {
   border-radius: 16px;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
-  width: 376px;
+  width: 100%;
+  overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  font-family: 'Inter';
 }
 
 .textInCardDiv {
@@ -55,11 +63,12 @@ VIENA KORTELE
 }
 
 .oneCardDiv img {
-  width: 376px;
+  max-width: 376px;
+  width: 100%;
   height: 431px;
   object-fit: cover;
   display: block;
-  border-radius: 16px 16px 0px 0px;
+  font-family: "Inter";
 }
 
 .oneCardDiv h2 {
@@ -120,44 +129,34 @@ VIENA KORTELE
 RESPONSIVE KORTELE
 ======================== */
 
-@media (min-width: 375px) and (max-width: 768px) {
-  .marginContainer {
-    margin: 0px 24px;
+
+/* tablet media query */
+@media (max-width: 1600px) {
+  .marginContainer h1 {
+    text-align: center;
   }
 
   .allCardsDiv {
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .oneCardDiv {
-    max-width: calc((100% - 20px) / 2);
-  }
-
-  .marginContainer h1 {
-    margin-top: 93px;
-    margin-bottom: 32px;
-    font-size: 62px;
+    justify-content: center;
   }
 }
 
-@media (max-width: 375px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .marginContainer h1 {
-    margin-top: 44px;
-    margin-bottom: 24px;
-    font-size: 32px;
-  }
-
-  .marginContainer {
-    margin: 0px 16px;
+    text-align: center;
   }
 
   .allCardsDiv {
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .marginContainer h1 {
+    text-align: center;
   }
 
-  .oneCardDiv {
-    flex: 2;
+  .allCardsDiv {
+    justify-content: center;
   }
 }
