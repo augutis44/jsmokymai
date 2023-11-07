@@ -11,6 +11,12 @@ h3 {
     padding: 0;
 }
 
+.sideContainer {
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+}
+
 #sideContainer {
     width: 100%;
     max-width: 1320px;
@@ -18,8 +24,6 @@ h3 {
 }
 
 #customSideContainer {
-    /* width: 100%;
-    max-width: 516px; */
     margin: auto;
 }
 
@@ -40,6 +44,9 @@ h3 {
     color: #fff;
     border: 2px solid #E7852B;
 }
+
+
+
 
 /* ========================
 NAVIGATION
@@ -65,6 +72,11 @@ nav .logo {
 
 nav .logo .logoOrange {
     color: #E7852B;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -93,11 +105,13 @@ HEADER
 
 .headerMain {
     display: flex;
+    background: #FEFEFE;
 }
 
 header .headerTextDiv {
     background: #FEFEFE;
     font-family: 'Poppins';
+    margin-right: 20px !important;
 }
 
 header .headerTextDiv h1 {
@@ -155,6 +169,7 @@ ALL CARDS WITH TEXT
     background: #FAFAFA;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
     margin: 40px 0px 0px;
 
@@ -218,6 +233,12 @@ ONE CARD
 FOOTER
 ======================== */
 
+footer {
+    display: flex;
+    gap: 125px;
+    padding: 80px 0;
+}
+
 .footerFull {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -228,12 +249,14 @@ footer p {
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
+    flex: 2;
 }
 
 footer div {
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 600;
+    flex: 1;
 }
 
 footer div ul {
@@ -248,23 +271,148 @@ footer div ul li a {
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
+    padding-top: 10px;
 }
 
 footer address {
+    flex: 1;
+}
+
+footer address a[href^="mailto:"],
+footer address p {
+    display: flex;
+    align-items: center;
+    color: #E7852B;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+footer address img {
+    margin-right: 6px;
+}
+
+.contacts {
+    color: #000;
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 600;
 }
 
-footer address a,
-footer address p {
-    color: #E7852B;
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-weight: 500;
-    display: inline-block;
+/* ========================
+RESPONSIVE
+======================== */
+
+@media (max-width: 1024px) {
+    .headerMain {
+        flex-direction: column-reverse;
+    }
+
+    header img {
+        height: 371px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .oneCardDiv .orangeDiv {
+        background: #fff;
+    }
+
+    .oneCardDiv .orangeDiv p {
+        margin: 11.95px 0px 15px;
+    }
+
+    .oneCardButtonDiv {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .oneCardDiv h3 {
+        font-size: 29px;
+    }
 }
 
-footer address img {
-    margin-right: 6px;
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .sideContainer {
+        max-width: 720px;
+    }
+
+    #sideContainer {
+        max-width: 720px;
+    }
+
+    header .headerTextDiv {
+        padding: 146px 0px;
+    }
+
+    .card {
+        max-width: 348px;
+    }
+
+    .oneCardDiv img {
+        width: 288px;
+        height: 232px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .sideContainer {
+        max-width: 343px;
+    }
+
+    #sideContainer {
+        max-width: 343px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 27px 0px;
+    }
+
+    header img {
+        object-position: left;
+    }
+
+    header .headerTextDiv h1 {
+        font-size: 45px;
+    }
+
+    header .headerTextDiv p {
+        font-size: 24px;
+    }
+
+    header .headerButtonsDiv {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .headerTextDiv {
+        padding: 91px 0px 45px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .card {
+        max-width: 283px;
+    }
+
+    .oneCardDiv img {
+        width: 240px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 40px;
+    }
 }
