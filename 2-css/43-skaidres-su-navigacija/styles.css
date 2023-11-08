@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.full {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1 {
+    background: #ffefef;
+}
+
+.div2 {
+    background: #51CB65;
+}
+
+.div3 {
+    background: #816EF5;
+}
+
+.div4 {
+    background: #EA7B7B;
+}
+
+.div5 {
+    background: #e8ea7b;
+}
+
+h1 {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 128px;
+    font-weight: 400;
+}
+
+.meniu {
+    background: #F5F3F3;
+    border-radius: 16px;
+    display: inline-block;
+    padding: 20px 0px;
+}
+
+.meniu a {
+    position: fixed;
+    border-radius: 12px;
+    border: 2px solid #F17965;
+    color: #F17965;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.75px;
+    padding: 8px 16px;
+    position: relative;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.absoluteBox {
+    position: fixed;
+    bottom: 5%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+.circleArror {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+    border: 3px solid #959393;
+    border-radius: 100px;
+    background: transparent;
+}
+
+.toTop {
+    display: inline;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    transform: translate(50%, 50%);
+
+}
