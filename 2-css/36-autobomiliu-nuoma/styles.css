@@ -382,6 +382,11 @@ RESPONSIVE
         object-position: left;
     }
 
+    header .headerTextDiv {
+        margin: 0 !important;
+        padding: 91px 10px 45px;
+    }
+
     header .headerTextDiv h1 {
         font-size: 45px;
     }
@@ -401,6 +406,7 @@ RESPONSIVE
 
     h2 {
         font-size: 36px;
+        text-align: center;
     }
 
     .card {
@@ -414,5 +420,11 @@ RESPONSIVE
     footer {
         flex-direction: column;
         gap: 40px;
+        padding: 80px 10px;
     }
+
+    .headerParagraph p {
+        padding: 30px 10px;
+    }
+
 }
