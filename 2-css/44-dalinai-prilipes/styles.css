@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.paragraphs {
+    margin: 56px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+    display: block;
+}
+
+.gradient {
+    background: linear-gradient(180deg, #AFBACB 0%, rgba(175, 186, 203, 0.00) 110.33%), #FFF;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    padding: 15px 0px;
+
+}
+
+h1 {
+    color: #373636;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.42px;
+    
+}
+
+p {
+    max-width: 464px;
+    color: #000;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.42px;
+}
+
+.forFlexBox {
+    height: 100%;
+    max-width: 464px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+}
