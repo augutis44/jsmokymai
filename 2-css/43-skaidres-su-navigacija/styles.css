@@ -80,6 +80,7 @@ h1 {
     border: 3px solid #959393;
     border-radius: 100px;
     background: transparent;
+    cursor: pointer;
 }
 
 .toTop {
