@@ -1,0 +1,53 @@
+body {
+    background: #E2E1E1;
+    text-align: center;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    font-family: 'Inter';
+    text-align: center;
+    display: inline-block;
+}
+
+.logo .starParentBox {
+    position: relative;
+}
+
+.logo .designLogoText {
+    color: #959393;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 42%;
+    top: 13px;
+}
+
+.logo .creatorLogoText {
+    color: #121212;
+    font-size: 128px;
+    font-weight: 700;
+}
+
+.logo .starParentBox img {
+    width: 43px;
+    height: 45px;
+    position: absolute;
+    transform: rotate(18.505deg);
+    bottom: 6px;
+    right: 0;
+}
+
+.logo .underLogoText {
+    color: #373636;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    margin: 26px 0px 0px;
+}
