@@ -63,6 +63,11 @@ h1 {
     margin: 5px;
 }
 
+.meniu a:hover {
+    background-color: #F17965;
+    color: #fff;
+}
+
 .absoluteBox {
     position: fixed;
     bottom: 5%;
