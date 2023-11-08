@@ -1,0 +1,98 @@
+body {
+    background: #131417;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+h1,
+p,
+a {
+    padding: 0;
+    margin: 0;
+}
+
+.outsideBox {
+    padding: 106px 55px;
+    position: relative;
+}
+
+.textBox {
+    border-radius: 12px;
+    background: rgba(34, 34, 37, 0.70);
+    padding: 80px 55px;
+    font-family: 'Inter';
+    color: #FFF;
+    display: inline-block;
+    width: 531px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0.42px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 16px 0px;
+}
+
+a {
+    border-radius: 12px;
+    border: 2px solid #F17965;
+    padding: 8px 16px;
+    text-align: center;
+    color: #F17965;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.75px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    background: #F79090;
+    color: #FFF;
+}
+
+/* ================= 
+IMAGES
+=================== */
+
+.speakerImg {
+    width: 195px;
+    height: 195px;
+    transform: rotate(11.788deg);
+    position: absolute;
+    top: 29px;
+    left: -4px;
+}
+
+.blueCircle {
+    background: #3E7FE1;
+    border-radius: 100px;
+    width: 114px;
+    height: 114px;
+    position: absolute;
+    bottom: 58px;
+    right: 34px;
+}
+
+.redCircle {
+    background: #F0755F;
+    border-radius: 100px;
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    right: 26px;
+    bottom: 137px;
+}
+
+.starImg {
+    position: absolute;
+    bottom: 88px;
+    right: 17px;
+}
