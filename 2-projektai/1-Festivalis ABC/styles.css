@@ -1,0 +1,627 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+p,
+h2,
+h3,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.mainMarginContainer {
+    width: 100%;
+    max-width: 1044.5px;
+    margin: auto;
+    padding: 0px 24px;
+}
+
+.primaryButton {
+    background: #EB5757;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 15px 50px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.secondaryButton {
+    color: #EB5757;
+    background: #FFF;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 15px 40px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.infoParText {
+    color: rgba(34, 34, 34, 0.50);
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* ==========================
+NAVIGATION
+========================== */
+
+.fullWidthNav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.navLinksBox ul li a {
+    text-decoration: none;
+    color: #222;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navLinksBox ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 63px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ==========================
+HEADER
+========================== */
+
+.headerImage {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/headerPhoto.jfif');
+    background-position: center;
+    height: 836px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerInfoBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerInfoBox h1 {
+    color: #FFF;
+    font-family: 'Lato';
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.headerInfoBox p {
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 16px 0px 43px;
+}
+
+.headerButtonsBox ul li {
+    list-style-type: none;
+}
+
+.headerButtonsBox ul {
+    display: flex;
+    gap: 21px;
+}
+
+.headerBottomInfoBoxFull {
+    background: #EB5757;
+}
+
+.headerBottomInfoBox {
+    background: #EB5757;
+    max-width: 1096px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.headerBottomInfoBox p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* ==========================
+SECTION HEADER
+========================== */
+
+.sectionHeader {
+    max-width: 735px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionHeader h2 {
+    color: #222;
+    font-family: 'Lato';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.sectionHeader .pinkLine {
+    background: #EB5757;
+    width: 31px;
+    height: 5px;
+    margin: 14px 0px 32px;
+}
+
+.sectionHeader p {
+    color: rgba(34, 34, 34, 0.50);
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* ==========================
+ARTIST SECTION
+========================== */
+
+.artistsBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 57px 20px 84px;
+    gap: 56px;
+}
+
+/* ==========================
+ARTIST ONE CARD
+========================== */
+
+.oneArtistCardOutside .oneArtistCard .imageInCardBox {
+    background: url('images/artistTomke.jfif');
+    width: 200px;
+    height: 200px;
+    border: 2px solid #FFF;
+    border-radius: 100px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-position: center;
+    background-size: cover;
+}
+
+.artistsImagesBox .oneArtistCard .artistNameInCard {
+    color: #222;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.artistsImagesBox .oneArtistCard .aboutArtistInCard {
+    text-align: center;
+}
+
+.artistsImagesBox .oneArtistCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.artistsImagesBox .oneArtistCardOutside {
+    width: 206px;
+    height: 306px;
+}
+
+.firstLine .oneArtistCardOutside:nth-child(2) .oneArtistCard .imageInCardBox {
+    background: url('images/artistUpce.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+.firstLine .oneArtistCardOutside:nth-child(3) .oneArtistCard .imageInCardBox {
+    background: url('images/artistHendrei.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+.firstLine .oneArtistCardOutside:nth-child(4) .oneArtistCard .imageInCardBox {
+    background: url('images/artistPolvek.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+.secondLine .oneArtistCardOutside:nth-child(1) .oneArtistCard .imageInCardBox {
+    background: url('images/artistPugr.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+.secondLine .oneArtistCardOutside:nth-child(2) .oneArtistCard .imageInCardBox {
+    background: url('images/artistLajs.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+.secondLine .oneArtistCardOutside:nth-child(3) .oneArtistCard .imageInCardBox {
+    background: url('images/artistLawew.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* ==========================
+ARTIST CARDS LINE ONE
+========================== */
+
+.artistsImagesBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.firstLine {
+    display: flex;
+    gap: 70px;
+}
+
+.secondLine {
+    display: flex;
+    gap: 98px;
+}
+
+
+/* ==========================
+GALLERY SECTION
+========================== */
+
+.galleryBox {
+    background: rgba(34, 34, 34, 0.02);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 56px 20px 76px;
+    gap: 31px;
+}
+
+.galleryImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1321px;
+    gap: 26px 24px;
+}
+
+.galleryImages .galleryImage {
+    width: 245px;
+    height: 212px;
+    object-fit: cover;
+}
+
+/* ==========================
+TICKETS SECTION
+========================== */
+
+.ticketsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 39px;
+    padding: 62px 0px 80px;
+}
+
+/* ==========================
+ONE TICKET CARD
+========================== */
+
+.ticketCard {
+    width: 424px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ticketCard h3 {
+    color: #222;
+    font-family: 'Lato';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 32px auto 31.04px;
+}
+
+.ticketCard .lightLine {
+    width: 424px;
+    height: 1px;
+    background: rgba(34, 34, 34, 0.05);
+}
+
+.priceBoxInCard {
+    margin: 9.22px 0px 29px;
+}
+
+.priceBoxInCard .priceBoxInCardPrice {
+    color: #222;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.priceBoxInCard .priceBoxInCard200E {
+    color: #EB5757;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.ticketCard .ticketCardButton {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 63.13px 10.9px 62.76px;
+}
+
+.aboutTicket {
+    text-align: center;
+}
+
+.bottomCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 31.42px 69.49px 38.46px 69px;
+}
+
+/* ==========================
+TICKETS CARDS BOX
+========================== */
+
+.ticketCardsBox {
+    display: flex;
+    gap: 24px;
+}
+
+/* ==========================
+LOCATION SECTION BOX
+========================== */
+
+.locationBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 62px 0px 79px;
+    background: rgba(34, 34, 34, 0.02);
+}
+
+.mapImageBox {
+    width: 1320px;
+    height: 443px;
+    background: url('images/mapImage.png');
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.mapImageBox img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 147px;
+    right: 630px;
+}
+
+.BlackAndWhite {
+    filter: grayscale(100%);
+    width: 100%;
+    max-width: 1320px;
+    height: 443px;
+}
+
+/* ==========================
+CONTACT US SECTION BOX
+========================== */
+
+.contactUsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactUsBox .sectionHeader {
+    margin: 74px 0px 40px;
+}
+
+.contactUsBox .sectionHeader .pinkLine {
+    margin: 14px 0px 0px;
+}
+
+.contactInformationBox {
+    width: 363px;
+    padding: 10px 0px;
+}
+
+.moreHeighToP {
+    height: 62px;
+}
+
+.halfSplitContactUs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contactInformationBox h3 {
+    color: #222;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.48px;
+    margin-bottom: 22px;
+}
+
+.contactInformationBox p {
+    color: rgba(34, 34, 34, 0.50);
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.contactInformationBox .boldedText {
+    font-weight: bold;
+    margin: 0px 5px 0px 12px;
+}
+
+.contactUsBox .socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contactInformationBox ul li {
+    list-style-type: none;
+    display: flex;
+    padding: 0px 10px;
+}
+
+.contactInformationBox ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 30px 0px;
+}
+
+.alignToRight {
+    display: flex;
+    align-items: center;
+    width: 860px;
+    justify-content: flex-end;
+    padding: 60px 120px 172px 0px;
+}
+
+/* ==========================
+CONTACT US SECTION FORM BOX
+========================== */
+
+.contactUsForm {
+    background: rgba(34, 34, 34, 0.02);
+    width: 1060px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form .primaryButton {
+    width: 172px;
+    height: 48px;
+    padding: 12px 32px;
+    margin-top: 32px;
+}
+
+.contactUsForm .formDivOutside {
+    max-width: 638px;
+    margin: 58px 0px 78px 113px;
+}
+
+.contactUsForm .formDivOutside form label {
+    color: #EB5757;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 10px 0px 10px;
+}
+
+.contactUsForm .formDivOutside form input {
+    border-radius: 4px;
+    border: 1px solid rgba(34, 34, 34, 0.05);
+    overflow: hidden;
+    height: 54px;
+    margin-bottom: 19px;
+}
+
+.contactUsForm .formDivOutside form input::placeholder {
+    color: rgba(34, 34, 34, 0.50);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0px 16px;
+}
+
+.contactUsForm .formDivOutside form textarea {
+    border-radius: 4px;
+    border: 1px solid rgba(34, 34, 34, 0.05);
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+.copyrightBox {
+    color: #222;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.fullWidthFooter {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px -2px 4px 0px rgba(192, 192, 192, 0.10);
+}
