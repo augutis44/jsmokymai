@@ -28,7 +28,7 @@ ul {
     font-style: normal;
     font-weight: 700;
     letter-spacing: 1px;
-    padding: 15px 50px;
+    padding: 15px 40px;
     text-decoration: none;
     display: inline-block;
 }
@@ -87,6 +87,17 @@ nav {
     align-items: center;
 }
 
+.meniuTabletPhone {
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    display: none;
+}
+
+.navLinksBox ul .firstElementNav {
+    margin: 0;
+}
+
 /* ==========================
 HEADER
 ========================== */
@@ -106,6 +117,8 @@ HEADER
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    margin: 0px 20px;
 }
 
 .headerInfoBox h1 {
@@ -202,7 +215,7 @@ ARTIST SECTION
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 57px 20px 84px;
+    padding: 57px 25px 84px;
     gap: 56px;
 }
 
@@ -210,8 +223,36 @@ ARTIST SECTION
 ARTIST ONE CARD
 ========================== */
 
-.oneArtistCardOutside .oneArtistCard .imageInCardBox {
+
+.oneArtistCardOutside .oneArtistCard .artist1 {
     background: url('images/artistTomke.jfif');
+}
+
+.oneArtistCardOutside .oneArtistCard .artist2 {
+    background: url('images/artistUpce.jfif');
+}
+
+.oneArtistCardOutside .oneArtistCard .artist3 {
+    background: url('images/artistHendrei.jfif');
+}
+
+.oneArtistCardOutside .oneArtistCard .artist4 {
+    background: url('images/artistPolvek.jfif');
+}
+
+.oneArtistCardOutside .oneArtistCard .artist5 {
+    background: url('images/artistPugr.jfif');
+}
+
+.oneArtistCardOutside .oneArtistCard .artist6 {
+    background: url('images/artistLajs.jfif');
+}
+
+.oneArtistCardOutside .oneArtistCard .artist7 {
+    background: url('images/artistLawew.jfif');
+}
+
+.oneArtistCardOutside .oneArtistCard .imageInCardBox {
     width: 200px;
     height: 200px;
     border: 2px solid #FFF;
@@ -221,7 +262,7 @@ ARTIST ONE CARD
     background-size: cover;
 }
 
-.artistsImagesBox .oneArtistCard .artistNameInCard {
+.oneArtistCardOutside .oneArtistCard .artistNameInCard {
     color: #222;
     text-align: center;
     font-family: 'Lato';
@@ -233,11 +274,11 @@ ARTIST ONE CARD
     margin-bottom: 8px;
 }
 
-.artistsImagesBox .oneArtistCard .aboutArtistInCard {
+.oneArtistCard .aboutArtistInCard {
     text-align: center;
 }
 
-.artistsImagesBox .oneArtistCard {
+.oneArtistCard {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,50 +286,13 @@ ARTIST ONE CARD
     width: 100%;
 }
 
-.artistsImagesBox .oneArtistCardOutside {
+.oneArtistCardOutside {
     width: 206px;
     height: 306px;
 }
 
-.firstLine .oneArtistCardOutside:nth-child(2) .oneArtistCard .imageInCardBox {
-    background: url('images/artistUpce.jfif');
-    background-position: center;
-    background-size: cover;
-}
-
-.firstLine .oneArtistCardOutside:nth-child(3) .oneArtistCard .imageInCardBox {
-    background: url('images/artistHendrei.jfif');
-    background-position: center;
-    background-size: cover;
-}
-
-.firstLine .oneArtistCardOutside:nth-child(4) .oneArtistCard .imageInCardBox {
-    background: url('images/artistPolvek.jfif');
-    background-position: center;
-    background-size: cover;
-}
-
-.secondLine .oneArtistCardOutside:nth-child(1) .oneArtistCard .imageInCardBox {
-    background: url('images/artistPugr.jfif');
-    background-position: center;
-    background-size: cover;
-}
-
-.secondLine .oneArtistCardOutside:nth-child(2) .oneArtistCard .imageInCardBox {
-    background: url('images/artistLajs.jfif');
-    background-position: center;
-    background-size: cover;
-}
-
-.secondLine .oneArtistCardOutside:nth-child(3) .oneArtistCard .imageInCardBox {
-    background: url('images/artistLawew.jfif');
-    background-position: center;
-    background-size: cover;
-}
-
-
 /* ==========================
-ARTIST CARDS LINE ONE
+ARTIST CARDS LINES
 ========================== */
 
 .artistsImagesBox {
@@ -308,6 +312,10 @@ ARTIST CARDS LINE ONE
     gap: 98px;
 }
 
+.artistsImagesBoxTabletPhoneWidthBox {
+    display: none;
+}
+
 
 /* ==========================
 GALLERY SECTION
@@ -318,7 +326,7 @@ GALLERY SECTION
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 56px 20px 76px;
+    padding: 56px 25px 76px;
     gap: 31px;
 }
 
@@ -345,7 +353,7 @@ TICKETS SECTION
     flex-direction: column;
     align-items: center;
     gap: 39px;
-    padding: 62px 0px 80px;
+    padding: 62px 25px 80px;
 }
 
 /* ==========================
@@ -353,8 +361,9 @@ ONE TICKET CARD
 ========================== */
 
 .ticketCard {
-    width: 424px;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);
+    max-width: 424px;
+    width: 100%;
+    box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -372,7 +381,7 @@ ONE TICKET CARD
 }
 
 .ticketCard .lightLine {
-    width: 424px;
+    width: 100%;
     height: 1px;
     background: rgba(34, 34, 34, 0.05);
 }
@@ -416,7 +425,8 @@ ONE TICKET CARD
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 31.42px 69.49px 38.46px 69px;
+    margin: 31.42px auto 38.46px;
+    max-width: 285.512px;
 }
 
 /* ==========================
@@ -425,19 +435,27 @@ TICKETS CARDS BOX
 
 .ticketCardsBox {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
+    width: 100%;
 }
 
 /* ==========================
 LOCATION SECTION BOX
 ========================== */
 
+.locationBoxFull {
+    width: 100%;
+    background: rgba(34, 34, 34, 0.02);
+}
+
 .locationBox {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    padding: 62px 0px 79px;
+    padding: 62px 25px 79px;
     background: rgba(34, 34, 34, 0.02);
 }
 
@@ -473,10 +491,7 @@ CONTACT US SECTION BOX
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.contactUsBox .sectionHeader {
-    margin: 74px 0px 40px;
+    padding: 73px 0px 55px;
 }
 
 .contactUsBox .sectionHeader .pinkLine {
@@ -543,7 +558,7 @@ CONTACT US SECTION BOX
 .alignToRight {
     display: flex;
     align-items: center;
-    width: 860px;
+    /* width: 860px; */
     justify-content: flex-end;
     padding: 60px 120px 172px 0px;
 }
@@ -554,7 +569,7 @@ CONTACT US SECTION FORM BOX
 
 .contactUsForm {
     background: rgba(34, 34, 34, 0.02);
-    width: 1060px;
+    max-width: 1060px;
 }
 
 form {
@@ -610,6 +625,11 @@ form .primaryButton {
 /* ==========================
 FOOTER
 ========================== */
+.fullWidthFooter {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
 
 .copyrightBox {
     color: #222;
@@ -619,9 +639,247 @@ FOOTER
     font-weight: 400;
 }
 
-.fullWidthFooter {
-    height: 100px;
+footer .footerFlexBox {
     display: flex;
-    align-items: center;
-    box-shadow: 0px -2px 4px 0px rgba(192, 192, 192, 0.10);
+    justify-content: space-between;
+}
+
+/* ==========================
+TABLET/PHONE RESPNSIVE
+========================== */
+
+
+
+@media (max-width: 1119px) {
+
+    .artistsImagesBox {
+        display: none;
+    }
+
+    .artistsImagesBoxTabletPhoneWidthBox {
+        display: block;
+        max-width: 718px;
+    }
+
+    .artistsImagesBoxTabletPhone {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 36px 50px;
+    }
+
+    .alignToRight {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin: 40px 25px 55px;
+    }
+
+    .contactUsForm {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contactUsForm .formDivOutside {
+        margin: 68px 25px;
+        width: 100%;
+        max-width: 638px;
+    }
+
+    .contactUsBox {
+        padding-bottom: 0px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contactUsBox .halfSplitContactUs {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1023px) {
+    .navLinksBox {
+        display: none;
+    }
+
+    .navLinksBoxFooter {
+        display: block;
+    }
+
+    .meniuTabletPhone {
+        display: block;
+    }
+}
+
+@media (max-width: 940px) {
+    footer .navLinksBox {
+        display: block;
+    }
+
+    footer .footerFlexBox {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .fullWidthFooter {
+        height: 133px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainMarginContainer {
+        padding: 0px 18px;
+    }
+
+    .headerInfoBox h1 {
+        font-size: 64px;
+    }
+
+    .headerInfoBox p {
+        font-size: 24px;
+    }
+
+    .sectionHeader h2 {
+        font-size: 32px;
+    }
+
+    .headerBottomInfoBox {
+        padding: 45px 25px;
+    }
+
+    .tabletImages {
+        display: none;
+    }
+
+    .galleryImages .galleryImage {
+        height: 245px;
+        width: 212px;
+    }
+
+    .galleryBox {
+        gap: 36px;
+    }
+
+    .galleryImages {
+        gap: 24px 36px;
+    }
+
+    .ticketsBox {
+        gap: 53px;
+    }
+
+    .locationBox {
+        gap: 45px;
+    }
+
+
+
+    form {
+        max-width: 638px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .artistsImagesBoxTabletPhoneWidthBox {
+        max-width: 462px;
+    }
+}
+
+@media (max-width: 644px) {
+
+    footer .navLinksBox ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .navLinksBox ul li {
+        margin: 0;
+    }
+
+    .fullWidthFooter {
+        height: 100%;
+        padding: 29px 0px 40px;
+    }
+
+    footer .footerFlexBox {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 511px) {
+    .artistsImagesBoxTabletPhoneWidthBox {
+        max-width: 206px;
+    }
+
+    .phoneNotShow {
+        display: none;
+    }
+}
+
+@media (max-width: 426px) {
+
+    .headerImage {
+        height: 612px;
+    }
+
+    .ticketCard {
+        max-width: 375px;
+    }
+
+    .headerInfoBox h1 {
+        font-size: 40px;
+    }
+
+    .headerInfoBox p {
+        font-size: 16px;
+    }
+
+    .headerButtonsBox ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerBottomInfoBox {
+        padding: 45px 16px;
+    }
+
+    .artistsBox {
+        padding: 57px 16px 84px;
+    }
+
+    .galleryBox {
+        padding: 56px 16px 76px;
+    }
+
+    .ticketsBox {
+        padding: 62px 16px 80px;
+    }
+
+    .locationBox {
+        padding: 62px 16px 79px;
+    }
+
+    .headerInfoBox {
+        width: 291px;
+        text-align: center;
+    }
+
+    .phoneImages {
+        display: none;
+    }
+
+    .galleryImages .galleryImage {
+        width: 158.078px;
+        height: 182.685px;
+    }
+
+
 }
