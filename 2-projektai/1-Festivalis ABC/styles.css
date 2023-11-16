@@ -179,6 +179,7 @@ SECTION HEADER
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 40px;
 }
 
 .sectionHeader h2 {
@@ -491,7 +492,7 @@ CONTACT US SECTION BOX
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 73px 0px 55px;
+    padding: 74px 0px 0px;
 }
 
 .contactUsBox .sectionHeader .pinkLine {
@@ -500,7 +501,7 @@ CONTACT US SECTION BOX
 
 .contactInformationBox {
     width: 363px;
-    padding: 10px 0px;
+    padding: 10px 0px 0px 25px;
 }
 
 .moreHeighToP {
@@ -561,6 +562,7 @@ CONTACT US SECTION BOX
     /* width: 860px; */
     justify-content: flex-end;
     padding: 60px 120px 172px 0px;
+    width: 40%;
 }
 
 /* ==========================
@@ -570,11 +572,14 @@ CONTACT US SECTION FORM BOX
 .contactUsForm {
     background: rgba(34, 34, 34, 0.02);
     max-width: 1060px;
+    height: 615px;
+    width: 60%;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    max-width: 638px;
 }
 
 form .primaryButton {
@@ -586,7 +591,7 @@ form .primaryButton {
 
 .contactUsForm .formDivOutside {
     max-width: 638px;
-    margin: 58px 0px 78px 113px;
+    margin: 58px 0px 55px 113px;
 }
 
 .contactUsForm .formDivOutside form label {
@@ -668,25 +673,6 @@ TABLET/PHONE RESPNSIVE
         gap: 36px 50px;
     }
 
-    .alignToRight {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0px;
-        margin: 40px 25px 55px;
-    }
-
-    .contactUsForm {
-        display: flex;
-        justify-content: center;
-    }
-
-    .contactUsForm .formDivOutside {
-        margin: 68px 25px;
-        width: 100%;
-        max-width: 638px;
-    }
-
     .contactUsBox {
         padding-bottom: 0px;
         margin-bottom: 0;
@@ -697,6 +683,28 @@ TABLET/PHONE RESPNSIVE
     .contactUsBox .halfSplitContactUs {
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .alignToRight {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px 0px 55px;
+        width: 411px;
+    }
+
+    .contactUsForm{
+        width: 100%;
+    }
+
+    .contactUsForm .formDivOutside{
+        margin: 0;
+    }
+
+    .contactInformationBox{
+        padding: 0;
     }
 }
 
@@ -775,8 +783,6 @@ TABLET/PHONE RESPNSIVE
     .locationBox {
         gap: 45px;
     }
-
-
 
     form {
         max-width: 638px;

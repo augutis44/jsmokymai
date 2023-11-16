@@ -1,0 +1,353 @@
+.navbar {
+    background: white !important;
+}
+
+.logo {
+    color: #878B9B;
+    font-family: 'Roboto Condensed';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.navbar ul li a {
+    color: #404445;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.navbar .active {
+    color: #43C45F !important;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+body .lead {}
+
+.btn-primary {
+    border-radius: 5px;
+    background: #43C45F;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    padding: 14px 50px !important;
+}
+
+.btn-primary:hover {
+    background: #4ee26e;
+}
+
+.hero {
+    background: linear-gradient(rgb(97, 99, 112, 0.5), rgb(97, 99, 112, 0.5)), url('images/heroimage.jfif');
+    height: 800px;
+    background-size: cover;
+}
+
+.hero h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.hero .lead {
+    max-width: 681px;
+    color: #D5D7D8;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 33px auto 49px;
+}
+
+.cardH3 {
+    margin: 18px 0px 10px;
+    color: #404445;
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+.video {
+    background: #F1F8FF;
+}
+
+.heading2Text {
+    color: #404445;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.paragraphText {
+    color: #5F6B81;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.paracgraph22px {
+    color: #404445;
+    font-size: 22px;
+}
+
+.lightLine {
+    width: 100%;
+    height: 1px;
+    background: #D8D8D8;
+}
+
+.card {
+    border: none;
+    background: transparent;
+}
+
+.album {
+    background: #F1F8FF;
+}
+
+.album img {
+    height: 262px;
+    object-fit: cover;
+}
+
+.album .paragraphText {
+    text-align: center;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.album .card-body .paragraphText {
+    text-align: start;
+}
+
+
+.statistics .heading2Text {
+    font-weight: 500;
+    text-align: start;
+}
+
+.py-6 {
+    margin-top: 112px;
+    margin-bottom: 112px;
+}
+
+.sectionHeader {
+    max-width: 661px;
+    text-align: center;
+}
+
+.subscribe {
+    background: #5F6B81;
+}
+
+.subscribe .sectionHeader h2 {
+    color: #FFF;
+}
+
+.subscribe .sectionHeader p {
+    color: #FFF;
+}
+
+form input {
+    height: 63px;
+    max-width: 361px;
+}
+
+form input::placeholder {
+    color: #D8D8D8 !important;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 36px;
+}
+
+form button {
+    height: 63px;
+    text-transform: none !important;
+}
+
+.team .card-body {
+    background: #EEE;
+    height: 102px;
+}
+
+.team img {
+    height: 392px;
+    object-fit: cover;
+}
+
+.footer {
+    background: #2F323B;
+}
+
+.footer .logo {
+    color: #FFF;
+}
+
+.footerDarkerText {
+    color: #7A7C88;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.footer .footerLighterText {
+    color: #FFF;
+}
+
+.footer .footerUpperCase {
+    text-transform: uppercase;
+}
+
+.footer .footerHeadings {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer .border-bottom-line {
+    height: 1px;
+    background: #707070;
+    margin: 5px 0px;
+    width: 200px;
+}
+
+.footer ul li {
+    margin: 0 !important;
+}
+
+.footer .row {
+    margin: 0;
+}
+
+.darkLine {
+    background: #3F4351;
+    height: 1px;
+    width: 100%;
+    height: 1px;
+}
+
+.footerInfo {
+    background: #2A2D36;
+    height: 70px;
+}
+
+.footerInfo .footerDarkerText {
+    margin: 0;
+}
+
+.videoBox {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.videoBox iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* TABLET */
+@media (max-width: 768px) {
+    .hero {
+        padding: 0px 24px;
+    }
+
+    .hero .lead {
+        max-width: 554px;
+    }
+
+    .py-6 {
+        margin-top: 93px;
+        margin-bottom: 93px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+/* PHONE */
+@media (max-width: 426px) {
+    .hero h1 {
+        font-size: 54px;
+    }
+
+    .hero {
+        padding: 0px 16px;
+    }
+
+    .py-6 {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .heading2Text {
+        font-size: 34px;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .album .card-body .paragraphText {
+        text-align: center;
+    }
+
+
+
+}
+
+@media (max-width: 576px) {
+
+    .subscribe form input {
+        border-radius: 5px !important;
+        max-width: none;
+        width: 100% !important;
+        margin-bottom: 14px;
+    }
+
+    .subscribe form button {
+        border-radius: 5px !important;
+    }
+}

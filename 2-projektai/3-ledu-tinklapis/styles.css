@@ -1,0 +1,108 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.borderBox {
+    max-width: 1320px;
+    margin: 0px auto;
+}
+
+/* =========================
+NAVIGATION
+========================= */
+
+.navigationFull {
+    background: #F95738;
+    height: 88px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 100%;
+}
+
+.navigation img {
+    width: 208px;
+    height: 56px;
+    margin: auto;
+}
+
+.navigation .logoA {
+    margin: auto 0;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    margin: auto 0;
+}
+
+.navigation ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 36px;
+}
+
+.navigation ul li:nth-child(1) {
+    margin-left: 0px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.navigation ul li a:hover {
+    color: #EFBE10;
+    border-bottom: 2px solid #EFBE10;
+    padding-bottom: 2px;
+}
+
+/* =========================
+HEADER
+========================= */
+
+.headerFull {
+    background: #F95738;
+    height: 800px;
+    position: relative;
+}
+
+.headerFull .headerImage {
+    width: 950px;
+    height: 800px;
+    position: absolute;
+    opacity: 0.8;
+    background: radial-gradient(52.95% 72.51% at 51.71% 56.69%, rgba(249, 87, 56, 0.00) 0%, #F95738 100%), url('images/headingImage.png');
+    mix-blend-mode: luminosity;
+    right: 0;
+    background-size: cover;
+}
+
+.headerFull .header h1 {
+    color: #FFF;
+    font-family: 'Sigmar One';
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 85%;
+}
+
+.headerFull .header h1 span {
+    color: #EFBE10;
+}
