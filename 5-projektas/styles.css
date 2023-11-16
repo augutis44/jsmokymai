@@ -1,0 +1,102 @@
+/* =============================
+GENERAL
+============================= */
+
+h1,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/* =============================
+NAVIGATION
+============================= */
+
+.navbar {
+    background: #000;
+    height: 104px;
+}
+
+.navbar button{
+    padding: 0;
+}
+
+.navbar ul li a {
+    color: #FFF;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 !important;
+}
+
+.navbar .clotingTypeList li {
+    margin-right: 35px;
+}
+
+.navbar .clotingTypeList li:nth-child(0) {
+    margin: 0px;
+}
+
+.navbar .accountProfile .profileName {
+    color: #FFF;
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.navbar .accountProfile .viewProfile {
+    color: #5F5F5F;
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+}
+
+.accountProfile img {
+    width: 32px;
+    height: 32px;
+}
+
+.shopingCartItemNumber {
+    border-radius: 100px;
+    background: #F95738;
+    width: 14px;
+    height: 14px;
+    top: 0;
+    right: -4px;
+}
+
+.shopingCartItemNumber p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.accountProfile {
+    gap: 12px;
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    fill: #FFF;
+}
+
+.shopingCart {
+    margin-right: 3em;
+}
+
+.heart {
+    margin-right: 24px;
+}
+
+@media (max-width: 576px) {
+    .shopingCart {
+        margin-right: 1em;
+    }
+}
