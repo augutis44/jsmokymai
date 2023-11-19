@@ -10,6 +10,21 @@ p {
     margin: 0;
 }
 
+.arrowButton {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent;
+}
+
+.container-fluid {
+    background: #000000;
+}
+
+/* .container {
+    max-width: 1420px;
+} */
+
 /* =============================
 NAVIGATION
 ============================= */
@@ -19,7 +34,7 @@ NAVIGATION
     height: 104px;
 }
 
-.navbar button{
+.navbar button {
     padding: 0;
 }
 
@@ -95,8 +110,798 @@ NAVIGATION
     margin-right: 24px;
 }
 
+/* =============================
+HEADER
+============================= */
+
+.headerBody {
+    height: 100%;
+}
+
+.header .container-fluid {
+    height: 900px;
+}
+
+.header .headerInside {
+    height: 100%;
+    max-width: 676px;
+}
+
+.headerText .headerBiggerParagraph {
+    color: #5F5F5F;
+    font-family: 'Ubuntu';
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.9px;
+}
+
+.headerText h1 {
+    color: #FFF;
+    font-family: 'Ubuntu';
+    font-size: 72px;
+    font-weight: 700;
+    margin: 8px 0px;
+    width: 352px;
+}
+
+.headerText .headerSmallerParagraph {
+    color: #5F5F5F;
+    font-family: 'Ubuntu';
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+}
+
+form {
+    margin-top: 48px;
+}
+
+form .formWrapper {
+    height: 62px;
+    width: 80%;
+    position: relative;
+}
+
+form input {
+    border-radius: 100px;
+    background: #161616;
+    border: none;
+    padding: 16px 24px;
+    height: 100%;
+    width: 100%;
+}
+
+form input::placeholder {
+    color: #5F5F5F;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+form button {
+    border-radius: 33px;
+    background: #FFF;
+    box-shadow: 2px 2px 0px 0px rgba(69, 63, 63, 0.13) inset;
+    border: none;
+    height: 80%;
+    width: 140px;
+    position: absolute;
+    right: 6px;
+    top: 10%;
+    padding: 0;
+}
+
+form button .insideButtonText {
+    gap: 8px;
+}
+
+form button .insideButtonText p {
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+}
+
+.header .heroPhoto {
+    background-image: url('images/headerPhoto.png');
+    background-size: cover;
+}
+
+.header .heroPhotoLaptop {
+    height: 900px;
+    width: 600px;
+    right: 166px;
+    background-position: bottom;
+}
+
+.header .heroPhotoPhone {
+    height: 600px;
+    width: 100%;
+    background-position: bottom;
+}
+
+.headerBottom {
+    margin-bottom: 33px;
+}
+
+.headerBottomLeft {
+    gap: 20px;
+}
+
+.headerBottom .headerBottomLeft p {
+    color: #FFF;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.headerBottomRight {
+    gap: 36px;
+}
+
+.headerBottom .headerBottomRight .carouselActive {
+    width: 14px;
+    height: 14px;
+    background: #423496;
+    border-radius: 100px;
+}
+
+.headerBottom .headerBottomRight .carouselNotActive {
+    width: 10px;
+    height: 10px;
+    background: #2B2B2B;
+    border-radius: 100px;
+}
+
+.headerBottomRightCircles {
+    gap: 8px;
+}
+
+
+/* =============================
+CATEGORIES CAROUSEL
+============================= */
+
+.categoriesSection {
+    padding: 100px 0px;
+}
+
+.buttonsBox {
+    margin-left: 102px;
+    margin-right: 250px;
+}
+
+/* =============================
+CATEGORIES CAROUSEL ONE CARD
+============================= */
+
+.categoriesOneCard {
+    min-width: 446px;
+    height: 570px;
+    margin-left: 48px
+}
+
+.categoriesSection .photo1 {
+    background: linear-gradient(180deg, rgba(1, 1, 1, 0.26) 0%, #010101 100%), url('images/categories1.png');
+}
+
+.categoriesSection .photo2 {
+    background: linear-gradient(180deg, rgba(1, 1, 1, 0.26) 0%, #010101 100%), url('images/categories2.png');
+}
+
+.categoriesSection .photo3 {
+    background: linear-gradient(180deg, rgba(1, 1, 1, 0.26) 0%, #010101 100%), url('images/categories3.png');
+}
+
+.categoriesSection .photo4 {
+    background: linear-gradient(180deg, rgba(1, 1, 1, 0.26) 0%, #010101 100%), url('images/categories4.png');
+}
+
+.categoriesSection .cardPhoto {
+    height: 100%;
+    background-size: cover;
+}
+
+.cardText {
+    padding: 48px 32px;
+    bottom: 0;
+    left: 0;
+}
+
+.cardText h3 {
+    color: #FFF;
+    font-family: 'Ubuntu';
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.9px;
+}
+
+.cardText p {
+    color: #5F5F5F;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* =============================
+BUY SECTION
+============================= */
+
+.buySection .container-fluid {
+    padding: 132px 0px;
+}
+
+.buySection .titleSection .titleSectionLeft h2 {
+    color: #FFF;
+    font-family: 'Ubuntu';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100%;
+
+}
+
+.buySection .titleSection .titleSectionLeft p {
+    color: #5F5F5F;
+    font-family: 'Ubuntu';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.buySection .titleSection .titleSectionLeft .sectionLine {
+    height: 5px;
+    width: 100%;
+    background: #5F5F5F;
+}
+
+.buySection .titleSection .titleSectionLeft .titleSectionLeftBottom {
+    gap: 8px;
+}
+
+.buySection .titleSection .titleSectionRight {
+    max-width: 870px;
+    color: #5F5F5F;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.buySection .moreButton {
+    color: #FFF;
+    font-family: 'Ubuntu';
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    border-radius: 33px;
+    background: #1B1B1B;
+    padding: 8px 48px;
+    border: none;
+    margin: 52px 0px 48px;
+    right: 0;
+}
+
+/* =============================
+BUY SECTION CARDS
+============================= */
+
+/* =============================
+BUY SECTION ONE CARD
+============================= */
+
+.album .newInTag {
+    color: #FFF;
+    background: #423496;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    padding: 12px 24px;
+    bottom: 25px;
+    left: 0;
+    text-transform: uppercase;
+}
+
+.itemImage img {
+    top: 16px;
+    right: 16px;
+}
+
+.newInTag {
+    color: #FFF;
+    background: #423496;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    padding: 12px 24px;
+    bottom: 25px;
+    left: 0;
+    text-transform: uppercase;
+}
+
+.album .card {
+    border: none;
+}
+
+.buySection .album .item1Image {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url('images/products/item1.png');
+}
+
+.buySection .album .item2Image {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url('images/products/item2.png');
+}
+
+.buySection .album .item3Image {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url('images/products/item3.png');
+}
+
+.buySection .album .item4Image {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url('images/products/item4.png');
+}
+
+.buySection .album .item5Image {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url('images/products/item5.png');
+}
+
+.buySection .album .item6Image {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url('images/products/item6.png');
+}
+
+.buySection .album .item7Image {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url('images/products/item7.png');
+}
+
+.buySection .album .itemImage {
+    height: 656px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-body {
+    background: #000;
+    padding: 8px;
+}
+
+.card-body p {
+    color: #FFF;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 100%;
+}
+
+.card-body .cardBodyLeft .itemName {
+    font-size: 40px;
+}
+
+.card-body .cardBodyLeft .itemPrice {
+    font-size: 24px;
+}
+
+.card-body .cardBodyLeft .reducedPrice {
+    color: #5F5F5F;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    text-decoration: line-through;
+}
+
+.card-body .cardBodyRight {
+    gap: 15px;
+}
+
+.card-body .salePrice {
+    gap: 16px;
+}
+
+.card-body .cardBodyRightReview {
+    gap: 8px;
+}
+
+.card-body .cardBodyRightReview p {
+    font-size: 16px;
+}
+
+.card-body .cardBodyRightColors {
+    gap: 9px;
+}
+
+.card-body .cardBodyRightColors .color {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
+
+.card1 .card-body .cardBodyRightColors .color1 {
+    background: #000;
+    border: 1px solid #fff;
+}
+
+.card1 .card-body .cardBodyRightColors .color2 {
+    background: #512A1E;
+}
+
+
+.card1 .card-body .cardBodyRightColors .color3 {
+    background: #E5E5E5;
+}
+
+.card2 .card-body .cardBodyRightColors .color1 {
+    background: #CB988F;
+    border: 1px solid #fff;
+}
+
+.card2 .card-body .cardBodyRightColors .color2 {
+    background: #4C4B90;
+}
+
+
+.card2 .card-body .cardBodyRightColors .color3 {
+    background: #2C2C2C;
+}
+
+.card3 .card-body .cardBodyRightColors .color1 {
+    background: #000;
+    border: 1px solid #fff;
+}
+
+.card3 .card-body .cardBodyRightColors .color2 {
+    background: #C92976;
+}
+
+
+.card3 .card-body .cardBodyRightColors .color3 {
+    background: #D7B606;
+}
+
+.card3 .card-body .cardBodyRightColors .color4 {
+    background: #E5E5E5;
+}
+
+.card4 .card-body .cardBodyRightColors .color1 {
+    background: #563B34;
+    border: 1px solid #fff;
+}
+
+.card4 .card-body .cardBodyRightColors .color2 {
+    background: #2A282A;
+}
+
+.card5 .card-body .cardBodyRightColors .color1 {
+    background: #000;
+    border: 1px solid #fff;
+}
+
+.card5 .card-body .cardBodyRightColors .color2 {
+    background: #512A1E;
+}
+
+.card5 .card-body .cardBodyRightColors .color3 {
+    background: #E5E5E5;
+}
+
+.card5 .card-body .cardBodyRightColors .color4 {
+    background: #4C4B90;
+}
+
+.card5 .card-body .cardBodyRightColors .color5 {
+    background: #EB1616;
+}
+
+.card5 .card-body .cardBodyRightColors .color6 {
+    background: #EB127A;
+}
+
+.card6 .card-body .cardBodyRightColors .color1 {
+    background: #6E8BC5;
+    border: 1px solid #fff;
+}
+
+.card6 .card-body .cardBodyRightColors .color2 {
+    background: #474659;
+}
+
+.card7 .card-body .cardBodyRightColors .color1 {
+    background: #BF95A8;
+    border: 1px solid #fff;
+}
+
+.card7 .card-body .cardBodyRightColors .color2 {
+    background: #262F6D;
+}
+
+.card7 .card-body .cardBodyRightColors .color3 {
+    background: #34535B;
+}
+
+.card7 .card-body .cardBodyRightColors .color4 {
+    background: #F8A0A7;
+}
+
+.addToCart button {
+    font-family: 'Ubuntu';
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    background: #FFF;
+    padding: 14px;
+    width: 100%;
+}
+
+
+
+/* =============================
+CUSTOM EXTRA EXTRA EXTRA LARGE
+============================= */
+
+@media (max-width: 1600px) {
+
+    /* HEADER */
+
+    .header .heroPhotoLaptop {
+        right: 90px;
+    }
+
+}
+
+/* =============================
+EXTRA EXTRA LARGE LAPTOP RESPONSIVE (XXL)
+============================= */
+
+@media (max-width: 1400px) {
+
+    /* HEADER */
+
+    .header .heroPhotoLaptop {
+        right: 0px;
+    }
+
+    .header .headerInside {
+        max-width: 583px;
+    }
+
+    .header .heroPhotoLaptop {
+        height: 860px;
+    }
+
+    /* BUY SECTION */
+
+    .buySection .album .itemImage {
+        height: 556px;
+    }
+
+    .card-body .cardBodyRightReview {
+        gap: 3px;
+    }
+
+
+}
+
+/* =============================
+EXTRA LARGE LAPTOP RESPONSIVE (XL)
+============================= */
+
+@media (max-width: 1200px) {
+
+    /* HEADER */
+
+    .header .headerInside {
+        max-width: 424px;
+    }
+
+    form .formWrapper {
+        width: 100%;
+    }
+
+    /* BUY SECTION */
+
+    .buySection .album .itemImage {
+        height: 456px;
+    }
+
+    .buySection .titleSection .titleSectionRight {
+        max-width: 670px;
+    }
+
+    .card-body .cardBodyLeft .itemName {
+        font-size: 34px;
+    }
+
+    .card-body .cardBodyRightReview {
+        gap: 1px;
+    }
+
+    .card-body .cardBodyLeft .itemName {
+        font-size: 24px;
+    }
+
+    .card-body .cardBodyLeft .itemPrice {
+        font-size: 16px;
+    }
+
+    .card-body .cardBodyLeft .reducedPrice {
+        font-size: 14px;
+    }
+
+}
+
+/* =============================
+SMALL LAPTOP RESPONSIVE (LG)
+============================= */
+
+@media (max-width: 991px) {
+    /* NAVBAR */
+
+    .navbar {
+        height: 76px;
+    }
+
+    /* HEADER */
+
+    .headerBody {
+        height: auto;
+    }
+
+    .header .container-fluid {
+        height: auto;
+    }
+
+    .header .heroPhoto {
+        background-image: url('images/headerPhotoPhone.png');
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* BUY SECTION */
+
+    .buySection .titleSection .titleSectionLeft h2 {
+        font-size: 32px;
+        line-height: 64px;
+    }
+
+    .buySection .titleSection .titleSectionLeft p {
+        font-size: 24px;
+    }
+
+    .buySection .titleSection .titleSectionRight {
+        margin: 32px 0px;
+    }
+
+    .buySection .moreButton {
+        margin-top: 0px;
+        margin-bottom: 43px;
+    }
+
+    .buySection .titleSection .titleSectionLeft .sectionLine {
+        height: 3px;
+        width: 33px;
+        background: #5F5F5F;
+    }
+
+    .buySection .album .itemImage {
+        height: 356px;
+    }
+
+    .album .newInTag {
+        color: #FFF;
+        background: #423496;
+        font-family: 'Ubuntu';
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        padding: 8px 12px;
+        bottom: 25px;
+        left: 0;
+        text-transform: uppercase;
+    }
+
+    .card-body .cardBodyRightReview p {
+        font-size: 11px;
+    }
+
+    .card-body .cardBodyRightReview img {
+        height: 11px;
+        width: 11px;
+    }
+
+    .card-body .cardBodyRight {
+        gap: 8px;
+    }
+
+    .card-body {
+        gap: 10px;
+    }
+
+    .card-body .cardBodyLeft {
+        gap: 8px;
+    }
+
+    .card-body .cardBodyRightReview {
+        gap: 5px;
+    }
+
+}
+
+
+/* =============================
+TABLET RESPONSIVE (MD)
+============================= */
+
+@media (max-width: 768px) {
+
+    .header .heroPhotoPhone {
+        height: 500px;
+    }
+
+    /* BUY SECTION */
+
+    .card-body .cardBodyLeft .itemName {
+        font-size: 24px;
+    }
+
+    .card-body .cardBodyLeft .itemPrice {
+        font-size: 16px;
+    }
+
+}
+
+/* =============================
+PHONE RESPONSIVE (SM)
+============================= */
+
+
 @media (max-width: 576px) {
+    /* NAVBAR */
+
     .shopingCart {
         margin-right: 1em;
     }
+
+    /* HEADER */
+
+    .headerText .headerBiggerParagraph {
+        font-size: 24px;
+    }
+
+    .headerText h1 {
+        font-size: 40px;
+    }
+
+    .headerText .headerSmallerParagraph {
+        font-size: 20px;
+    }
+
+    form {
+        margin-top: 32px;
+    }
+
+    form input {
+        padding: 16px 16px;
+    }
+
+    form input::placeholder {
+        font-size: 16px;
+    }
+
+    .header .heroPhotoPhone {
+        height: 335px;
+    }
+
+    /* BUY SECTION */
+
+    .buySection .album .itemImage {
+        height: 256px;
+    }
+
+    .card-body .cardBodyRightReview {
+        gap: 1px;
+    }
+
 }
