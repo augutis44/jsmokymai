@@ -248,14 +248,14 @@ form button .insideButtonText p {
     gap: 36px;
 }
 
-.headerBottom .headerBottomRight .carouselActive {
+.carouselActive {
     width: 14px;
     height: 14px;
     background: #423496;
     border-radius: 100px;
 }
 
-.headerBottom .headerBottomRight .carouselNotActive {
+.carouselNotActive {
     width: 10px;
     height: 10px;
     background: #2B2B2B;
@@ -830,7 +830,8 @@ footer ul li a {
 }
 
 .footer .container-fluid {
-    padding: 100px 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer .footerLine {
@@ -914,8 +915,6 @@ EXTRA EXTRA LARGE LAPTOP RESPONSIVE (XXL)
         bottom: 166px;
     }
 
-
-
 }
 
 /* =============================
@@ -975,6 +974,12 @@ SMALL LAPTOP RESPONSIVE (LG)
 
     .navbar {
         height: 76px;
+    }
+    
+    .header .heroPhotoPhone .headerBottomRightCircles{
+        bottom: 54px;
+        right: 50%;
+        transform: translate(50%, 50%);
     }
 
     /* HEADER */
@@ -1050,7 +1055,7 @@ SMALL LAPTOP RESPONSIVE (LG)
 
     .buySection .moreButton {
         margin-top: 0px;
-        margin-bottom: 43px;
+        margin-bottom: 64px;
     }
 
     .buySection .titleSection .titleSectionLeft .sectionLine {
@@ -1104,6 +1109,19 @@ SMALL LAPTOP RESPONSIVE (LG)
     .itemImage img {
         top: 8px;
         right: 8px;
+    }
+
+    .categoriesSection {
+        padding: 52px 0px;
+    }
+
+    .card-body .cardBodyRightColors {
+        gap: 5px;
+    }
+
+    .card-body .cardBodyRightColors .color {
+        width: 15px;
+        height: 15px;
     }
 
     /* INFORMATION1 */
@@ -1177,12 +1195,12 @@ SMALL LAPTOP RESPONSIVE (LG)
 
     .information2phone .image1phone {
         background: url('images/information2.png');
-        width: 375px;
+        width: 100%;
         height: 100%;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
+        background-repeat: no-repeat;
         bottom: 0;
-        height: 353px;
     }
 
     .information2phone .image2phone {
@@ -1206,7 +1224,6 @@ SMALL LAPTOP RESPONSIVE (LG)
     .information2 .text {
         width: auto;
     }
-
 
 }
 
@@ -1242,7 +1259,8 @@ TABLET RESPONSIVE (MD)
     }
 
     .footer .container-fluid {
-        padding: 48px 0px;
+        padding-top: 48px;
+        padding-bottom: 48px;
     }
 
     .footer .footerLine {
