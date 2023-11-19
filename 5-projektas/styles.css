@@ -25,6 +25,13 @@ p {
     max-width: 1420px;
 } */
 
+
+.sectionLine {
+    height: 5px;
+    width: 100%;
+    background: #5F5F5F;
+}
+
 /* =============================
 NAVIGATION
 ============================= */
@@ -271,6 +278,12 @@ CATEGORIES CAROUSEL
 .buttonsBox {
     margin-left: 102px;
     margin-right: 250px;
+    bottom: 0;
+    right: 0;
+}
+
+.categoriesCards {
+    margin-right: 424px;
 }
 
 /* =============================
@@ -334,6 +347,10 @@ BUY SECTION
     padding: 132px 0px;
 }
 
+.buySection .titleSection {
+    gap: 20px;
+}
+
 .buySection .titleSection .titleSectionLeft h2 {
     color: #FFF;
     font-family: 'Ubuntu';
@@ -349,12 +366,6 @@ BUY SECTION
     font-size: 40px;
     font-weight: 700;
     line-height: 100%;
-}
-
-.buySection .titleSection .titleSectionLeft .sectionLine {
-    height: 5px;
-    width: 100%;
-    background: #5F5F5F;
 }
 
 .buySection .titleSection .titleSectionLeft .titleSectionLeftBottom {
@@ -383,10 +394,6 @@ BUY SECTION
     margin: 52px 0px 48px;
     right: 0;
 }
-
-/* =============================
-BUY SECTION CARDS
-============================= */
 
 /* =============================
 BUY SECTION ONE CARD
@@ -635,11 +642,224 @@ BUY SECTION ONE CARD
     width: 100%;
 }
 
+/* =============================
+INFORMATION 1
+============================= */
+
+.information1 .container-fluid {
+    padding-right: 0;
+}
+
+.information1 .text {
+    height: 100%;
+}
+
+.information1Image {
+    height: 684px;
+}
+
+.information1 h1 {
+    color: #FFF;
+    font-family: 'Ubuntu';
+    font-size: 170px;
+    font-weight: 700;
+    text-transform: capitalize;
+    max-width: 720px;
+}
+
+.information1 p {
+    color: #FFF;
+    font-family: 'Ubuntu';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.information1 .information1Image .image1 {
+    width: 698.995px;
+    height: 388.249px;
+    border-radius: 100px;
+    background: linear-gradient(245deg, #A73B27 22.43%, rgba(98, 129, 41, 0.51) 59.21%, rgba(25, 202, 43, 0.00) 76.17%);
+    background-blend-mode: multiply;
+    filter: blur(45px);
+    right: 484px;
+    bottom: 125px;
+}
+
+.information1 .information1Image .image2 {
+    width: 406px;
+    height: 406px;
+    background: rgba(173, 124, 237, 0.50);
+    filter: blur(74px);
+    border-radius: 406px;
+    right: 0;
+    bottom: 0;
+}
+
+.information1 .information1Image .image3 {
+    width: 386px;
+    height: 324px;
+    border-radius: 406px;
+    background: rgba(201, 41, 118, 0.38);
+    filter: blur(74px);
+    right: 330px;
+    bottom: 208px;
+}
+
+.information1 .information1Image .image4 {
+    background: linear-gradient(131deg, rgba(0, 0, 0, 0.00) 51.29%, rgba(0, 0, 0, 0.48) 67.67%, rgba(0, 0, 0, 0.70) 85.25%), url('images/information1-1.png');
+    width: 761px;
+    height: 100%;
+    background-size: cover;
+    right: 0;
+    bottom: 0;
+}
+
+/* =============================
+INFORMATION 2
+============================= */
+
+.information2 .container-fluid {
+    height: 779px;
+}
+
+
+.information2 .container-fluid .container {
+    height: 100%;
+}
+
+.information2 .text {
+    height: 100%;
+    width: 619px;
+    gap: 32px;
+}
+
+.information2Image {
+    height: 579px;
+}
+
+.information2 .information2Image .image1 {
+    background: url('images/information2.png');
+    width: 772px;
+    height: 100%;
+    background-size: cover;
+    right: 0;
+    bottom: 0;
+}
+
+.information2 .information2Image .image2 {
+    width: 306px;
+    height: 285px;
+    border-radius: 100px;
+    background: linear-gradient(252deg, #EE5A3D 34.35%, rgba(246, 222, 137, 0.65) 83.18%);
+    background-blend-mode: multiply;
+    filter: blur(62px);
+    right: 333px;
+    bottom: 166px;
+}
+
+.information2 h2 {
+    color: #FFF;
+    font-family: 'Ubuntu';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.information2 .information2paragraph {
+    color: #5F5F5F;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.information2 .information2Section {
+    gap: 8px
+}
+
+.information2 .information2Section .information2SectionLine {
+    background: #5F5F5F;
+    height: 5px;
+    width: 100%;
+}
+
+.information2 .information2Section p {
+    color: #5F5F5F;
+    font-family: 'Ubuntu';
+    font-size: 40px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.information2 .text a {
+    color: #000;
+    font-family: 'Ubuntu';
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    background: #FFF;
+    text-decoration: none;
+    box-shadow: 0px 17px 33px 0px rgba(255, 255, 255, 0.20);
+    padding: 14px 60px;
+    width: 245px;
+}
+
+/* =============================
+FOOTER
+============================= */
+
+footer h5 {
+    color: #FFF;
+    font-family: 'Ubuntu';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+footer ul {
+    gap: 32px;
+}
+
+
+footer ul li a {
+    color: #5F5F5F !important;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 0 !important;
+}
+
+.footer .container-fluid {
+    padding: 100px 0px;
+}
+
+.footer .footerLine {
+    background: #5F5F5F;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 83px;
+}
+
+.socialMediaFooter {
+    margin-top: 32px;
+}
+
 
 
 /* =============================
 CUSTOM EXTRA EXTRA EXTRA LARGE
 ============================= */
+
+@media (min-width: 1600px) {
+
+    .container {
+        max-width: 1420px
+    }
+}
 
 @media (max-width: 1600px) {
 
@@ -681,6 +901,22 @@ EXTRA EXTRA LARGE LAPTOP RESPONSIVE (XXL)
         gap: 3px;
     }
 
+    /* INFORMATION2 */
+
+    .information2 .information2Image .image1 {
+        background: url('images/information2.png');
+        width: 600px;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        right: 0;
+        bottom: 0;
+    }
+
+    .information2 .information2Image .image2 {
+        right: 230px;
+        bottom: 166px;
+    }
 
 }
 
@@ -759,7 +995,49 @@ SMALL LAPTOP RESPONSIVE (LG)
         background-position: top;
     }
 
+    .headerText h1 {
+        width: auto;
+    }
+
+    form button {
+        width: 94px;
+    }
+
+    form button .insideButtonText {
+        gap: 5px;
+    }
+
+    .categoriesCards {
+        margin-right: 0;
+        /* left: 50%; */
+    }
+
+    .categoriesOneCard {
+        min-width: 220px;
+        height: 426px;
+    }
+
+    .cardText h3 {
+        font-size: 26.888px;
+        letter-spacing: -0.672px;
+    }
+
+    .cardText p {
+        font-size: 14.938px;
+        letter-spacing: -0.373px;
+    }
+
+
+
     /* BUY SECTION */
+
+    .buySection .container-fluid {
+        padding: 48px 0px;
+    }
+
+    .buySection .titleSection {
+        gap: 0;
+    }
 
     .buySection .titleSection .titleSectionLeft h2 {
         font-size: 32px;
@@ -827,6 +1105,60 @@ SMALL LAPTOP RESPONSIVE (LG)
         gap: 5px;
     }
 
+    /* INFORMATION1 */
+
+    .information1 .container-fluid {
+        height: 363px;
+    }
+
+    .information1Image {
+        height: 100%;
+    }
+
+    .information1 h1 {
+        font-size: 66.938px;
+        margin-top: 16px;
+        max-width: 284px;
+    }
+
+    .information1 p {
+        font-size: 14.175px;
+    }
+
+    .information1 .information1Image .image1 {
+        width: 309.092px;
+        height: 176.104px;
+        border-radius: 100px;
+        background: linear-gradient(251deg, #A73B27 22.43%, rgb(85 125 10 / 81%) 59.21%, rgba(25, 202, 43, 0.00) 76.17%);
+        background-blend-mode: multiply;
+        filter: blur(28.375px);
+        bottom: 60px;
+        right: 148px;
+
+    }
+
+    .information1 .information1Image .image2 {
+        width: 159.863px;
+        height: 159.863px;
+
+    }
+
+    .information1 .information1Image .image3 {
+        fill: rgba(201, 41, 118, 0.38);
+        filter: blur(29.13749885559082px);
+        width: 159.863px;
+        height: 159.863px;
+        right: 59px;
+        bottom: 120px;
+
+    }
+
+    .information1 .information1Image .image4 {
+        width: 315.644px;
+        height: 319.35px;
+        z-index: 2;
+    }
+
 }
 
 
@@ -848,6 +1180,24 @@ TABLET RESPONSIVE (MD)
 
     .card-body .cardBodyLeft .itemPrice {
         font-size: 16px;
+    }
+
+    /* FOOTER */
+
+    footer h5 {
+        margin-top: 48px;
+    }
+
+    footer ul {
+        gap: 24px;
+    }
+
+    .footer .container-fluid {
+        padding: 48px 0px;
+    }
+
+    .footer .footerLine {
+        margin-bottom: 0;
     }
 
 }
@@ -903,5 +1253,38 @@ PHONE RESPONSIVE (SM)
     .card-body .cardBodyRightReview {
         gap: 1px;
     }
+
+    /* INFORMATION1 */
+
+    .information1 .container-fluid {
+        height: 363px;
+    }
+
+    .information1 .information1Image .image1 {
+        width: 309.092px;
+        height: 176.104px;
+        bottom: 60px;
+        right: 0;
+    }
+
+    .information1 .information1Image .image2 {
+        width: 159.863px;
+        height: 159.863px;
+
+    }
+
+    .information1 .information1Image .image3 {
+        width: 159.863px;
+        height: 159.863px;
+        right: 0px;
+        bottom: 120px;
+    }
+
+    .information1 .information1Image .image4 {
+        width: 244.644px;
+        height: 231.35px;
+        z-index: 2;
+    }
+
 
 }
