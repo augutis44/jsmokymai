@@ -52,6 +52,10 @@ NAVIGATION
     padding: 0 !important;
 }
 
+.nav-link:hover {
+    color: rgb(96, 132, 209);
+}
+
 .navbar .clotingTypeList li {
     margin-right: 35px;
 }
@@ -900,7 +904,7 @@ footer ul li a {
 CUSTOM EXTRA EXTRA EXTRA LARGE
 ============================= */
 
-@media (min-width: 1600px) {
+@media only screen and (min-width: 1600px) {
 
     .container {
         max-width: 1420px
@@ -921,7 +925,7 @@ CUSTOM EXTRA EXTRA EXTRA LARGE
 EXTRA EXTRA LARGE LAPTOP RESPONSIVE (XXL)
 ============================= */
 
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
 
     /* HEADER */
 
@@ -976,7 +980,7 @@ EXTRA EXTRA LARGE LAPTOP RESPONSIVE (XXL)
 EXTRA LARGE LAPTOP RESPONSIVE (XL)
 ============================= */
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 
     /* HEADER */
 
@@ -1026,7 +1030,7 @@ EXTRA LARGE LAPTOP RESPONSIVE (XL)
 SMALL LAPTOP RESPONSIVE (LG)
 ============================= */
 
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
     /* NAVBAR */
 
     .navbar {
@@ -1317,7 +1321,7 @@ SMALL LAPTOP RESPONSIVE (LG)
 TABLET RESPONSIVE (MD)
 ============================= */
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     .header .heroPhotoPhone {
         height: 500px;
@@ -1371,7 +1375,7 @@ PHONE RESPONSIVE (SM)
 ============================= */
 
 
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     /* NAVBAR */
 
     .shopingCart {
@@ -1436,7 +1440,7 @@ PHONE RESPONSIVE (SM)
 
 }
 
-@media (min-width: 991px) {
+@media only screen and (min-width: 991px) {
 
     .buySection .album .card:hover .item1Image {
         background: url('images/products/item1.png');
