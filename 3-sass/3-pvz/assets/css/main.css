@@ -22,4 +22,17 @@ nav {
       list-style-type: none;
       margin-left: 15px; }
 
+.home-page .about-us-section {
+  background: green; }
+.home-page .services-section {
+  background: red; }
+
+header {
+  background: greenyellow;
+  padding: 50px 0; }
+  header .container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; }
+
 /*# sourceMappingURL=main.css.map */
