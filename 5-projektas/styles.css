@@ -21,16 +21,15 @@ p {
     background: #000000;
 }
 
-/* .container {
-    max-width: 1420px;
-} */
-
-
-.sectionLine {
-    height: 5px;
-    width: 100%;
-    background: #5F5F5F;
+.container {
+    padding: 0;
 }
+
+.container-fluid {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
 
 /* =============================
 NAVIGATION
@@ -47,7 +46,7 @@ NAVIGATION
 
 .navbar ul li a {
     color: #FFF;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: 700;
     padding: 0 !important;
@@ -63,7 +62,7 @@ NAVIGATION
 
 .navbar .accountProfile .profileName {
     color: #FFF;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -71,13 +70,13 @@ NAVIGATION
 
 .navbar .accountProfile .viewProfile {
     color: #5F5F5F;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: -0.4px;
 }
 
-.accountProfile img {
+.navbar .accountProfile img {
     width: 32px;
     height: 32px;
 }
@@ -94,7 +93,7 @@ NAVIGATION
 .shopingCartItemNumber p {
     color: #FFF;
     text-align: center;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 10px;
     font-weight: 400;
 }
@@ -136,24 +135,26 @@ HEADER
 
 .headerText .headerBiggerParagraph {
     color: #5F5F5F;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: -0.9px;
+    line-height: 100%;
 }
 
 .headerText h1 {
     color: #FFF;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 72px;
     font-weight: 700;
     margin: 8px 0px;
     width: 352px;
+    line-height: 100%;
 }
 
 .headerText .headerSmallerParagraph {
     color: #5F5F5F;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
     font-weight: 500;
     letter-spacing: -0.6px;
@@ -165,7 +166,7 @@ form {
 
 form .formWrapper {
     height: 62px;
-    width: 80%;
+    width: 85%;
     position: relative;
 }
 
@@ -180,7 +181,7 @@ form input {
 
 form input::placeholder {
     color: #5F5F5F;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: 400;
 }
@@ -204,7 +205,7 @@ form button .insideButtonText {
 
 form button .insideButtonText p {
     text-align: center;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 2.1px;
@@ -224,7 +225,7 @@ form button .insideButtonText p {
 }
 
 .header .heroPhotoPhone {
-    height: 600px;
+    height: 500px;
     width: 100%;
     background-position: bottom;
 }
@@ -237,9 +238,9 @@ form button .insideButtonText p {
     gap: 20px;
 }
 
-.headerBottom .headerBottomLeft p {
+.headerBottomLeft p {
     color: #FFF;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: 400;
 }
@@ -265,7 +266,6 @@ form button .insideButtonText p {
 .headerBottomRightCircles {
     gap: 8px;
 }
-
 
 /* =============================
 CATEGORIES CAROUSEL
@@ -315,25 +315,26 @@ CATEGORIES CAROUSEL ONE CARD
 .categoriesSection .cardPhoto {
     height: 100%;
     background-size: cover;
+    background-position: center;
 }
 
-.cardText {
+.categoriesOneCard .cardText {
     padding: 48px 32px;
     bottom: 0;
     left: 0;
 }
 
-.cardText h3 {
+.categoriesOneCard .cardText h3 {
     color: #FFF;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: -0.9px;
 }
 
-.cardText p {
+.categoriesOneCard .cardText p {
     color: #5F5F5F;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -354,7 +355,7 @@ BUY SECTION
 
 .buySection .titleSection .titleSectionLeft h2 {
     color: #FFF;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 64px;
     font-weight: 700;
     line-height: 100%;
@@ -363,7 +364,7 @@ BUY SECTION
 
 .buySection .titleSection .titleSectionLeft p {
     color: #5F5F5F;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 100%;
@@ -376,14 +377,14 @@ BUY SECTION
 .buySection .titleSection .titleSectionRight {
     max-width: 870px;
     color: #5F5F5F;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
     font-weight: 700;
 }
 
 .buySection .moreButton {
     color: #FFF;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 2.1px;
@@ -392,7 +393,7 @@ BUY SECTION
     background: #1B1B1B;
     padding: 8px 48px;
     border: none;
-    margin: 52px 0px 48px;
+    margin: 48px 0px;
     right: 0;
 }
 
@@ -403,7 +404,7 @@ BUY SECTION ONE CARD
 .album .newInTag {
     color: #FFF;
     background: #423496;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.2px;
@@ -421,7 +422,7 @@ BUY SECTION ONE CARD
 .newInTag {
     color: #FFF;
     background: #423496;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.2px;
@@ -433,6 +434,8 @@ BUY SECTION ONE CARD
 
 .album .card {
     border: none;
+    height: 748px;
+    border-radius: 0px;
 }
 
 .buySection .album .item1Image {
@@ -469,28 +472,56 @@ BUY SECTION ONE CARD
     background-position: center;
 }
 
+.buySection .album .card .cardBodyButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buySection .album .card .cardBodyButton button {
+    font-family: 'Ubuntu';
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: none;
+    background: #FFF;
+    border-radius: 48px;
+    box-shadow: 0px 17px 33px 0px rgba(255, 255, 255, 0.20);
+    width: 85%;
+    padding: 14px 0px;
+}
+
 .card-body {
     background: #000;
     padding: 8px;
+    padding-top: 16px;
+    height: 92px;
 }
 
 .card-body p {
     color: #FFF;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     letter-spacing: 0.2px;
     line-height: 100%;
 }
 
-.card-body .cardBodyLeft .itemName {
+.cardBodyLeft {
+    height: 100%;
+    justify-content: space-between;
+}
+
+.cardBodyLeft .itemName {
     font-size: 40px;
 }
 
-.card-body .cardBodyLeft .itemPrice {
+.cardBodyLeft .itemPrice {
     font-size: 24px;
 }
 
-.card-body .cardBodyLeft .reducedPrice {
+.cardBodyLeft .reducedPrice {
     color: #5F5F5F;
     font-size: 16px;
     font-weight: 500;
@@ -524,114 +555,114 @@ BUY SECTION ONE CARD
     border-radius: 100px;
 }
 
-.card1 .card-body .cardBodyRightColors .color1 {
+.card1 .cardBodyRightColors .color1 {
     background: #000;
     border: 1px solid #fff;
 }
 
-.card1 .card-body .cardBodyRightColors .color2 {
+.card1 .cardBodyRightColors .color2 {
     background: #512A1E;
 }
 
 
-.card1 .card-body .cardBodyRightColors .color3 {
+.card1 .cardBodyRightColors .color3 {
     background: #E5E5E5;
 }
 
-.card2 .card-body .cardBodyRightColors .color1 {
+.card2 .cardBodyRightColors .color1 {
     background: #CB988F;
     border: 1px solid #fff;
 }
 
-.card2 .card-body .cardBodyRightColors .color2 {
+.card2 .cardBodyRightColors .color2 {
     background: #4C4B90;
 }
 
 
-.card2 .card-body .cardBodyRightColors .color3 {
+.card2 .cardBodyRightColors .color3 {
     background: #2C2C2C;
 }
 
-.card3 .card-body .cardBodyRightColors .color1 {
+.card3 .cardBodyRightColors .color1 {
     background: #000;
     border: 1px solid #fff;
 }
 
-.card3 .card-body .cardBodyRightColors .color2 {
+.card3 .cardBodyRightColors .color2 {
     background: #C92976;
 }
 
 
-.card3 .card-body .cardBodyRightColors .color3 {
+.card3 .cardBodyRightColors .color3 {
     background: #D7B606;
 }
 
-.card3 .card-body .cardBodyRightColors .color4 {
+.card3 .cardBodyRightColors .color4 {
     background: #E5E5E5;
 }
 
-.card4 .card-body .cardBodyRightColors .color1 {
+.card4 .cardBodyRightColors .color1 {
     background: #563B34;
     border: 1px solid #fff;
 }
 
-.card4 .card-body .cardBodyRightColors .color2 {
+.card4 .cardBodyRightColors .color2 {
     background: #2A282A;
 }
 
-.card5 .card-body .cardBodyRightColors .color1 {
+.card5 .cardBodyRightColors .color1 {
     background: #000;
     border: 1px solid #fff;
 }
 
-.card5 .card-body .cardBodyRightColors .color2 {
+.card5 .cardBodyRightColors .color2 {
     background: #512A1E;
 }
 
-.card5 .card-body .cardBodyRightColors .color3 {
+.card5 .cardBodyRightColors .color3 {
     background: #E5E5E5;
 }
 
-.card5 .card-body .cardBodyRightColors .color4 {
+.card5 .cardBodyRightColors .color4 {
     background: #4C4B90;
 }
 
-.card5 .card-body .cardBodyRightColors .color5 {
+.card5 .cardBodyRightColors .color5 {
     background: #EB1616;
 }
 
-.card5 .card-body .cardBodyRightColors .color6 {
+.card5 .cardBodyRightColors .color6 {
     background: #EB127A;
 }
 
-.card6 .card-body .cardBodyRightColors .color1 {
+.card6 .cardBodyRightColors .color1 {
     background: #6E8BC5;
     border: 1px solid #fff;
 }
 
-.card6 .card-body .cardBodyRightColors .color2 {
+.card6 .cardBodyRightColors .color2 {
     background: #474659;
 }
 
-.card7 .card-body .cardBodyRightColors .color1 {
+.card7 .cardBodyRightColors .color1 {
     background: #BF95A8;
     border: 1px solid #fff;
 }
 
-.card7 .card-body .cardBodyRightColors .color2 {
+.card7 .cardBodyRightColors .color2 {
     background: #262F6D;
 }
 
-.card7 .card-body .cardBodyRightColors .color3 {
+.card7 .cardBodyRightColors .color3 {
     background: #34535B;
 }
 
-.card7 .card-body .cardBodyRightColors .color4 {
+.card7 .cardBodyRightColors .color4 {
     background: #F8A0A7;
 }
 
 .addToCart button {
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 2.1px;
@@ -661,7 +692,7 @@ INFORMATION 1
 
 .information1 h1 {
     color: #FFF;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 170px;
     font-weight: 700;
     text-transform: capitalize;
@@ -670,7 +701,7 @@ INFORMATION 1
 
 .information1 p {
     color: #FFF;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 100%;
@@ -716,9 +747,21 @@ INFORMATION 1
     bottom: 0;
 }
 
+.sectionLine {
+    height: 5px;
+    width: 100%;
+    background: #5F5F5F;
+}
+
 /* =============================
 INFORMATION 2
 ============================= */
+
+.information2 .container-fluid {
+    overflow: visible !important;
+    padding-top: 58px;
+    padding-bottom: 64px;
+}
 
 .information2 .container-fluid .container {
     height: 100%;
@@ -756,7 +799,7 @@ INFORMATION 2
 
 .information2 h2 {
     color: #FFF;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 64px;
     font-weight: 700;
     line-height: 64px;
@@ -764,7 +807,7 @@ INFORMATION 2
 
 .information2 .information2paragraph {
     color: #5F5F5F;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
     font-weight: 700;
 }
@@ -776,12 +819,12 @@ INFORMATION 2
 .information2 .information2Section .information2SectionLine {
     background: #5F5F5F;
     height: 5px;
-    width: 100%;
+    width: 224px;
 }
 
 .information2 .information2Section p {
     color: #5F5F5F;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
     font-weight: 700;
     white-space: nowrap;
@@ -789,7 +832,7 @@ INFORMATION 2
 
 .information2 .text a {
     color: #000;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 2.1px;
@@ -802,13 +845,19 @@ INFORMATION 2
     width: 245px;
 }
 
+.sectionLineProfessional {
+    height: 5px;
+    width: 100%;
+    background: #5F5F5F;
+}
+
 /* =============================
 FOOTER
 ============================= */
 
 footer h5 {
     color: #FFF;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
     font-weight: 700;
     line-height: 32px;
@@ -822,9 +871,9 @@ footer ul {
 
 footer ul li a {
     color: #5F5F5F !important;
-    font-family: 'Ubuntu';
-    font-size: 20px;
-    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px !important;
+    font-weight: 700 !important;
     line-height: 24px;
     padding: 0 !important;
 }
@@ -898,6 +947,12 @@ EXTRA EXTRA LARGE LAPTOP RESPONSIVE (XXL)
         gap: 3px;
     }
 
+    /* ONE CARD */
+
+    .album .card {
+        height: 648px;
+    }
+
     /* INFORMATION2 */
 
     .information2 .information2Image .image1 {
@@ -944,15 +999,11 @@ EXTRA LARGE LAPTOP RESPONSIVE (XL)
     }
 
     .card-body .cardBodyLeft .itemName {
-        font-size: 34px;
+        font-size: 30px;
     }
 
     .card-body .cardBodyRightReview {
         gap: 1px;
-    }
-
-    .card-body .cardBodyLeft .itemName {
-        font-size: 24px;
     }
 
     .card-body .cardBodyLeft .itemPrice {
@@ -961,6 +1012,12 @@ EXTRA LARGE LAPTOP RESPONSIVE (XL)
 
     .card-body .cardBodyLeft .reducedPrice {
         font-size: 14px;
+    }
+
+    /* ONE CARD */
+
+    .album .card {
+        height: 548px;
     }
 
 }
@@ -975,14 +1032,19 @@ SMALL LAPTOP RESPONSIVE (LG)
     .navbar {
         height: 76px;
     }
-    
-    .header .heroPhotoPhone .headerBottomRightCircles{
+
+    .header .heroPhotoPhone .headerBottomRightCircles {
         bottom: 54px;
         right: 50%;
         transform: translate(50%, 50%);
     }
 
     /* HEADER */
+
+    form {
+        margin-top: 32px;
+        margin-bottom: 60px;
+    }
 
     .headerBody {
         height: auto;
@@ -1055,12 +1117,18 @@ SMALL LAPTOP RESPONSIVE (LG)
 
     .buySection .moreButton {
         margin-top: 0px;
-        margin-bottom: 64px;
+        margin-bottom: 43px;
     }
 
     .buySection .titleSection .titleSectionLeft .sectionLine {
         height: 3px;
         width: 33px;
+        background: #5F5F5F;
+    }
+
+    .buySection .titleSection .titleSectionLeft .sectionLineProfessional {
+        height: 3px;
+        width: 124px;
         background: #5F5F5F;
     }
 
@@ -1071,12 +1139,12 @@ SMALL LAPTOP RESPONSIVE (LG)
     .album .newInTag {
         color: #FFF;
         background: #423496;
-        font-family: 'Ubuntu';
+        font-family: 'Ubuntu', sans-serif;
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0.2px;
         padding: 8px 12px;
-        bottom: 25px;
+        bottom: 16px;
         left: 0;
         text-transform: uppercase;
     }
@@ -1091,10 +1159,11 @@ SMALL LAPTOP RESPONSIVE (LG)
     }
 
     .card-body .cardBodyRight {
-        gap: 8px;
+        gap: 10px;
     }
 
     .card-body {
+        height: auto;
         gap: 10px;
     }
 
@@ -1113,6 +1182,7 @@ SMALL LAPTOP RESPONSIVE (LG)
 
     .categoriesSection {
         padding: 52px 0px;
+        overflow: hidden;
     }
 
     .card-body .cardBodyRightColors {
@@ -1122,6 +1192,16 @@ SMALL LAPTOP RESPONSIVE (LG)
     .card-body .cardBodyRightColors .color {
         width: 15px;
         height: 15px;
+    }
+
+    .categoriesCards {
+        margin-right: -150px;
+    }
+
+    /* ONE CARD */
+
+    .album .card {
+        height: auto;
     }
 
     /* INFORMATION1 */
@@ -1225,6 +1305,11 @@ SMALL LAPTOP RESPONSIVE (LG)
         width: auto;
     }
 
+    .information2 .information2Section .information2SectionLine {
+        height: 3px;
+        width: 70px;
+    }
+
 }
 
 
@@ -1236,6 +1321,18 @@ TABLET RESPONSIVE (MD)
 
     .header .heroPhotoPhone {
         height: 500px;
+    }
+
+    .headerText h1 {
+        font-size: 40px;
+    }
+
+    .headerText .headerBiggerParagraph {
+        font-size: 24px;
+    }
+
+    .headerText .headerSmallerParagraph {
+        font-size: 20px;
     }
 
     /* BUY SECTION */
@@ -1283,22 +1380,6 @@ PHONE RESPONSIVE (SM)
 
     /* HEADER */
 
-    .headerText .headerBiggerParagraph {
-        font-size: 24px;
-    }
-
-    .headerText h1 {
-        font-size: 40px;
-    }
-
-    .headerText .headerSmallerParagraph {
-        font-size: 20px;
-    }
-
-    form {
-        margin-top: 32px;
-    }
-
     form input {
         padding: 16px 16px;
     }
@@ -1318,7 +1399,7 @@ PHONE RESPONSIVE (SM)
     }
 
     .card-body .cardBodyRightReview {
-        gap: 1px;
+        gap: 4px;
     }
 
     /* INFORMATION1 */
@@ -1353,4 +1434,64 @@ PHONE RESPONSIVE (SM)
         z-index: 2;
     }
 
+}
+
+@media (min-width: 991px) {
+
+    .buySection .album .card:hover .item1Image {
+        background: url('images/products/item1.png');
+    }
+
+    .buySection .album .card:hover .item2Image {
+        background: url('images/products/item2.png');
+    }
+
+    .buySection .album .card:hover .item3Image {
+        background: url('images/products/item3.png');
+    }
+
+    .buySection .album .card:hover .item4Image {
+        background: url('images/products/item4.png');
+    }
+
+    .buySection .album .card:hover .item5Image {
+        background: url('images/products/item5.png');
+    }
+
+    .buySection .album .card:hover .item6Image {
+        background: url('images/products/item6.png');
+    }
+
+    .buySection .album .card:hover .item7Image {
+        background: url('images/products/item7.png');
+    }
+
+    .buySection .album .card:hover .itemImage {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .buySection .album .card:hover .cardBodyText {
+        display: none !important;
+    }
+
+    .buySection .album .card:hover .cardBodyButtonOutside {
+        display: block !important;
+        width: 100%;
+        height: 114px;
+        background: black;
+    }
+
+    .buySection .album .card:hover .newInTag {
+        display: none !important;
+    }
+
+    .buySection .album .card:hover {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .buySection .album .card:hover .itemImage {
+        overflow: hidden;
+    }
 }
