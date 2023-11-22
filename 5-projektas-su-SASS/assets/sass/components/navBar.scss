@@ -1,0 +1,63 @@
+.navBar {
+    padding-top: 28.85px;
+    display: flex;
+    justify-content: center;
+  
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      .navBarCenter {
+        ul {
+          display: flex;
+          width: 100%;
+          padding: 0;
+          gap: 40px;
+  
+          li {
+            list-style-type: none;
+  
+            a {
+              display: inline-block;
+              color: #fff;
+              font-family: $font-titles;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: $font-title-bold;
+              line-height: normal;
+              letter-spacing: 1.4px;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+  
+      .navBarRight {
+        display: flex;
+        align-items: center;
+  
+        .navBarLanguage {
+          color: #fff;
+          font-family: $font-titles;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: $font-title-bold;
+          line-height: normal;
+          letter-spacing: 1.4px;
+          text-transform: uppercase;
+        }
+  
+        .sectionLine {
+          background: #fff;
+          width: 1px;
+          height: 30px;
+          margin: 0px 29px 0px 21.6px;
+        }
+  
+        .xboxIcon {
+          margin-right: 20px;
+        }
+      }
+    }
+  }

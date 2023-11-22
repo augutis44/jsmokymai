@@ -1,0 +1,38 @@
+$font-titles: "Open Sans", sans-serif;
+$font-title-bold: 700;
+
+// =====================
+// GENERAL
+// =====================
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.containerFull {
+}
+
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1150px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@import 'components/navBar.scss';
+@import 'components/header.scss';

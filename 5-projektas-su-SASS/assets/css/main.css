@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1150px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.navBar {
+  padding-top: 28.85px;
+  display: flex;
+  justify-content: center; }
+  .navBar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .navBar nav .navBarCenter ul {
+      display: flex;
+      width: 100%;
+      padding: 0;
+      gap: 40px; }
+      .navBar nav .navBarCenter ul li {
+        list-style-type: none; }
+        .navBar nav .navBarCenter ul li a {
+          display: inline-block;
+          color: #fff;
+          font-family: "Open Sans", sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 1.4px;
+          text-transform: uppercase; }
+    .navBar nav .navBarRight {
+      display: flex;
+      align-items: center; }
+      .navBar nav .navBarRight .navBarLanguage {
+        color: #fff;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.4px;
+        text-transform: uppercase; }
+      .navBar nav .navBarRight .sectionLine {
+        background: #fff;
+        width: 1px;
+        height: 30px;
+        margin: 0px 29px 0px 21.6px; }
+      .navBar nav .navBarRight .xboxIcon {
+        margin-right: 20px; }
+
+.header .headerImage {
+  background: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.8) 73.22%, #08090a 99.74%), url("../../images/headerImage.png");
+  height: 1278.849px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  z-index: -1; }
+.header header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .header header h1 {
+    color: #fff;
+    font-family: "Bebas Neue";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
+  .header header p {
+    color: #fff;
+    font-family: "Bebas Neue";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px; }
+  .header header button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    color: #1a1917;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(195deg, #ffb548 11.27%, #f3af34 90.4%);
+    width: 260.362px;
+    height: 60.063px;
+    margin-top: 25.63px; }
+    .header header button div {
+      width: 0.874px;
+      background: #1a1917;
+      opacity: 0.5;
+      height: 23.95px; }
+
+/*# sourceMappingURL=main.css.map */

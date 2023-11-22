@@ -1,7 +1,7 @@
-$font-titles: 'Oswald', sans-serif;
+$font-titles: "Oswald", sans-serif;
 $font-title-bold: 700;
 
-$font-body: 'Poppins', sans-serif;
+$font-body: "Poppins", sans-serif;
 $font-body-light: 100;
 $font-body-regular: 400;
 
@@ -15,72 +15,79 @@ body {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: $font-titles;
-    font-weight: $font-title-bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-titles;
+  font-weight: $font-title-bold;
 }
 
-p, li, a {
-    font-family: $font-body;
-    font-weight: $font-body-regular;
+p,
+li,
+a {
+  font-family: $font-body;
+  font-weight: $font-body-regular;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: $color-dark;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $color-dark;
 
-    a {
-        color: $color-light;
-        text-decoration: none;
-    }
+  a {
+    color: $color-light;
+    text-decoration: none;
+  }
 
-    ul.links {
-        list-style-type: none;
+  ul.links {
+    list-style-type: none;
 
-        li {
-            display: inline-block;
-            margin-left: 15px;
+    li {
+      display: inline-block;
+      margin-left: 15px;
 
-            a.link {
-                transition: 0.2s all;
+      a.link {
+        transition: 0.2s all;
 
-                &:hover {
-                    color: $color-primary;
-                }
-            }
+        &:hover {
+          color: $color-primary;
         }
+      }
     }
+  }
 }
 
 .articles {
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    background: $color-light;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: $color-light;
 
-    article {
-        width: calc((100% - 20px) / 2);
-        background: white;
-        padding: 20px;
-        box-sizing: border-box;
-        border-left: 2px solid $color-primary;
+  article {
+    width: calc((100% - 20px) / 2);
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-left: 2px solid $color-primary;
 
-        a {
-            text-decoration: none;
-            background: $color-primary;
-            color: $color-light;
-            padding: 7px 13px;
-            border-radius: 5px;
-            border: 1px solid $color-primary;
-            transition: 0.2s all;
+    a {
+      text-decoration: none;
+      background: $color-primary;
+      color: $color-light;
+      padding: 7px 13px;
+      border-radius: 5px;
+      border: 1px solid $color-primary;
+      transition: 0.2s all;
 
-            &:hover {
-                background: $color-light;
-                color: $color-primary;
-            }
-        }
+      &:hover {
+        background: $color-light;
+        color: $color-primary;
+      }
     }
+  }
 }
