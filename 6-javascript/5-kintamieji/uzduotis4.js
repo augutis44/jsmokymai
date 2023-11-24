@@ -9,4 +9,3 @@ let someNumber = 25;
 
 console.log(`${someNumber}${someNumber}${someNumber}${someNumber}${someNumber}`);
 console.log(someNumber, someNumber, someNumber, someNumber, someNumber);
-

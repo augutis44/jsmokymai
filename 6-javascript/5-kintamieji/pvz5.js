@@ -12,12 +12,15 @@ const makeGuess = () => (
     rl.question("Guess the number between 0 and 10 ", function (answer) {
         if (answer == numberToGuess) {
             numberGuessed = true;
+            console.log('========================');
             console.log(`You guessed the number! It was ${answer}`);
             rl.close();
         } else if (answer > numberToGuess) {
+            console.log('========================');
             console.log(`The number is smaller then ${answer}`);
             makeGuess();
         } else if (answer < numberToGuess) {
+            console.log('========================');
             console.log(`The number is bigger then ${answer}`);
             makeGuess();
         }
