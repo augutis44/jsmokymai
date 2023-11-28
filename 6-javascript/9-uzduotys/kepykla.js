@@ -1,7 +1,7 @@
 const hoursInDay = 8;
 let bakedGoodsInHour = 6;
 let employees = 5;
-let primeCost = 0.5;
+let primeCost = 1;
 let price = 5;
 let needToBakeInDay = 100;
 
@@ -9,16 +9,16 @@ console.log('========================');
 let bakedInOneDay = employees * bakedGoodsInHour * hoursInDay;
 console.log(`All employees bakes ${bakedInOneDay} goods in one day.`);
 
+let overBaked = false;
+
 if (bakedInOneDay <= needToBakeInDay) {
     console.log(`Bakery could not fulfill all of the orders. They are ${needToBakeInDay - bakedInOneDay} orders short.`);
+    overBaked = true;
 } else {
     console.log(`Bakery fulfilled all of ${needToBakeInDay} orders and sold all of them for ${price}$ each!!`);
 }
 
 let primeCostInDay = primeCost * bakedInOneDay;
-
-let left = bakedInOneDay - needToBakeInDay;
-let overBaked = left > 0 ? true : false
 let soldFor = !overBaked ? price * bakedInOneDay : price * needToBakeInDay;
 
 let finalIncome = soldFor - primeCostInDay;

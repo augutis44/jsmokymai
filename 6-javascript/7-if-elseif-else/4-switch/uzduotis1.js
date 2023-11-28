@@ -16,4 +16,4 @@ switch (option) {
     default:
         console.log('klaida');
         break;
-} 
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #straipsniai {
+            background: orange;
+            padding: 20px;
+        }
+        article {
+            background: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="pavadinimas">Puslapis</h1>
+
+    <p id="pirmas-tekstas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem libero, ipsa animi
+        dolores repudiandae magnam hic eligendi perferendis quia officiis in porro excepturi cum amet neque, nemo modi,
+        facere earum.</p>
+
+    <div id="blokas1">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, repellendus?
+        </p>
+    </div>
+
+    <div>
+        <ul>
+            <li> Lorem, ipsum dolor. </li>
+            <li id="saraso-el"> Dolores, voluptatum quos. </li>
+            <li> Harum, obcaecati error. </li>
+        </ul>
+    </div>
+
+    <!-- #blokas2>(ul.pirmas>li*2>lorem2)+(ul.antras>li*4>lorem2) -->
+    <div id="blokas2">
+        <ul class="pirmas">
+            <li>Lorem, ipsum.</li>
+            <li>Beatae, officiis!</li>
+        </ul>
+        <ul class="antras">
+            <li>Lorem, ipsum.</li>
+            <li>Voluptate, ad!</li>
+            <li>Molestiae, voluptates!</li>
+            <li>Harum, incidunt?</li>
+        </ul>
+    </div>
+
+    <!-- #blokas3>p*3>lorem5 -->
+    <div id="blokas3">
+        <p id="par3">Lorem ipsum dolor sit amet.</p>
+        <p class="blok3-par">Veniam quos praesentium unde ex.</p>
+        <p class="blok3-par">Repellat excepturi corporis facilis quod.</p>
+    </div>
+
+    <div id="straipsniai">
+        <!-- article*3>(h3>lorem2)+p>lorem4 -->
+        <article id="pirmas-str">
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit.</p>
+        </article>
+        <article id="antras-str">
+            <h3>Reiciendis, dolor?</h3>
+            <p>Obcaecati repudiandae cupiditate deserunt!</p>
+        </article>
+        <article id="trecias-str">
+            <h3>In, veritatis!</h3>
+            <p>Quam nisi temporibus exercitationem?</p>
+        </article>
+    </div>
+
+    <article>
+        <h3>Atskiras straipsniai</h3>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, illum!
+        </p>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
