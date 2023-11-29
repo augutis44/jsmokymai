@@ -1,0 +1,36 @@
+.pirma {
+    color: red;
+}
+
+.antra {
+    font-size: 30px;
+}
+
+.trecia {
+    border: 1px solid black;
+}
+
+.didesnis-tekstas {
+    font-size: 40px;
+}
+
+.raudona-teksto-spalva {
+    color: red;
+}
+
+.slepti {
+    display: none;
+}
+
+.dropdown ul.nerodyti {
+    display: none;
+}
+
+.dropdown ul.rodyti {
+    display: block;
+}
+
+#teksto-dydzio-keitimas p {
+    margin-top: 0;
+    font-size: 20px;
+}
