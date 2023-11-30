@@ -1,0 +1,243 @@
+/* font-family: 'Open Sans', sans-serif; 400 700 500*/
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #F1F1F1;
+}
+
+.container {
+    margin: 100px auto;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1030px;
+}
+
+.counter-results {
+    display: flex;
+    gap: 30px;
+}
+
+header h1 {
+    color: #31685D;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+#counter {
+    background: #FFFFFF;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 700px;
+}
+
+h2 {
+    color: #31685D;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+#counter p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #7F7F7F;
+    margin-top: 40px;
+    letter-spacing: 0.8px;
+}
+
+#counter .buttonsDiv {
+    font-size: 0;
+}
+
+#counter .buttonsDiv button {
+    border: #31685D solid 1px;
+    color: #31685D;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 50%;
+    display: inline;
+    padding: 15px 0px;
+    background: #FFFFFF;
+    letter-spacing: 0.5px;
+}
+
+#counter .buttonsDiv .clickedButton {
+    color: #FFFFFF;
+    background: #31685D;
+}
+
+.all-cards-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#counter .card-full {
+    width: calc((100%)/3);
+    border: #31685D solid 1px;
+    padding: 15px;
+}
+
+#counter .card-full .image {
+    height: 102px;
+    width: 174.672px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#counter .card-full label {
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    margin: 12px 0px;
+}
+
+#counter .card-full select {
+    font-family: 'Open Sans', sans-serif;
+    padding: 2px;
+    width: 100%;
+    font-size: 16px;
+    color: #5e5e5e;
+    border: #7F7F7F solid 1px;
+    border-radius: 2px;
+}
+
+#counter .card-full .card1-image {
+    background-image: url('lentos_aukstis.jpg');
+}
+
+#counter .card-full .card2-image {
+    background-image: url('Lentos_plotis.jpg');
+}
+
+#counter .card-full .card3-image {
+    background-image: url('lentos_ilgis.jpg');
+}
+
+#counter #quantity label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #7F7F7F;
+    margin-top: 40px;
+    letter-spacing: 0.8px;
+    display: block;
+}
+
+#counter #quantity input {
+    font-family: 'Open Sans', sans-serif;
+    padding: 2px;
+    font-size: 16px;
+    color: #5e5e5e;
+    border: #7F7F7F solid 1px;
+    border-radius: 2px;
+    margin-top: 14px;
+}
+
+#results {
+    background: #FFFFFF;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #95B1AB;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.left {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+#results .info div {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+
+.right {
+    font-family: 'Open Sans', sans-serif;
+    color: #5e5e5e;
+    margin: 0;
+}
+
+#results .info .divider-top {
+    background: #cecdcd;
+    margin-top: 40px;
+    height: 1px;
+    width: 300px;
+    overflow: visible;
+    margin-left: -20px;
+}
+
+#results .info .divider-bottom {
+    background: #cecdcd;
+    margin-bottom: 40px;
+    height: 1px;
+    width: 300px;
+    overflow: visible;
+    margin-left: -20px;
+}
+
+#results .info .divider-top-bottom {
+    background: #cecdcd;
+    margin-top: 114px;
+    height: 1px;
+    width: 300px;
+    overflow: visible;
+    margin-left: -20px;
+}
+
+#results .info .bottom {
+    margin-bottom: 0;
+}
+
+#results .results-info .info-cubature .right span {
+    font-weight: 600;
+}
+
+#results .results-info .info-price .right {
+    color: #ff0000;
+    font-size: 14px;
+}
+
+#results .results-info .info-price .right span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #5e5e5e;
+}
+
+.select-display-non-using { 
+    display: none;
+}
+
+/* .select-display-using { 
+    display: block;
+} */

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medienos skaiciuokle </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Skaičiuoklė</h1>
+        </header>
+
+        <div class="counter-results">
+            <div id="counter">
+                <h2>Medienos kainos ir kubų skaičiuoklė</h2>
+                <p>PASIRINKITE MEDIENĄ: </p>
+                <div class="buttonsDiv">
+                    <button id="constructionButton" class="clickedButton">statybinė</button>
+                    <button id="calibratedButton">kalibruota</button>.
+                </div>
+
+                <p>PASIRINKITE IŠMATAVIMUS:</p>
+
+                <div class="all-cards-container">
+                    <div class="card-full">
+                        <div class="card1-image image"></div>
+                        <label for="constructionThickness calibratedThickness">Storis</label>
+                        <select id="constructionThickness">
+                            <option value="25" data-price="0.31">25mm</option>
+                            <option value="30" data-price="0.42">30mm</option>
+                            <option value="50" data-price="0.53">50mm</option>
+                            <option value="100" data-price="0.64">100mm</option>
+                            <option value="120" data-price="0.75">120mm</option>
+                            <option value="150" data-price="0.86">150mm</option>
+                        </select>
+                        <select id="calibratedThickness" class="select-display-non-using">
+                            <option value="20" data-price="0.41">20mm</option>
+                            <option value="28" data-price="0.52">28mm</option>
+                            <option value="45" data-price="0.63">45mm</option>
+                            <option value="95" data-price="0.74">95mm</option>
+                            <option value="115" data-price="0.85">115mm</option>
+                            <option value="145" data-price="0.96">145mm</option>
+                        </select>
+                    </div>
+
+                    <div class="card-full">
+                        <div class="card2-image image"></div>
+                        <label for="constructionWidth calibratedWidth">Plotis</label>
+                        <select id="constructionWidth">
+                            <option value="50" data-price="0.37">50mm</option>
+                            <option value="100" data-price="0.58">100mm</option>
+                            <option value="120" data-price="0.79">120mm</option>
+                            <option value="150" data-price="0.94">150mm</option>
+                        </select>
+                        <select id="calibratedWidth" class="select-display-non-using">
+                            <option value="45" data-price="0.47">45mm</option>
+                            <option value="95" data-price="0.68">95mm</option>
+                            <option value="115" data-price="0.89">115mm</option>
+                            <option value="145" data-price="1.04">145mm</option>
+                        </select>
+                    </div>
+
+                    <div class="card-full">
+                        <div class="card3-image image"></div>
+                        <label for="length">Ilgis</label>
+                        <select id="length">
+                            <option value="3000" data-price="0.51">3000mm</option>
+                            <option value="6000" data-price="1.32">6000mm</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="quantity">
+                    <label for="quantityInput">PASIRINKITE LENTŲ KIEKĮ:</label>
+                    <input id="quantityInput" type="number" value="1">
+                </div>
+            </div>
+
+            <div id="results">
+                <h2>Suvestinė</h2>
+
+                <h3>STATYBINĖ MEDIENA</h3>
+
+                <div class="results-info info">
+                    <div class="info-thickness">
+                        <p class="left">Storis:</p>
+                        <p class="right"><span>25</span> mm</p>
+                    </div>
+
+                    <div class="info-width">
+                        <p class="left">Plotis:</p>
+                        <p class="right"><span>50</span> mm</p>
+                    </div>
+
+                    <div class="info-length">
+                        <p class="left">Ilgis:</p>
+                        <p class="right"><span>3000</span> mm</p>
+                    </div>
+
+                    <div class="divider-top"></div>
+
+                    <div class="info-quantity">
+                        <p class="left">Lentų kiekis:</p>
+                        <p class="right"><span>1</span> vnt.</p>
+                    </div>
+
+                    <div class="divider-bottom"></div>
+
+                    <div class="info-cubature">
+                        <p class="left">Kubatūra:</p>
+                        <p class="right"><span id="cubature">0.004</span> m3</p>
+                    </div>
+
+                    <div class="divider-top-bottom"></div>
+
+                    <div class="bottom info-price">
+                        <p class="left">VISO:</p>
+                        <p class="right"><span id="finalPrice">1.19</span><span>€</span> + PVM</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
