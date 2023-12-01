@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptų skaičiuoklė</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Pasirinkite receptą:</h2>
+
+        <div class="cards-container">
+            <div id="card1" class="card">
+                <div class="display-none selected-check">
+                    <img src="check.svg" alt="check mark">
+                </div>
+                <div class="card1-image card-image"> </div>
+                <div class="card-body">
+                    <h3>Vištiena su salotom</h3>
+                    <p>Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut.
+                        Pellentesque
+                        montes.</p>
+                </div>
+            </div>
+
+            <div id="card2" class="card">
+                <div class="display-none selected-check">
+                    <img src="check.svg" alt="check mark">
+                </div>
+                <div class="card2-image card-image"></div>
+                <div class="card-body">
+                    <h3>Tortas su mėlynėm</h3>
+                    <p>Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut.
+                        Pellentesque
+                        montes.</p>
+                </div>
+            </div>
+
+            <div id="card3" class="card" +>
+                <div class="display-none selected-check">
+                    <img src="check.svg" alt="check mark">
+                </div>
+                <div class="card3-image card-image"></div>
+                <div class="card-body">
+                    <h3>Makaronai su mėsa</h3>
+                    <p>Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut.
+                        Pellentesque
+                        montes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container portions">
+        <h2>Kiek porcijų gaminsite?</h2>
+        <input type="range" min="1" max="5" value="1">
+    </div>
+
+    <div class="container ingredients">
+        <h2>Jums reikės šių ingredientų, tokiais kiekiais:</h2>
+        <div>Norint pamatyti receptą, pasirinkite patiekalą</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

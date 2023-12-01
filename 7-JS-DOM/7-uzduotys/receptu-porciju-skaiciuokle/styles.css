@@ -1,0 +1,114 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #EFEFEF;
+}
+
+.container {
+    background: #FFFFFF;
+    padding: 30px;
+    width: 600px;
+    margin: 32px auto;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cards-container {
+    display: flex;
+    gap: 27px;
+}
+
+.card {
+    border: 1px solid #E6E6E6;
+    background: #FFF;
+    width: calc((100% - 27px*2) / 3);
+    position: relative;
+    cursor: pointer;
+}
+
+.card .card-image {
+    height: 100px;
+    width: 100%;
+}
+
+.card .card1-image {
+    background: url('image1.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.card .card2-image {
+    background: url('image2.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.card .card3-image {
+    background: url('image3.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.card-body {
+    padding: 13px 7px;
+}
+
+.card-body h3 {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.card-body p {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.selected-check {
+    position: absolute;
+    top: -10px;
+    right: -8px;
+}
+
+.display-none {
+    display: none;
+}
+
+.ingredients div {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ingredients div span {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
