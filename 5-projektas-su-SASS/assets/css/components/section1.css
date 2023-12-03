@@ -1,0 +1,11 @@
+.section1 {
+  background: linear-gradient(0deg, rgba(9, 10, 12, 0.9) 0%, rgba(9, 10, 12, 0.9) 100%), radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080a0b 99.74%), url("../../images/section1foto.png");
+  height: 1279px;
+  background-size: cover;
+  transform: scaleX(-1); }
+  .section1 .container {
+    transform: scaleX(-1); }
+    .section1 .container h2 {
+      width: 410.93px; }
+
+/*# sourceMappingURL=section1.css.map */

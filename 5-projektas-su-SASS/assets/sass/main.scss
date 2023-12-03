@@ -34,5 +34,27 @@ p {
   margin-right: auto;
 }
 
-@import 'components/navBar.scss';
-@import 'components/header.scss';
+.headingParagraph {
+  color: #fff;
+  font-family: "Bebas Neue";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.heading {
+  color: #fff;
+  font-family: "Bebas Neue";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+@import "components/navBar.scss";
+@import "components/header.scss";
+@import "components/section1.scss";
