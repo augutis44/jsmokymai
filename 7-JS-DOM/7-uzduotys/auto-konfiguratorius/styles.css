@@ -1,0 +1,258 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER  */
+
+header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url(images/headerImage.png);
+    height: 265px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+
+}
+
+header .container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+header .smaller-h1 {
+    font-size: 48px;
+    font-weight: 600;
+    display: block;
+}
+
+/* SELECTION CONTAINER */
+
+#selection-container {
+    background: #F5F5F5;
+    padding-bottom: 52.65px;
+}
+
+#selection-container .container {
+    border-radius: 0px 0px 20px 20px;
+    background: #FFF;
+}
+
+.one-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 32px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 2px 3px 11.6px 0px rgba(0, 0, 0, 0.10);
+}
+
+#selection-container h3 {
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    padding: 8px 0px 16px 0px;
+}
+
+#selection-container .choice {
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+#selection-container .price {
+    color: #999;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#selection-container .choice-box {
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    padding: 16px;
+    gap: 16px;
+}
+
+#selection-container .active-box {
+    border-radius: 8px;
+    border: 2px solid #189AF8;
+    background: linear-gradient(0deg, rgba(24, 154, 248, 0.05) 0%, rgba(24, 154, 248, 0.05) 100%), #FFF;
+    position: relative;
+}
+
+.check-mark-single {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.check-mark-multi {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+}
+
+.check-mark-multi-default {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.multi-box {
+    position: relative;
+}
+
+#selection-container .colors-box .choice-box {
+    width: calc((100% - 16px) /2);
+}
+
+.small-card {
+    width: 387px;
+}
+
+.large-card {
+    width: 709px;
+    box-sizing: border-box;
+}
+
+.large-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#cards-container {
+    padding: 96px 96px 48px 96px;
+    row-gap: 16px;
+    column-gap: 32px;
+}
+
+.color-circle {
+    width: 54px;
+    height: 54px;
+    border-radius: 100px;
+}
+
+.color-black {
+    background: #000;
+}
+
+.color-red {
+    background: #DC1313;
+}
+
+.color-grey {
+    background: #D9D9D9;
+}
+
+.color-green {
+    background: #5A6B3A;
+}
+
+.color-white {
+    background: #FDFDFD;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.color-blue {
+    background: #124099;
+}
+
+.colors-box {
+    row-gap: 8px;
+    column-gap: 16px;
+}
+
+.break-line {
+    background: #EDEDED;
+    height: 2px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.final-price-box {
+    width: 100%;
+}
+
+.final-price-box p {
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.final-price-box p span {
+    font-weight: 400;
+}
+
+.final-price-box button {
+    background: #2B9CEE;
+    padding: 16px 32px;
+    border: none;
+
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.36px;
+}
+
+/* THANKS FOR BUYING BOX */
+
+.hidden-container {
+    display: none;
+}
+
+#thanks-container {
+    padding: 230px;
+}
+
+#thanks-container h2 {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+#thanks-container p {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
