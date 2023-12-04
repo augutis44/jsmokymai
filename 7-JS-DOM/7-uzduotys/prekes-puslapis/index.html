@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prekės puslapis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="d-flex">
+        <div id="foto-box">
+            <div class="foto-box-inner">
+                <div class="product-path">
+                    <p>
+                        Home / Moterims / ... / Sinsay / <span>Dvieilis švarkas</span>
+                    </p>
+                </div>
+                <div class="product-images d-flex">
+                    <div class="image-gallery d-flex flex-column">
+                        <div class="image-active">
+                            <img src="images/product1.png" alt="black coat" color="Juoda" imgNumber="1" id="image1">
+                        </div>
+                        <div>
+                            <img src="images/product2.png" alt="black coat" imgNumber="2" id="image2">
+                        </div>
+                        <div>
+                            <img src="images/product3.png" alt="black coat" imgNumber="3" id="image3">
+                        </div>
+                        <div>
+                            <img src="images/product4.png" alt="brown coat" color="Ruda" imgNumber="4" id="image4">
+                        </div>
+                        <div>
+                            <img src="images/product5.png" alt="nude coat" color="Kreminė" imgNumber="5" id="image5">
+                        </div>
+                    </div>
+                    <div id="selected-image">
+                        <div class="arrow-buttons-image arrow-buttons-display">
+                            <div class="arrow-button-left">
+                                <img src="images/arrowLeft.svg" alt="">
+                            </div>
+                            <div class="arrow-button-right">
+                                <img src="images/arrowRight.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="information-box" class="d-flex flex-column">
+            <div>
+                <h2>Dvieilis švarkas</h2>
+                <p class="logo">Sinsay</p>
+            </div>
+
+            <div>
+                <div class="product-description position-relative">
+                    <div class="position-absolute z-n1"></div>
+                    <p>PRODUKTO APRAŠYMAS</p>
+                </div>
+                <p class="description">Šis stilingas Dvieilis švarkas su atlapais ir elegantiškomis detalėmis tinkamas
+                    kasdieniam naudojimui ar
+                    ypatingoms progoms. Dvieilis užsegimas, dekoratyvinės siūlės bei aukštos kokybės medžiagos (83%
+                    poliesteris, 15% viskozė, 2% elastanas) užtikrina ne tik išskirtinį stilių, bet ir patogumą. Būtina
+                    laikytis priežiūros instrukcijų, kad išsaugotumėte drabužio kokybę ilgiau. Šis drabužis leidžia jums
+                    išsiskirti stiliaus ir patogumo deriniu vienu metu.</p>
+            </div>
+
+            <div class="product-information d-flex flex-column">
+                <div>
+                    <p class="color-size color-name">Spalva — <span>Juoda</span></p>
+                    <div class="colors-box d-flex">
+                        <div class="color-choice color-active" color="Juoda">
+                            <div class="color-black"></div>
+                        </div>
+                        <div class="color-choice" color="Ruda">
+                            <div class="color-brown"></div>
+                        </div>
+                        <div class="color-choice" color="Kreminė">
+                            <div class="color-nude"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="quantity-size-box">
+                    <p class="color-size size-name">Dydis — <span>S</span></p>
+                    <div class="size-box d-flex align-items-center">
+                        <div class="size-choice size-active" quantityLeft="10" size="S">
+                            <p>S(36)</p>
+                        </div>
+                        <div class="size-choice" quantityLeft="12" size="M">
+                            <p>M(38)</p>
+                        </div>
+                        <div class="size-choice" quantityLeft="4" size="L">
+                            <p>L(40/42)</p>
+                        </div>
+                        <div class="size-choice size-disabled" quantityLeft="0" size="XL">
+                            <p>XL(44)</p>
+                        </div>
+                    </div>
+                    <p id="low-quantity" class="quantity-display">Paskutiniai vienetai</p>
+                </div>
+
+                <div class="product-price">
+                    <p>Kaina:</p>
+                    <p>19.99 €</p>
+                </div>
+            </div>
+
+            <div>
+                <button class="d-flex">
+                    <img src="images/shoping-bag.svg" alt="">
+                    <p>Add to cart</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
