@@ -78,6 +78,9 @@ additionalBoxes.forEach(box => {
 document.getElementById('buy-button').addEventListener('click', () => {
     document.getElementById('cards-container').classList.add('hidden-container');
     document.getElementById('thanks-container').classList.remove('hidden-container');
+
+    let player = document.querySelector("lottie-player");
+    player.play();
 });
 
 
