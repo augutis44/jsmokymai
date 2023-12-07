@@ -15,7 +15,3 @@ if (student1Average > student2Average) {
 } else {
     console.log('Antro studento pažymių vidurkis yra didesnis nei pirmo.');
 }
-
-
-
-

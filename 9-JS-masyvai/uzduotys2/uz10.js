@@ -1,13 +1,13 @@
-let salys = ['Alus', 'Vanduo', 'Degtine',
+let zodis = ['Alus', 'Vanduo', 'Degtine',
     'Limonadas', 'Gaiva', 'Sultys',
     'Vynas', 'Sampanas'];
 
 let visoRaidziu = 0;
 
-for (let i = 0; i < salys.length; i++) {
-    visoRaidziu += salys[i].length;
-    console.log('Zodis:', salys[i]);
-    console.log('Raidziu kiekis zodyje:', salys[i].length);
+for (let i = 0; i < zodis.length; i++) {
+    visoRaidziu += zodis[i].length;
+    console.log('Zodis:', zodis[i]);
+    console.log('Raidziu kiekis zodyje:', zodis[i].length);
     console.log();
 }
 

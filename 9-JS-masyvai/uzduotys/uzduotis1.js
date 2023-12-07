@@ -3,10 +3,8 @@
 
 let names = ['Aldutė', 'Genutė', 'Mariukas', 'Simukas', 'Gusciukas'];
 
-console.log(names[0]);
-console.log(names[names.length - 1]);
-console.log(names[3]);
-console.log(names[2]);
-console.log(names.length);
-
-
+console.log(`pirmas is saraso: ${names[0]}`);
+console.log(`paskutinis is saraso: ${names[names.length - 1]}`);
+console.log(`vidurinis is saraso: ${names[3]}`);
+console.log(`vidurinis is saraso: ${names[2]}`);
+console.log(`vardu sarase yra: ${names.length}`);
