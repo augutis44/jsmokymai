@@ -55,6 +55,19 @@ const calculateTotalCost = () => {
     document.querySelector('.final-price-box p span').innerHTML = totalCostToSring;
 };
 
+// document.querySelectorAll('.blokas1 .main-package-type, .blokas2 .spalvos, ....').forEach();
+
+// let types = [
+//     mainPacketBoxes,
+//     colorBoxes,
+// ];
+
+// types.forEach(type => {
+//     type.forEach(box => {
+//         clickOnSingleChoice(box, type);
+//     })
+// });
+
 mainPacketBoxes.forEach(box => {
     clickOnSingleChoice(box, mainPacketBoxes);
 });
