@@ -32,8 +32,3 @@ const calcGradeAverage = (student, studentGradeAverage) => {
 
 calcGradeAverage(student1, student1GradeAverage);
 calcGradeAverage(student2, student2GradeAverage);
-
-
-
-
-
