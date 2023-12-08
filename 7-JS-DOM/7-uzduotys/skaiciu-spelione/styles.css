@@ -1,0 +1,71 @@
+body,
+html {
+  margin: 0;
+  padding: 0; }
+
+h1,
+p {
+  margin: 0;
+  padding: 0; }
+
+.full-container {
+  background: linear-gradient(0deg, rgba(45, 28, 93, 0.966) 0%, rgba(45, 28, 93, 0.966) 100%), url("background.png");
+  background-position: center;
+  background-size: cover;
+  background-color: #2d1c5dee;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center; }
+  .full-container .image-container {
+    width: 661px;
+    height: 979px;
+    position: relative;
+    left: 140px; }
+    .full-container .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center; }
+  .full-container .text-container {
+    width: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px; }
+    .full-container .text-container h1 {
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal; }
+    .full-container .text-container .input-container input {
+      background: rgba(23, 14, 49, 0.72);
+      color: #d4d4d4;
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      border: none;
+      padding: 14px 15px;
+      width: 343px; }
+    .full-container .text-container .input-container p {
+      color: #dedede;
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      margin-top: 8px; }
+    .full-container .text-container button {
+      width: 256px;
+      padding: 16px 8px;
+      background: #eee;
+      border: none;
+      color: #c2c2c2;
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700; }
+
+/*# sourceMappingURL=styles.css.map */
