@@ -1,4 +1,4 @@
-let someStr = '01410';
+let someStr = '01411';
 
 let someStrArr = someStr.split('');
 let someStrArrReverse = someStrArr.slice().reverse();
@@ -14,4 +14,4 @@ for (let i = 0; i <= someStr.length; i++) {
 
 if (isPolindrom) {
     console.log('Skaicius yra palindromis');
-} 
+}
