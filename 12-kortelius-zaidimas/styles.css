@@ -1,0 +1,60 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(250, 215, 219);
+}
+
+#game {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Shrikhand', serif;
+    font-size: 60px;
+    letter-spacing: 8px;
+    margin: 20px;
+    color: rgb(31, 31, 31);
+}
+
+#card-div {
+    display: flex;
+    flex-wrap: wrap;
+    height: 530px;
+    width: 713px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+#card-div .card {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.453);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#card-div .card-open {
+    background-color: aliceblue;
+}
+
+.img-open {
+    display: none;
+}
+
+#card-div .card-closed {
+    background-color: #ED5481;
+}
+
+.img-closed {
+    display: block;
+}
