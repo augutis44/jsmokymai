@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skaiciotuvas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="input-row">
+            <span id="calculation"></span>
+            <input type="text" id="calc-input" readonly>
+        </div>
+
+        <div class="buttons">
+            <button onclick="onNumberClick(7)">7</button>
+            <button onclick="onNumberClick(8)">8</button>
+            <button onclick="onNumberClick(9)">9</button>
+            <button onclick="onActionClick('x')">x</button>
+            <button onclick="onNumberClick(4)">4</button>
+            <button onclick="onNumberClick(5)">5</button>
+            <button onclick="onNumberClick(6)">6</button>
+            <button onclick="onActionClick('/')">/</button>
+            <button onclick="onNumberClick(1)">1</button>
+            <button onclick="onNumberClick(2)">2</button>
+            <button onclick="onNumberClick(3)">3</button>
+            <button onclick="onActionClick('+')">+</button>
+            <button onclick="onNumberClick(0)">0</button>
+            <button onclick="onCleanClick()">C</button>
+            <button onclick="onCountClick()">=</button>
+            <button onclick="onActionClick('-')">-</button>
+            <button onclick="dot()">.</button>
+            <button></button>
+            <button></button>
+            <button onclick="clearInput()">&lt;=</button>
+        </div>
+
+        <div class="history">
+            <button id="show-history">Rodyti istorija</button>
+            <div class="history-div">
+                <button id="hide-history">Paslepti istorija</button>
+                <button id="clear-history">Isvalyti istorija</button>
+                <div class="history-item"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
