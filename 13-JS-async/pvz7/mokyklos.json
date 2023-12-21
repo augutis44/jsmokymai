@@ -1,0 +1,17 @@
+[
+    {
+        "pavadinimas": "KTU",
+        "studentai": 25000,
+        "fakultetai": 9
+    },
+    {
+        "pavadinimas": "VDU",
+        "studentai": 28000,
+        "fakultetai": 8
+    },
+    {
+        "pavadinimas": "VU",
+        "studentai": 22000,
+        "fakultetai": 10
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "vardas": "Tomas",
+        "pavarde": "Tomauskas",
+        "etatas": 1,
+        "atlyginimas": 1000
+    },
+    {
+        "vardas": "Petras",
+        "pavarde": "Petrauskas",
+        "etatas": 0.75,
+        "atlyginimas": 780
+    },
+    {
+        "vardas": "Algis",
+        "pavarde": "Algiauskas",
+        "etatas": 1,
+        "atlyginimas": 2020
+    },
+    {
+        "vardas": "Lina",
+        "pavarde": "Linauskaite",
+        "etatas": 1,
+        "atlyginimas": 2500
+    },
+    {
+        "vardas": "Ruta",
+        "pavarde": "Rutauske",
+        "etatas": 0.5,
+        "atlyginimas": 1200
+    },
+    {
+        "vardas": "Marius",
+        "pavarde": "Mariauskas",
+        "etatas": 0.5,
+        "atlyginimas": 1200
+    }
+]

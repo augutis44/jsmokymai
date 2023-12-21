@@ -1,0 +1,38 @@
+.turinys {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.projektai {
+    background: rgb(255, 255, 110);
+}
+
+.projektai .projektas {
+    width: 50%;
+    padding: 10px;
+    background: rgb(255, 255, 166);
+}
+
+.darbuotojai {
+    background: rgb(116, 116, 255);
+
+}
+
+.darbuotojai .darbuotojas {
+    width: 50%;
+    padding: 10px;
+    background: rgb(179, 179, 255);
+}
+
+.uzduotys {
+    background: pink;
+
+}
+
+.uzduotys .uzduotis {
+    width: 50%;
+    padding: 10px;
+    background: rgb(255, 234, 238);
+
+}
