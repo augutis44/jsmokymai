@@ -35,7 +35,7 @@ shufleCards();
 let activeCards = [];
 let openCards = [];
 
-const checkIfMatch = (animalObj) => {
+const checkIfMatch = () => {
 
     if (activeCards.length == 2) {
         if (activeCards[0].cardAnimalName !== activeCards[1].cardAnimalName) {
@@ -47,6 +47,7 @@ const checkIfMatch = (animalObj) => {
             activeCards.concat(matchedCards);
             openCards = openCards.concat(activeCards);
             activeCards = [];
+            openCards = [];
         }
     }
 }
