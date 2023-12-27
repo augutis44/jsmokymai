@@ -1,0 +1,15 @@
+.products {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.products .product {
+    width: calc((100% - 20px) /2);
+    box-sizing: border-box;
+}
+
+.products .product img {
+    width: 100%;
+}

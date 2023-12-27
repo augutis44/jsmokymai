@@ -47,7 +47,6 @@ const checkIfMatch = () => {
             activeCards.concat(matchedCards);
             openCards = openCards.concat(activeCards);
             activeCards = [];
-            openCards = [];
         }
     }
 }
@@ -71,6 +70,7 @@ const closeTwoCards = () => {
 const playAgain = () => {
     animals = ['mice', 'mice', 'bird', 'bird', 'bear', 'bear',
         'cat', 'cat', 'butterfly', 'butterfly', 'turtle', 'turtle'];
+    openCards = [];
     randomIndex = 12;
     cardIdNumber = 1;
     score = 0;
