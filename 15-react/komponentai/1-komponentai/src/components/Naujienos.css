@@ -1,0 +1,13 @@
+.naujienu-wrapper {
+    background-color: bisque;
+}
+
+.naujienu-wrapper .naujienu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.naujienu-wrapper .naujienos-blokelis {
+    width: calc(50% - 10px);
+}

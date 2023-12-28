@@ -1,0 +1,15 @@
+.services {
+    background: pink;
+}
+
+h2 {
+    color: brown;
+    text-align: center;
+}
+
+.services ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
