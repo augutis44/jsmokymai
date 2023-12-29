@@ -3,6 +3,8 @@ import Darbuotojas from './components/Darbuotojas'
 import EinaPrieLentos from './components/EinaPrieLentos'
 import GeriausiasMedis from './components/GeriausiasMedis'
 import Laimejimas from './components/Laimejimas'
+import LyginisArNe from './components/LyginisArNe'
+import Palindromas from './components/Palindromas'
 import PrekiuKrepselis from './components/PrekiuKrepselis'
 import Sansas from './components/Sansas'
 import Skaiciai from './components/Skaiciai'
@@ -26,6 +28,8 @@ function App() {
       <GeriausiasMedis />
       <Skaiciai />
       <EinaPrieLentos />
+      <LyginisArNe />
+      <Palindromas />
     </>
   )
 }
