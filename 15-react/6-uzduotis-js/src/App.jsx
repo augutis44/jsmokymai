@@ -4,6 +4,7 @@ import Darbuotojas from './components/Darbuotojas'
 import EinaPrieLentos from './components/EinaPrieLentos'
 import GeriausiasMedis from './components/GeriausiasMedis'
 import GreicioMatuoklis from './components/GreicioMatuoklis'
+import Kelione from './components/Kelione'
 import Laimejimas from './components/Laimejimas'
 import LyginisArNe from './components/LyginisArNe'
 import Palindromas from './components/Palindromas'
@@ -44,6 +45,7 @@ function App() {
       <Vistos />
       <TrysKepyklos />
       <Skaicius2 />
+      <Kelione />
     </>
   )
 }
