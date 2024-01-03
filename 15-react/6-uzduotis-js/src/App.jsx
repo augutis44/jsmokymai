@@ -7,6 +7,7 @@ import GreicioMatuoklis from './components/GreicioMatuoklis'
 import Kelione from './components/Kelione'
 import Laimejimas from './components/Laimejimas'
 import LyginisArNe from './components/LyginisArNe'
+import MedzioApdirbejas from './components/MedzioApdirbejas'
 import Palindromas from './components/Palindromas'
 import PrekiuKrepselis from './components/PrekiuKrepselis'
 import Sansas from './components/Sansas'
@@ -46,6 +47,7 @@ function App() {
       <TrysKepyklos />
       <Skaicius2 />
       <Kelione />
+      <MedzioApdirbejas />
     </>
   )
 }

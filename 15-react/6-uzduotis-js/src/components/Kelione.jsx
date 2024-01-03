@@ -49,7 +49,7 @@ const Kelione = () => {
             <input ref={pricePerLiterRef} type="number" name="pricePerLiter" />
             <br />
 
-            <button onClick={setInformationHandler}>Isvesti skaiciu</button>
+            <button onClick={setInformationHandler}>Skaiciuoti</button>
 
             {distance && consumption && pricePerLiter && <>
                 <p>{outputInformation()}</p>
