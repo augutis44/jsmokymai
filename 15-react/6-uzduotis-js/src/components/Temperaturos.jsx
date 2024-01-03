@@ -9,6 +9,10 @@ const Temperaturos = () => {
     let maxTemp
 
     const buttonHandler = () => {
+        if (tempInputRef.current.value == '') {
+            return
+        }
+
         let inputValue = tempInputRef.current.valueAsNumber;
         setTempArr([...tempArr, inputValue]);
         tempInputRef.current.value = '';
@@ -45,7 +49,7 @@ const Temperaturos = () => {
 
     return (
         <div>
-            <h1> -------- Temperaturos 2 -------- </h1>
+            <h1> -------- Temperaturos -------- </h1>
 
             <label htmlFor="temp"></label>
             <input ref={tempInputRef} type="number" name="temp" />
@@ -62,9 +66,6 @@ const Temperaturos = () => {
                 <p>Auksciausia dienos temperatura: {maxTempInDay()}</p>
                 <p>Skirtumas tarp auksciausios ir maziausios temperaturos: {differanceTempInDay()}</p>
             </>}
-
-
-
 
         </div>
     )
