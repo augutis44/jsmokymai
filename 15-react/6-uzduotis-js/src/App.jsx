@@ -9,6 +9,7 @@ import Laimejimas from './components/Laimejimas'
 import LyginisArNe from './components/LyginisArNe'
 import MedzioApdirbejas from './components/MedzioApdirbejas'
 import Palindromas from './components/Palindromas'
+import Prekes from './components/Prekes'
 import PrekiuKrepselis from './components/PrekiuKrepselis'
 import Sansas from './components/Sansas'
 import Skaiciai from './components/Skaiciai'
@@ -50,6 +51,7 @@ function App() {
       <Kelione />
       <MedzioApdirbejas />
       <Temperaturos />
+      <Prekes />
     </>
   )
 }

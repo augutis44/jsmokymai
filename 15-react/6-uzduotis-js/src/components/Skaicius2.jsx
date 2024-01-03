@@ -26,8 +26,8 @@ const Skaicius2 = () => {
         <div>
             <h1> -------- Skaicius 2 -------- </h1>
 
-            <label htmlFor="someNumb"></label>
-            <input ref={numberInputRef} type="number" name="someNumb" />
+            <label htmlFor="someNumb">Iveskite skaiciu</label>
+            <input ref={numberInputRef} type="number" id="someNumb" />
             <button onClick={setNumberHandler}>Isvesti skaiciu</button>
 
             {number && <>
