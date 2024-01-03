@@ -11,6 +11,7 @@ const Temperaturos = () => {
     const buttonHandler = () => {
         let inputValue = tempInputRef.current.valueAsNumber;
         setTempArr([...tempArr, inputValue]);
+        tempInputRef.current.value = '';
     }
 
     const buttonDeleteHandler = () => {
