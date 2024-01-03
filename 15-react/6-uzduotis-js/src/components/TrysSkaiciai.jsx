@@ -26,6 +26,8 @@ const TrysSkaiciai = () => {
 
     return (
         <div>
+            <h1> -------- Trys skaiciai -------- </h1>
+
             <p>Visi skaiciai: {iskvSkaiciusDiv()}</p>
             <p>Didziausias skaicius: {didziausiasSk()}</p>
             <p>Skaiciu suma: {suma()}</p>

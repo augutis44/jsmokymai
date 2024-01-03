@@ -28,6 +28,8 @@ const GreicioMatuoklis = () => {
 
     return (
         <div>
+            <h1> -------- Greicio matuoklis -------- </h1>
+
             <p>{greitis} km/h</p>
             <p>{koksGreitis}</p>
             <button onClick={() => nustatytiGreiti(0)}>0km/h</button>

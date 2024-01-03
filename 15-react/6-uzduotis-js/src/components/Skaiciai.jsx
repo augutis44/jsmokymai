@@ -14,6 +14,8 @@ const Skaiciai = () => {
 
     return (
         <div>
+            <h1> -------- Skaiciai -------- </h1>
+
             <button onClick={sumHandle}>Skaiciuoti suma</button>
             <button onClick={biggestNumberHandle}>Didziausias skaicius </button>
         </div>

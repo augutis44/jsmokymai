@@ -1,4 +1,5 @@
 import './App.css'
+import Begikai from './components/Begikai'
 import Darbuotojas from './components/Darbuotojas'
 import EinaPrieLentos from './components/EinaPrieLentos'
 import GeriausiasMedis from './components/GeriausiasMedis'
@@ -10,8 +11,11 @@ import PrekiuKrepselis from './components/PrekiuKrepselis'
 import Sansas from './components/Sansas'
 import Skaiciai from './components/Skaiciai'
 import Skaicius from './components/Skaicius'
+import Skaicius2 from './components/Skaicius2'
 import Tikrinimai from './components/Tikrinimai'
+import TrysKepyklos from './components/TrysKepyklos'
 import TrysSkaiciai from './components/TrysSkaiciai'
+import Vistos from './components/Vistos'
 import Zodis from './components/Zodis'
 import ZodzioIlgis from './components/ZodzioIlgis'
 import Zuikis from './components/Zuikis'
@@ -36,6 +40,10 @@ function App() {
       <Zodis />
       <Zuikis />
       <GreicioMatuoklis />
+      <Begikai />
+      <Vistos />
+      <TrysKepyklos />
+      <Skaicius2 />
     </>
   )
 }

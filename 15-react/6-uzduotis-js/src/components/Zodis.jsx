@@ -14,6 +14,8 @@ const Zodis = () => {
 
     return (
         <div>
+            <h1> -------- Zodis -------- </h1>
+
             <p>{zodis}</p>
             <button onClick={keistiZodiPomidoras}>Pomidoras</button>
             <button onClick={keistiZodiAgurkas}>Agurkas</button>

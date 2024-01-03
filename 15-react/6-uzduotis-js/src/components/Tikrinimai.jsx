@@ -19,6 +19,8 @@ const Tikrinimai = () => {
 
     return (
         <div>
+            <h1> -------- Tikrinimai -------- </h1>
+        
             <button onClick={arLyginisHandle}>Ar lyginis skaicius?</button>
             <button onClick={arDidesnisHandle}>Ar skaicius didesnis uz 30?</button>
             <button onClick={arPirminisHandle}>Ar pirminis?</button>

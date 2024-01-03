@@ -12,6 +12,8 @@ const Skaicius = () => {
 
     return (
         <div>
+            <h1> -------- Skaicius -------- </h1>
+
             <p>Duotas skaicius: {skaicius}</p>
             <p>Ar skaicius yra lyginis? {arLyginis()}</p>
             <p>Ar skaicius yra teigiamas? {arTeigiamas()}</p>

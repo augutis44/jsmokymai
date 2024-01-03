@@ -11,6 +11,8 @@ const LyginisArNe = () => {
 
     return (
         <div>
+            <h1> -------- Lyginis ar ne -------- </h1>
+
             <input type="number" onChange={arLyginis} />
         </div>
     )

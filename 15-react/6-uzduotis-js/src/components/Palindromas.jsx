@@ -12,6 +12,8 @@ const Palindromas = () => {
 
     return (
         <div>
+            <h1> -------- Palindromas -------- </h1>
+
             <input type="text" onChange={arPalindromas} />
         </div>
     )

@@ -70,6 +70,8 @@ const PrekiuKrepselis = () => {
 
     return (
         <div>
+            <h1> -------- Prekiu krepselis -------- </h1>
+
             {duomenysLenteleje(prekiuKrepselis)}
             <p>Viso gaunama nuolaida: {nuolaida()}eur</p>
             <p>Viso prekiu kaina: {bendraKaina()}</p>

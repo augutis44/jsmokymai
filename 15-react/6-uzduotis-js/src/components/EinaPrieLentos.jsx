@@ -9,6 +9,8 @@ const EinaPrieLentos = () => {
 
     return (
         <div>
+            <h1> -------- Eina prie lentos -------- </h1>
+
             <button onClick={randomStudentsHandle}>Atsitiktinis studentas</button>
         </div>
     )

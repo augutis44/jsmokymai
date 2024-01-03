@@ -8,6 +8,8 @@ const Sansas = () => {
 
     return (
         <div>
+            <h1> -------- Sansas -------- </h1>
+
             <button onClick={randomNumberHandle}>Atsitiktinis laimejimas</button>
         </div>
     )

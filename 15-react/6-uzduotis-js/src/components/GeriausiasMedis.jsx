@@ -19,6 +19,8 @@ const GeriausiasMedis = () => {
 
     return (
         <div>
+            <h1> -------- Geriausias medis -------- </h1>
+
             <button onClick={() => medzioPavadinimas('liepa')}>Tikrinti medi</button>
             <button onClick={() => medzioPavadinimas('azuolas')}>Tikrinti medi</button>
             <button onClick={() => medzioPavadinimas('uosis')}>Tikrinti medi</button>

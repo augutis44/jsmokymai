@@ -27,6 +27,8 @@ const Darbuotojas = () => {
 
     return (
         <div>
+            <h1> -------- Darbuotojas -------- </h1>
+
             <p>Darbuotojas: {darbuotojas.vardas}</p>
             <p>Profesija: {darbuotojas.profesija}</p>
             <p>Atlyginimas: {darbuotojas.atlyginimas}eur</p>

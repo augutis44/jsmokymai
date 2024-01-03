@@ -13,6 +13,8 @@ const Zuikis = () => {
 
     return (
         <div>
+            <h1> -------- Zuikis -------- </h1>
+
             <p>Ar zuikis persoko? {arPersoko ? 'Taip' : 'Ne'}</p>
             <button onClick={randomBoolean}>Ar persoko?</button>
             <button onClick={persoko}>Persokti</button>
