@@ -14,6 +14,7 @@ import Sansas from './components/Sansas'
 import Skaiciai from './components/Skaiciai'
 import Skaicius from './components/Skaicius'
 import Skaicius2 from './components/Skaicius2'
+import Temperaturos from './components/Temperaturos'
 import Tikrinimai from './components/Tikrinimai'
 import TrysKepyklos from './components/TrysKepyklos'
 import TrysSkaiciai from './components/TrysSkaiciai'
@@ -48,6 +49,7 @@ function App() {
       <Skaicius2 />
       <Kelione />
       <MedzioApdirbejas />
+      <Temperaturos />
     </>
   )
 }
