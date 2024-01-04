@@ -1,5 +1,6 @@
 import './App.css'
 import Begikai from './components/Begikai'
+import Imone from './components/Bonusai/Imone'
 import Darbuotojas from './components/Darbuotojas'
 import EinaPrieLentos from './components/EinaPrieLentos'
 import GeriausiasMedis from './components/GeriausiasMedis'
@@ -56,6 +57,7 @@ function App() {
       <Prekes />
       <Pasaulis />
       <VisosRoles />
+      <Imone />
     </>
   )
 }
