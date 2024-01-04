@@ -11,6 +11,8 @@ import LyginisArNe from './components/LyginisArNe'
 import MedzioApdirbejas from './components/MedzioApdirbejas'
 import Palindromas from './components/Palindromas'
 import Pasaulis from './components/Pasaulio-info/Pasaulis'
+import Tevinis from './components/Pavyzdys-vaikinis-i-tevini/Tevinis'
+import Skaiciai2 from './components/Pavizdys1-V-i-T/Skaiciai2'
 import Prekes from './components/Prekes'
 import PrekiuKrepselis from './components/PrekiuKrepselis'
 import VisosRoles from './components/Roles/VisosRoles'
@@ -60,6 +62,8 @@ function App() {
       <VisosRoles />
       <Imone />
       <Studentas />
+      <Tevinis />
+      <Skaiciai2 />
     </>
   )
 }
