@@ -18,6 +18,7 @@ import Sansas from './components/Sansas'
 import Skaiciai from './components/Skaiciai'
 import Skaicius from './components/Skaicius'
 import Skaicius2 from './components/Skaicius2'
+import Studentas from './components/Studento-info/Studentas'
 import Temperaturos from './components/Temperaturos'
 import Tikrinimai from './components/Tikrinimai'
 import TrysKepyklos from './components/TrysKepyklos'
@@ -58,6 +59,7 @@ function App() {
       <Pasaulis />
       <VisosRoles />
       <Imone />
+      <Studentas />
     </>
   )
 }
