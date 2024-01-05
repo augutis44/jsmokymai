@@ -30,6 +30,7 @@ import Zodis from './components/Zodis'
 import ZodzioIlgis from './components/ZodzioIlgis'
 import Zuikis from './components/Zuikis'
 import CounterTev from './components/Counter/CounterTev'
+import ZodziuBendras from './components/Zodziai/ZodziuBendras'
 
 function App() {
 
@@ -66,6 +67,7 @@ function App() {
       <Tevinis />
       <Skaiciai2 />
       <CounterTev />
+      <ZodziuBendras />
     </>
   )
 }
