@@ -8,11 +8,7 @@ const Skaiciai2 = () => {
     useEffect(() => {
         const newRandomNum = Math.floor(Math.random() * 4);
         setRandomNum(newRandomNum);
-        console.log(newRandomNum);
     }, []);
-
-    // const randomNum = Math.floor(Math.random() * 4);
-    // console.log(randomNum);
 
     const apdorotiSpejima = (spejimas) => {
         if (spejimas == randomNum) {

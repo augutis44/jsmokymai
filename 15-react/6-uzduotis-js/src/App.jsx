@@ -29,6 +29,7 @@ import Vistos from './components/Vistos'
 import Zodis from './components/Zodis'
 import ZodzioIlgis from './components/ZodzioIlgis'
 import Zuikis from './components/Zuikis'
+import CounterTev from './components/Counter/CounterTev'
 
 function App() {
 
@@ -64,6 +65,7 @@ function App() {
       <Studentas />
       <Tevinis />
       <Skaiciai2 />
+      <CounterTev />
     </>
   )
 }
