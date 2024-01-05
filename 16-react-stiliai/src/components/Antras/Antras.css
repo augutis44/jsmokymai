@@ -1,0 +1,9 @@
+.antras {
+    background-color: orangered;
+    padding: 10px;
+}
+
+/* nueis į pirmą komponentą, nes klasė sutampa */
+.pirmas {
+    padding: 15px;
+}
