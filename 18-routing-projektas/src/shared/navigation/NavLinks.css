@@ -10,7 +10,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 29px;
+    /* line-height: 29px; */
     text-decoration: none;
     position: relative;
 }
@@ -34,7 +34,39 @@
     transition: 1s ease;
 }
 
-.nav-link-text {
+/* .nav-link-text {
     z-index: 10;
+} */
 
+/* BIG/NORMAL SCREENS */
+@media screen and (max-width: 1650px) {
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .brand img {
+        height: 60px;
+    }
+}
+
+/* LAPTOP */
+@media screen and (min-width: 427px) and (max-width: 768px) {
+    .nav-links a {
+        font-size: 8px;
+    }
+
+    .brand img {
+        height: 40px;
+    }
+}
+
+/* PHONE */
+@media screen and (max-width: 426px) {
+    .nav-links a {
+        font-size: 8px;
+    }
+
+    .brand img {
+        height: 40px;
+    }
 }

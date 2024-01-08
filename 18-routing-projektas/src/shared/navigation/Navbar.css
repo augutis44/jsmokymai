@@ -6,3 +6,31 @@
     align-items: center;
     padding: 32px 300px;
 }
+
+/* BIG SCREENS */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .nav-bar {
+        padding: 16px 150px;
+    }
+}
+
+/* NORMAL SCREENS */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .nav-bar {
+        padding: 16px 100px;
+    }
+}
+
+/* LAPTOP */
+@media screen and (min-width: 427px) and (max-width: 768px) {
+    .nav-bar {
+        padding: 8px 50px;
+    }
+}
+
+/* PHONE */
+@media screen and (max-width: 426px) {
+    .nav-bar {
+        padding: 8px 50px;
+    }
+}
