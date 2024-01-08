@@ -1,0 +1,40 @@
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 34px;
+}
+
+.nav-links a {
+    color: #EFF1EC;
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    text-decoration: none;
+    position: relative;
+}
+
+/* .nav-links li a:hover,
+.nav-links li a.active {
+} */
+
+.nav-links li a:hover::before,
+.nav-links li a.active::before {
+    position: absolute;
+    content: '';
+    border-radius: 98px;
+    background: rgba(80, 197, 87, 0.55);
+    filter: blur(12.949999809265137px);
+    /* z-index: -1; */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: 1s ease;
+}
+
+.nav-link-text {
+    z-index: 10;
+
+}
