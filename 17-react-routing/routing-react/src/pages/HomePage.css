@@ -1,0 +1,19 @@
+.home-page header {
+    background-color: lightblue;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.home-page header h1 {
+    margin: 0;
+}
+
+.home-page header a {
+    background-color: rgb(129, 189, 210);
+    color: white;
+    padding: 10px 20px;
+}
+
+.home-page header a:hover {
+    background-color: rgb(99, 160, 182);
+}
