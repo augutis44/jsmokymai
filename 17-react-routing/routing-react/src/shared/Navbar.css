@@ -1,0 +1,28 @@
+.navbar {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar ul.links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar .brand a {
+    font-weight: bold;
+}
+
+.navbar ul.links li a:hover,
+.navbar ul.links li a.active {
+    color: red;
+}
