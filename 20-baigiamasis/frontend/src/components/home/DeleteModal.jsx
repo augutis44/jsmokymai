@@ -1,6 +1,5 @@
 import { useState } from "react";
 import axios from "axios";
-import Spinner from "../shared/animated/Spinner";
 import { MdDelete } from "react-icons/md";
 
 const DeleteModal = ({ employeeId, fetchEmployees }) => {
