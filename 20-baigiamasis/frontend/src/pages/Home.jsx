@@ -8,13 +8,10 @@ const Home = () => {
     const [employees, setEmployees] = useState([]);
     const [loading, setLoading] = useState(false);
 
-    useEffect(() => {
-        setLoading(true);
-
+    const fetchEmployees = () => {
         axios
             .get('http://localhost:5555/employees')
             .then((response) => {
-                console.log(response.data);
                 setEmployees(response.data);
                 setLoading(false);
             })
@@ -22,12 +19,17 @@ const Home = () => {
                 console.log(error);
                 setLoading(false);
             });
-    }, []);
+    }
 
+    useEffect(() => {
+        setLoading(true);
+
+        fetchEmployees();
+    }, []);
 
     return (
         <>
-            {loading ? <Spinner /> : <HomeTable employees={employees} />}
+            {loading ? <Spinner /> : <HomeTable employees={employees} fetchEmployees={fetchEmployees} />}
         </>
     )
 }

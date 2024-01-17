@@ -1,8 +1,10 @@
 import { MdEdit } from "react-icons/md";
-import { MdDelete } from "react-icons/md";
 import { IoMdEye } from "react-icons/io";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import DeleteModal from "./DeleteModal";
 
-const HomeTable = ({ employees }) => {
+const HomeTable = ({ employees, fetchEmployees }) => {
 
     return (
 
@@ -33,7 +35,7 @@ const HomeTable = ({ employees }) => {
                                 <td className="py-4 pr-4 flex gap-2">
                                     <IoMdEye />
                                     <MdEdit />
-                                    <MdDelete />
+                                    <DeleteModal employeeId={employee._id} fetchEmployees={fetchEmployees}/>
                                 </td>
                             </tr>
                         )}
