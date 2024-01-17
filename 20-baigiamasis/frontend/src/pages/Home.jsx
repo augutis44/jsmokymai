@@ -28,9 +28,7 @@ const Home = () => {
 
     return (
         <>
-            <NavBar />
             {loading ? <Spinner /> : <HomeTable employees={employees} />}
-
         </>
     )
 }
