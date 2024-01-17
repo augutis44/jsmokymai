@@ -2,6 +2,12 @@ import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
+// const defaultForm = {
+//     firstName: '',
+//     lastName: '',
+//     // ....
+// }
+
 const AddEmpForm = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -11,12 +17,13 @@ const AddEmpForm = () => {
     const [departament, setDepartament] = useState('');
     const [location, setLocation] = useState('');
     const [image, setImage] = useState('');
+    // const [form, setForm] = useState(defaultForm);
     const [loading, setLoading] = useState(false);
 
     const navigate = useNavigate();
 
     const submitHandler = () => {
-        console.log("New employee added");
+        event.preventDefault();
 
         const data = {
             firstName: firstName,
@@ -43,7 +50,7 @@ const AddEmpForm = () => {
     }
 
     return (
-        <form action="#" onSubmit={submitHandler} className="text-xl">
+        <form onSubmit={submitHandler} className="text-xl">
             <div className="pb-5 flex justify-between">
                 <label htmlFor="firstNameInput" className="">First Name</label>
                 <input

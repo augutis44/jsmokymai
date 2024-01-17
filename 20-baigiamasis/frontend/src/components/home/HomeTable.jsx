@@ -1,6 +1,7 @@
 import { MdEdit } from "react-icons/md";
 import DeleteModal from "./DeleteModal";
 import ViewModal from "./ViewModal";
+import { Link } from "react-router-dom";
 
 const HomeTable = ({ employees, fetchEmployees }) => {
 
@@ -32,7 +33,9 @@ const HomeTable = ({ employees, fetchEmployees }) => {
                                 <td className="py-4">{employee.phone}</td>
                                 <td className="py-4 pr-4 flex gap-2">
                                     <ViewModal employeeId={employee._id} />
-                                    <MdEdit />
+                                    <Link to={`/editEmployee/${employee._id}`} >
+                                        <MdEdit className="text-xl text-yellow-500" />
+                                    </Link>
                                     <DeleteModal employeeId={employee._id} fetchEmployees={fetchEmployees} />
                                 </td>
                             </tr>

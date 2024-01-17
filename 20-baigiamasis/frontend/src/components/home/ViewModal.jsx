@@ -26,39 +26,6 @@ const ViewModal = ({ employeeId }) => {
             });
     }, []);
 
-    // const [firstName, setFirstName] = useState('');
-    // const [lastName, setLastName] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [address, setAddress] = useState('');
-    // const [phone, setPhone] = useState('');
-    // const [departament, setDepartament] = useState('');
-    // const [location, setLocation] = useState('');
-    // const [image, setImage] = useState('');
-    // const [loading, setLoading] = useState(false);
-
-    // useEffect(() => {
-    //     setLoading(true);
-    //     axios
-    //         .get(`http://localhost:5555/employees/${employeeId}`)
-    //         .then((response) => {
-    //             setFirstName(response.data.firstName);
-    //             setLastName(response.data.lastName);
-    //             setEmail(response.data.email);
-    //             setAddress(response.data.address);
-    //             setPhone(response.data.phone);
-    //             setDepartament(response.data.departament);
-    //             setImage(response.data.image);
-    //             setLocation(response.data.location);
-
-    //             setLoading(false);
-    //         })
-    //         .catch((error) => {
-    //             setLoading(false);
-    //             alert('An error happened, please check Console');
-    //             console.log(error);
-    //         });
-    // }, []);
-
     return (
         <>
             <button onClick={() => setViewModalOpen(true)}>
