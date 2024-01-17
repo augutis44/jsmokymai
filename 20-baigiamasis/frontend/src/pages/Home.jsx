@@ -1,4 +1,3 @@
-import NavBar from "../components/shared/navigation/NavBar";
 import HomeTable from "../components/home/HomeTable";
 import axios from 'axios';
 import Spinner from "../components/shared/animated/Spinner";
