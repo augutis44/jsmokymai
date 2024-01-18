@@ -5,7 +5,7 @@ const NavBarLinks = () => {
   return (
     <div className="text-white text-xl flex justify-between items-center">
       <NavLink to='/'>
-        <FaHome />
+        <FaHome className="text-3xl"/>
       </NavLink>
 
       <ul>

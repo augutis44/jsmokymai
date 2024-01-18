@@ -34,7 +34,7 @@ const ViewModal = ({ employeeId }) => {
 
             {viewModalOpen &&
                 <div className="fixed z-10 overflow-auto pt-[10%] top-0 left-0 w-full h-full bg-slate-200 bg-opacity-50">
-                    <div className="bg-white m-auto p-3 w-[650px] shadow-xl shadow-slate-300 rounded-md border-2 border-slate-700">
+                    <div className="bg-white m-auto p-3 w-[700px] shadow-xl shadow-slate-300 rounded-md">
 
                         <button
                             onClick={closeModal}
@@ -43,24 +43,23 @@ const ViewModal = ({ employeeId }) => {
                             x
                         </button>
 
-                        <div className="p-6">
-                            <div className="flex items-center">
-                                <img
-                                    src={`/images/${employee.image}`}
-                                    alt="employee photo"
-                                    className="w-[150px] h-[150px] border rounded-full object-cover"
-                                />
+                        <div className="p-6 flex items-center">
+                            <img
+                                src={`/images/${employee.image}`}
+                                alt="employee photo"
+                                className="w-[200px] h-[250px] border-2 border-gray-300 object-cover rounded-lg"
+                            />
 
-                                <div className="pl-16 text-3xl">
+                            <div className="pl-12">
+                                <div className="text-4xl">
                                     <div>{employee.firstName} {employee.lastName}</div>
                                     <div>{employee.departament}, {employee.location}</div>
                                 </div>
-                            </div>
-
-                            <div className="pt-5 text-xl">
-                                <div>Email: {employee.email}</div>
-                                <div>Adress: {employee.address}</div>
-                                <div>Phone Number: {employee.phone}</div>
+                                <div className="pt-5 text-xl">
+                                    <div><span className="font-bold">Email:</span> {employee.email}</div>
+                                    <div><span className="font-bold">Adress:</span> {employee.address}</div>
+                                    <div><span className="font-bold">Phone Number:</span> {employee.phone}</div>
+                                </div>
                             </div>
                         </div>
 
