@@ -36,7 +36,7 @@ const SearchBar = ({ setResults }) => {
     }
 
     return (
-        <div className="flex gap-2 items-center bg-white p-2 pl-3 rounded-md">
+        <div className="flex gap-2 items-center bg-white p-1 pl-3 rounded-md">
             <FaSearch className="text-xl" />
             <input
                 placeholder="Type to search..."
