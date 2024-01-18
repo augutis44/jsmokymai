@@ -16,28 +16,35 @@ const AddEmpForm = () => {
     const [phone, setPhone] = useState('');
     const [departament, setDepartament] = useState('');
     const [location, setLocation] = useState('');
-    const [image, setImage] = useState('');
+    const [image, setImage] = useState(null);
     // const [form, setForm] = useState(defaultForm);
     const [loading, setLoading] = useState(false);
 
     const navigate = useNavigate();
 
-    const submitHandler = () => {
+    const submitHandler = (event) => {
         event.preventDefault();
 
-        const data = {
-            firstName: firstName,
-            lastName: lastName,
-            email: email,
-            address: address,
-            phone: phone,
-            departament: departament,
-            location: location,
-            image: image
-        }
+        const formData = new FormData();
+        formData.append('firstName', firstName);
+        formData.append('lastName', lastName);
+        formData.append('email', email);
+        formData.append('address', address);
+        formData.append('phone', phone);
+        formData.append('departament', departament);
+        formData.append('location', location);
+        formData.append('image', image);
+
         setLoading(true);
         axios
-            .post(`http://localhost:5555/employee`, data)
+            .post(`http://localhost:5555/employee`,
+                formData,
+                {
+                    headers: {
+                        'Content-Type': 'multipart/form-data',
+                    },
+                }
+            )
             .then(() => {
                 setLoading(false);
                 navigate('/');
@@ -94,7 +101,7 @@ const AddEmpForm = () => {
             <div className="pb-5 flex justify-between">
                 <label htmlFor="phoneNumberInput" className="">Phone Number</label>
                 <input
-                    type="number"
+                    type="text"
                     id="phoneNumberInput"
                     className="border-2 border-slate-300 w-[450px] box-border p-2 rounded-sm"
                     onChange={(event) => setPhone(event.target.value)}
@@ -127,7 +134,8 @@ const AddEmpForm = () => {
                     type="file"
                     id="imageInput"
                     className="w-[450px] rounded-sm"
-                    onChange={(event) => setImage(event.target.value)}
+                    onChange={(event) => setImage(event.target.files[0])}
+
                 />
             </div>
 

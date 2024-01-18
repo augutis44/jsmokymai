@@ -35,6 +35,7 @@ const ViewModal = ({ employeeId }) => {
             {viewModalOpen &&
                 <div className="fixed z-10 overflow-auto pt-[10%] top-0 left-0 w-full h-full bg-slate-200 bg-opacity-50">
                     <div className="bg-white m-auto p-3 w-[650px] shadow-xl shadow-slate-300 rounded-md border-2 border-slate-700">
+
                         <button
                             onClick={closeModal}
                             className="pb-2 px-2 text-2xl float-end font-bold text-purple-600 hover:text-purple-700"
@@ -45,9 +46,9 @@ const ViewModal = ({ employeeId }) => {
                         <div className="p-6">
                             <div className="flex items-center">
                                 <img
-                                    src={employee.image}
+                                    src={`/images/${employee.image}`}
                                     alt="employee photo"
-                                    className="w-[150px] h-[150px] border rounded-full"
+                                    className="w-[150px] h-[150px] border rounded-full object-cover"
                                 />
 
                                 <div className="pl-16 text-3xl">

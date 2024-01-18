@@ -1,13 +1,11 @@
-import { MdEdit } from "react-icons/md";
-import DeleteModal from "./DeleteModal";
-import ViewModal from "./ViewModal";
-import { Link } from "react-router-dom";
+
+import TableContent from "./TableContent";
 
 const HomeTable = ({ employees, fetchEmployees }) => {
 
     return (
 
-        <div className="my-12 border-solid border-2 m-auto w-[1200px] shadow-lg shadow-purple-100">
+        <div className="my-12 border-solid border-2 m-auto w-[1200px] shadow-lg shadow-purple-100 font-font-regular">
             <div className="bg-purple-600 p-5 text-white text-xl">
                 <p>Manage Employees</p>
             </div>
@@ -18,29 +16,12 @@ const HomeTable = ({ employees, fetchEmployees }) => {
                             <th className="py-4 pl-4">First Name</th>
                             <th className="py-4">Last Name</th>
                             <th className="py-4">Email</th>
-                            <th className="py-4">Address</th>
-                            <th className="py-4">Phone</th>
+                            <th className="py-4">Departament</th>
+                            <th className="py-4">Location</th>
                             <th className="py-4 pr-4">Actions</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        {employees.map((employee, i) =>
-                            <tr key={i} className="border-b-2 hover:bg-purple-50">
-                                <td className="py-4 pl-4">{employee.firstName}</td>
-                                <td className="py-4">{employee.lastName}</td>
-                                <td className="py-4">{employee.email}</td>
-                                <td className="py-4">{employee.address}</td>
-                                <td className="py-4">{employee.phone}</td>
-                                <td className="py-4 pr-4 flex gap-2">
-                                    <ViewModal employeeId={employee._id} />
-                                    <Link to={`/editEmployee/${employee._id}`} >
-                                        <MdEdit className="text-xl text-yellow-500" />
-                                    </Link>
-                                    <DeleteModal employeeId={employee._id} fetchEmployees={fetchEmployees} />
-                                </td>
-                            </tr>
-                        )}
-                    </tbody >
+                    <TableContent employees={employees} fetchEmployees={fetchEmployees} />
                 </table >
             </div >
         </div >

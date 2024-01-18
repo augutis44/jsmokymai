@@ -4,7 +4,7 @@ const AddEmployee = () => {
 
 
   return (
-    <div className="my-12 border-solid border-2 m-auto w-[800px] shadow-lg shadow-purple-100">
+    <div className="my-12 border-solid border-2 m-auto w-[800px] shadow-lg shadow-purple-100 font-font-regular">
       <div className="bg-purple-600 py-5 px-12 text-white text-xl">
         <p>Add New Employee</p>
       </div>

@@ -130,7 +130,7 @@ const EditEmployee = () => {
                     <div className="pb-5 flex justify-between">
                         <label htmlFor="phoneNumberInput" className="">Phone Number</label>
                         <input
-                            type="number"
+                            type="text"
                             id="phoneNumberInput"
                             className="border-2 border-slate-300 w-[450px] box-border p-2 rounded-sm"
                             value={phone}

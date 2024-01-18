@@ -1,9 +1,28 @@
 import express from "express";
 import { Employee } from "../models/employeeModel.js";
+import multer from "multer";
 
 const router = express.Router();
 
-router.post('/', async (req, res) => {
+//For image uploading
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, '../frontend/public/images')
+    },
+    filename: function (req, file, cb) {
+        const uniqueSuffix = Date.now();
+        cb(null, uniqueSuffix + file.originalname)
+    }
+})
+
+const upload = multer({ storage: storage })
+
+
+//Create new employee
+router.post('/', upload.single("image"), async (req, res) => {
+
+    const imageName = req.file.filename
+
     try {
         const newEmployeeObj = {
             id: req.body.id,
@@ -14,7 +33,7 @@ router.post('/', async (req, res) => {
             phone: req.body.phone,
             departament: req.body.departament,
             location: req.body.location,
-            image: req.body.image,
+            image: imageName,
             dateOfJoining: req.body.dateOfJoining
         }
 
@@ -24,10 +43,11 @@ router.post('/', async (req, res) => {
 
     } catch (error) {
         console.log(error.message);
-        response.status(500).send({ message: error.message });
+        res.status(500).send({ message: error.message });
     }
 });
 
+//Get all employees
 router.get('/', async (req, res) => {
     try {
         const alleEployees = await Employee.find({});
@@ -36,10 +56,11 @@ router.get('/', async (req, res) => {
 
     } catch (error) {
         console.log(error.message);
-        response.status(500).send({ message: error.message });
+        res.status(500).send({ message: error.message });
     }
 });
 
+//Get employee by ID
 router.get('/:id', async (req, res) => {
     try {
 
@@ -51,10 +72,11 @@ router.get('/:id', async (req, res) => {
 
     } catch (error) {
         console.log(error.message);
-        response.status(500).send({ message: error.message });
+        res.status(500).send({ message: error.message });
     }
 });
 
+//Update employee
 router.put('/:id', async (req, res) => {
     try {
 
@@ -70,10 +92,11 @@ router.put('/:id', async (req, res) => {
 
     } catch (error) {
         console.log(error.message);
-        response.status(500).send({ message: error.message });
+        res.status(500).send({ message: error.message });
     }
 });
 
+//Delete employee
 router.delete('/:id', async (req, res) => {
     try {
 
@@ -89,7 +112,7 @@ router.delete('/:id', async (req, res) => {
 
     } catch (error) {
         console.log(error.message);
-        response.status(500).send({ message: error.message });
+        res.status(500).send({ message: error.message });
     }
 });
 
