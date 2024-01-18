@@ -48,7 +48,7 @@ const DeleteModal = ({ employeeId, fetchEmployees }) => {
                             </button>
                             <button
                                 onClick={deleteHandler}
-                                className="bg-red-300 hover:bg-red-400 py-2 px-4 border-2 border-red-500 rounded-md ml-4"
+                                className="bg-red-500 hover:bg-red-600 py-2 px-4 border-2 border-red-700 rounded-md ml-4 text-white"
                             >
                                 OK
                             </button>

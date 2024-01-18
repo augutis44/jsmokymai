@@ -1,15 +1,25 @@
-
+import { NavLink } from "react-router-dom";
+import { FaCirclePlus } from "react-icons/fa6";
 import TableContent from "./TableContent";
+import SearchBar from "../searchBar/SearchBar";
+import { useState } from "react";
 
 const HomeTable = ({ employees, fetchEmployees }) => {
+    const [results, setResults] = useState(employees);
 
     return (
 
         <div className="my-12 border-solid border-2 m-auto w-[1200px] shadow-lg shadow-purple-100 font-font-regular rounded-md overflow-hidden">
-            <div className="bg-purple-600 p-5  flex justify-between items-center">
+            <div className="bg-purple-900 p-5 flex justify-between items-center">
                 <p className="text-white text-2xl">Manage Employees</p>
 
-                <button className="bg-green-400 hover:bg-green-500 py-2 px-4 border-2 border-green-600 rounded-md text-lg">Add Employee</button>
+                <SearchBar setResults={setResults}/>
+
+                <NavLink to='/addEmployee'>
+                    <div className="bg-green-600 hover:bg-green-700 py-2 px-4 border-2 border-green-800 rounded-md text-lg text-white flex items-center gap-2">
+                        <FaCirclePlus className="text-white" /> Add employee
+                    </div>
+                </NavLink>
             </div>
             <div className="p-5">
                 <table className="border w-full table-auto">
@@ -23,7 +33,7 @@ const HomeTable = ({ employees, fetchEmployees }) => {
                             <th className="py-4 pr-4">Actions</th>
                         </tr>
                     </thead>
-                    <TableContent employees={employees} fetchEmployees={fetchEmployees} />
+                    <TableContent employees={results} fetchEmployees={fetchEmployees} />
                 </table >
             </div >
         </div >

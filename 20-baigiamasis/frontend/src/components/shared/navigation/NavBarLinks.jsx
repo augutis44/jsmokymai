@@ -9,14 +9,6 @@ const NavBarLinks = () => {
       </NavLink>
 
       <ul>
-        <li className="inline-block list-none">
-          <NavLink to='/addEmployee'>
-            <div>
-              Add employee
-            </div>
-          </NavLink>
-        </li>
-
         <li className="inline-block list-none pl-5">
           <NavLink>
             <div>

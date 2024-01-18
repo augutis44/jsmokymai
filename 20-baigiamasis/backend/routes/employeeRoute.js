@@ -20,6 +20,7 @@ const upload = multer({ storage: storage })
 
 //Create new employee
 router.post('/', upload.single("image"), async (req, res) => {
+    console.log(req);
 
     const imageName = req.file.filename
 

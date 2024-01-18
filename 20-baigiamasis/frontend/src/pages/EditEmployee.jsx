@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
+import { FaCircleArrowLeft } from "react-icons/fa6";
 
 
 const EditEmployee = () => {
@@ -57,8 +59,6 @@ const EditEmployee = () => {
             image: image
         }
 
-        console.log(data);
-
         setLoading(true);
 
         axios
@@ -66,7 +66,6 @@ const EditEmployee = () => {
             .then(() => {
                 setLoading(false);
                 navigate('/');
-                console.log("Updated");
             })
             .catch((error) => {
                 setLoading(false);
@@ -77,8 +76,14 @@ const EditEmployee = () => {
 
     return (
         <div className="my-12 border-solid border-2 m-auto w-[800px] shadow-lg shadow-purple-100">
-            <div className="bg-purple-600 py-5 px-12 text-white text-xl">
+            <div className="bg-purple-900 p-5 text-white text-2xl flex justify-between items-center">
                 <p>Edit Employee</p>
+
+                <NavLink to='/'>
+                    <div className="bg-green-600 hover:bg-green-700 py-2 px-4 border-2 border-green-800 rounded-md text-lg text-white flex gap-2 items-center">
+                        <FaCircleArrowLeft className="text-white" /> Back
+                    </div>
+                </NavLink>
             </div>
 
             <div className="px-12 py-5">
