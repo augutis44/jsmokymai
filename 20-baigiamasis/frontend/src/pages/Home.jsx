@@ -4,13 +4,20 @@ import Spinner from "../components/shared/animated/Spinner";
 import { useEffect, useState } from "react";
 
 const Home = () => {
-
     const [employees, setEmployees] = useState([]);
     const [loading, setLoading] = useState(false);
+    const [searchValue, setSearchValue] = useState('');
+    const [filter, setFilter] = useState(
+        {
+            fieldName: "firstName",
+            order: 1
+        }
+    )
 
+    //turi priimti filter 
     const fetchEmployees = () => {
         axios
-            .get('http://localhost:5555/employees')
+            .post('http://localhost:5555/employees/get', { filter, searchValue })
             .then((response) => {
                 setEmployees(response.data);
                 setLoading(false);
@@ -25,11 +32,18 @@ const Home = () => {
         setLoading(true);
 
         fetchEmployees();
-    }, []);
+    }, [filter, searchValue]);
 
     return (
         <>
-            {loading ? <Spinner /> : <HomeTable employees={employees} fetchEmployees={fetchEmployees} />}
+            <HomeTable
+                employees={employees}
+                fetchEmployees={fetchEmployees}
+                setFilter={setFilter}
+                filter={filter}
+                searchValue={searchValue}
+                setSearchValue={setSearchValue}
+            />
         </>
     )
 }

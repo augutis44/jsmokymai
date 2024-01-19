@@ -17,12 +17,11 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage })
 
-
 //Create new employee
 router.post('/', upload.single("image"), async (req, res) => {
     console.log(req);
 
-    const imageName = req.file.filename
+    const imageName = req.file.filename;
 
     try {
         const newEmployeeObj = {
@@ -49,17 +48,43 @@ router.post('/', upload.single("image"), async (req, res) => {
 });
 
 //Get all employees
-router.get('/', async (req, res) => {
+router.post('/get', async (req, res) => {
     try {
-        const alleEployees = await Employee.find({});
 
-        return res.status(200).json(alleEployees);
+        const { filter, searchValue } = req.body;
+
+        const { fieldName = 'firstName', order = 1 } = filter;
+
+        const allEmployees = await Employee
+            .find(
+                {
+                    $or: [{ 'firstName': { $regex: '^' + searchValue, $options: 'i' } },
+                    { 'lastName': { $regex: '^' + searchValue, $options: 'i' } }]
+                }
+            )
+            .sort({ [fieldName]: order })
+
+        // .filter((employee) => {
+        //     const firstNameMatch = employee &&
+        //         employee.firstName &&
+        //         employee.firstName.toLowerCase().startsWith(searchValue);
+
+        //     const lastNameMatch = employee &&
+        //         employee.lastName &&
+        //         employee.lastName.toLowerCase().startsWith(searchValue);
+
+        //     return firstNameMatch || lastNameMatch
+        // });
+
+        return res.status(200).json(allEmployees);
 
     } catch (error) {
         console.log(error.message);
         res.status(500).send({ message: error.message });
     }
 });
+
+//reikia requeste objekto filter. jame butu feald name ir orderis (asc, desc). .find padarytu find ir sortinima
 
 //Get employee by ID
 router.get('/:id', async (req, res) => {

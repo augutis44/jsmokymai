@@ -1,41 +1,27 @@
-import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
 
-const SearchBar = ({ employees, setResults }) => {
-    const [searchValue, setSearchValue] = useState('');
+const SearchBar = ({
+    searchValue,
+    setSearchValue
+}) => {
 
-    const fetchData = (value) => {
-
-        const result = employees.filter((employee) => {
-            const firstNameMatch = employee &&
-                employee.firstName &&
-                employee.firstName.toLowerCase().startsWith(value);
-
-            const lastNameMatch = employee &&
-                employee.lastName &&
-                employee.lastName.toLowerCase().startsWith(value);
-
-            return firstNameMatch || lastNameMatch
-        });
-
-        setResults(result);
-
-    };
-
-    const handleChange = (value) => {
-        setSearchValue(value);
-        fetchData(value);
+    const clearSearch = () => {
+        setSearchValue('');
     }
 
     return (
-        <div className="flex gap-2 items-center bg-white p-1 pl-3 rounded-md">
+        <div className="flex gap-2 items-center bg-white p-1 pl-3 pr-3 rounded-md">
             <FaSearch className="text-xl" />
             <input
-                placeholder="Type to search..."
+                placeholder="Search employee..."
                 className="p-1 focus:outline-none"
                 value={searchValue}
-                onChange={(event) => handleChange(event.target.value)}
+                onChange={(event) => setSearchValue(event.target.value)}
             />
+            <button onClick={clearSearch}>
+                <IoMdClose className="text-xl" />
+            </button>
         </div>
     )
 }
