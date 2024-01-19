@@ -1,34 +1,26 @@
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
-const SearchBar = ({ setResults }) => {
+const SearchBar = ({ employees, setResults }) => {
     const [searchValue, setSearchValue] = useState('');
 
     const fetchData = (value) => {
 
-        fetch(`http://localhost:5555/employees`)
-            .then((response) =>
-                response.json()
-            ).then((json) => {
-                const result = json.filter((employee) => {
-                    const firstNameMatch = employee &&
-                        employee.firstName &&
-                        employee.firstName.toLowerCase().startsWith(value);
+        const result = employees.filter((employee) => {
+            const firstNameMatch = employee &&
+                employee.firstName &&
+                employee.firstName.toLowerCase().startsWith(value);
 
-                    const lastNameMatch = employee &&
-                        employee.lastName &&
-                        employee.lastName.toLowerCase().startsWith(value);
+            const lastNameMatch = employee &&
+                employee.lastName &&
+                employee.lastName.toLowerCase().startsWith(value);
 
-                    return firstNameMatch || lastNameMatch
-                });
+            return firstNameMatch || lastNameMatch
+        });
 
-                setResults(result);
+        setResults(result);
 
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }
+    };
 
     const handleChange = (value) => {
         setSearchValue(value);

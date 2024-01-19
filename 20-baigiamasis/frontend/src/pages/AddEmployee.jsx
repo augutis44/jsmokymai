@@ -6,8 +6,8 @@ const AddEmployee = () => {
 
 
   return (
-    <div className="my-12 border-solid border-2 m-auto w-[800px] shadow-lg shadow-purple-100 font-font-regular">
-      <div className="bg-purple-900 p-5 text-white text-2xl flex justify-between items-center">
+    <div className="my-6 border-solid border-2 m-auto w-[800px] shadow-lg shadow-purple-100 font-font-regular">
+      <div className="bg-purple-900 py-3 px-5 text-white text-2xl flex justify-between items-center">
         <p>Add New Employee</p>
 
         <NavLink to='/'>

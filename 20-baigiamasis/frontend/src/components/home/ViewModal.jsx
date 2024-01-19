@@ -13,18 +13,20 @@ const ViewModal = ({ employeeId }) => {
     }
 
     useEffect(() => {
-        setLoading(true);
-        axios
-            .get(`http://localhost:5555/employees/${employeeId}`)
-            .then((response) => {
-                setEmployee(response.data);
-                setLoading(false);
-            })
-            .catch((error) => {
-                console.log(error);
-                setLoading(false);
-            });
-    }, []);
+        if (viewModalOpen) {
+            setLoading(true);
+            axios
+                .get(`http://localhost:5555/employees/${employeeId}`)
+                .then((response) => {
+                    setEmployee(response.data);
+                    setLoading(false);
+                })
+                .catch((error) => {
+                    console.log(error);
+                    setLoading(false);
+                });
+        }
+    }, [viewModalOpen]);
 
     return (
         <>

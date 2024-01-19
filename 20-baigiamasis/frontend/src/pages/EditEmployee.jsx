@@ -75,8 +75,8 @@ const EditEmployee = () => {
     }
 
     return (
-        <div className="my-12 border-solid border-2 m-auto w-[800px] shadow-lg shadow-purple-100">
-            <div className="bg-purple-900 p-5 text-white text-2xl flex justify-between items-center">
+        <div className="my-6 border-solid border-2 m-auto w-[800px] shadow-lg shadow-purple-100">
+            <div className="bg-purple-900 px-5 py-3 text-white text-2xl flex justify-between items-center">
                 <p>Edit Employee</p>
 
                 <NavLink to='/'>

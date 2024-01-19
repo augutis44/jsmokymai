@@ -14,7 +14,7 @@ const TableContent = ({ employees, fetchEmployees }) => {
                         <td className="py-4">{employee.email}</td>
                         <td className="py-4">{employee.departament}</td>
                         <td className="py-4">{employee.location}</td>
-                        <td className="py-4 pr-4 flex gap-2">
+                        <td className="py-4 flex gap-3">
                             <ViewModal employeeId={employee._id} />
                             <Link to={`/editEmployee/${employee._id}`} >
                                 <MdEdit className="text-xl text-yellow-500" />

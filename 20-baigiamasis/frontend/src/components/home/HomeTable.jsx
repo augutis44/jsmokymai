@@ -13,7 +13,7 @@ const HomeTable = ({ employees, fetchEmployees }) => {
             <div className="bg-purple-900 px-5 py-3 flex justify-between items-center">
                 <p className="text-white text-2xl">Manage Employees</p>
 
-                <SearchBar setResults={setResults}/>
+                <SearchBar setResults={setResults} employees={employees} />
 
                 <NavLink to='/addEmployee'>
                     <div className="bg-green-600 hover:bg-green-700 py-2 px-4 border-2 border-green-800 rounded-md text-lg text-white flex items-center gap-2">
