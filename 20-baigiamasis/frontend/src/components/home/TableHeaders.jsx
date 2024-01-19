@@ -1,7 +1,7 @@
 
 const HomeTableHeaders = ({ styles, children }) => {
 
-    const combinedStyles = `py-2 ${styles}`
+    const combinedStyles = `bg-gray-100 border-b-4 sticky top-0 py-2 ${styles}`
 
     return (
         <>
