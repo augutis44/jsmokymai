@@ -8,7 +8,7 @@ const NavBarLinks = () => {
         <FaHome className="text-3xl"/>
       </NavLink>
 
-      <ul>
+      {/* <ul>
         <li className="inline-block list-none pl-5">
           <NavLink>
             <div>
@@ -16,7 +16,7 @@ const NavBarLinks = () => {
             </div>
           </NavLink>
         </li>
-      </ul>
+      </ul> */}
     </div>
   )
 }
