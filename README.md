@@ -39,7 +39,7 @@ Developed using CSS, HTML, and JavaScript, it aimed to solidify my understanding
 
 ### Project 3: Employee Management CRUD
 
-[Project 1: Link to card game project]( NEED TO ADD LINK )
+[Project 1: Link to employee management CRUD](https://github.com/augutis44/EmployeeManagement)
 
 This project is an Employee Management Application built using the MERN stack. 
 Its main purpose is to help manage employee data. 
